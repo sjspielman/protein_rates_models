@@ -11,7 +11,7 @@ TYPE=$1
 FILE=$2
 
 
-PROJPATH=/home/sjspielman/leisr_validation/compare_models
+PROJPATH=/home/sjspielman/leisr_rates_across_models/rate_inference
 DATAPATH=$PROJPATH/$TYPE
 RESULTPATH=$PROJPATH/$TYPE-inference
 mkdir -p $RESULTPATH
@@ -21,8 +21,7 @@ MPI=$HYPATH/HYPHYMPI
 LIBPATH=$HYPATH/res
 BATCHFILE=$LIBPATH/TemplateBatchFiles/LEISR.bf
 
-for MODEL in LG WAG JTT JC69 mtMet cpREV; do
-#for MODEL in mtMet; do
+for MODEL in LG WAG JTT JC69 mtVer cpREV; do
     for RV in Gamma No; do
        if [ $RV == "Gamma" ]; then
 	  RV2=G
