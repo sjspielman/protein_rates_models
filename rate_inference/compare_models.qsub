@@ -21,7 +21,7 @@ MPI=$HYPATH/HYPHYMPI
 LIBPATH=$HYPATH/res
 BATCHFILE=$LIBPATH/TemplateBatchFiles/LEISR.bf
 
-for MODEL in LG WAG JTT JC69 mtVer cpREV; do
+for MODEL in LG WAG JTT JC69 mtVer gcpREV; do
     for RV in Gamma No; do
        if [ $RV == "Gamma" ]; then
 	  RV2=G
@@ -32,7 +32,7 @@ for MODEL in LG WAG JTT JC69 mtVer cpREV; do
         if [ ! -e $JSON ]; then
             /opt/scyld/openmpi/1.6.3/gnu/bin/mpirun -np 64 $MPI LIBPATH=$LIBPATH  $BATCHFILE ${DATAPATH}/$FILE y Protein $MODEL $RV
             mv ${DATAPATH}/$FILE.LEISR.json  $JSON
-        fi
+       fi
     done
 done
 
