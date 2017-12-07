@@ -7,9 +7,9 @@ import os
 import sys
 
 fit_output = "model_fits.csv"
-fitstring = "dataset,model,type,logl,AICc,GammaShape\n"
-mito = ["ATP6", "ATP8", "COX1", "COX2", "COX3", "CYTB", "ND1", "ND2", "ND3", "ND4", "ND4L", "ND5", "ND6"]
+fitstring = "dataset,sequences,sites,model,type,logl,AICc,GammaShape\n"
 
+mito = ["ATP6", "ATP8", "COX1", "COX2", "COX3", "CYTB", "ND1", "ND2", "ND3", "ND4", "ND4L", "ND5", "ND6"]
     
 for type in ["organelle", "enzyme"]:
     
@@ -24,12 +24,15 @@ for type in ["organelle", "enzyme"]:
         output = json.replace(".json", ".csv")
         p.extract_csv(json_directory + output)
     
-        model = p.reveal_fitted_models()[0]
-    
+        sites = str(p.extract_number_sites())
+        seqs = str(p.extract_number_sequences())
+           
+        jsonmodel = p.reveal_fitted_models()[0]
+
         dataset = json.split(".")[0]
         outmodelname = json.split(".")[2]
         if "-G" in json:
-            shape = str(p.extract_model_rate_distributions(model)["Gamma distribution shape parameter"])
+            shape = str(p.extract_model_rate_distributions(jsonmodel)["Gamma distribution shape parameter"])
         else:
             shape = "NA"
  
@@ -42,7 +45,7 @@ for type in ["organelle", "enzyme"]:
         else:
             finaltype = "enzyme"
 
-        thisfit = json.split(".")[0] + "," + outmodelname + "," + finaltype + "," + str(p.extract_model_logl(model)) + "," + str(p.extract_model_aicc(model)) + "," + shape +  "\n"
+        thisfit = json.split(".")[0] + "," + seqs + "," + sites + "," + outmodelname + "," + finaltype + "," + str(p.extract_model_logl(jsonmodel)) + "," + str(p.extract_model_aicc(jsonmodel)) + "," + shape +  "\n"
         fitstring += thisfit
 
 fitstring.strip()

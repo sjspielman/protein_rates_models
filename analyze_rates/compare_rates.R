@@ -1,189 +1,256 @@
-###
-### SJS
-### This script processes the rate inferences to obtain correlations
-### Generates the following files:
-###   1) rate_inferences_all.csv, all rate inferences. **No normalization or filtering applied**
-###   2) correlations_gamma_noRV.csv, per-gene correlations (both Pearson on log-transformed data and Spearman) for each model with and without gamma, i.e. WAG norv vs WAG gamma, etc.
-###   3) correlations_between_models.csv, per-gene correlations (both Pearson on log-transformed data and Spearman) between models, specifically norv inferences
-###
+###### Crux analysis file for rates
+###### SJS
+##### docu forthcoming.....
 
+require(cowplot)
 require(tidyverse)
-require(purrr)
 require(broom)
 mito <- c("ATP6", "ATP8", "COX1", "COX2", "COX3", "CYTB", "ND1", "ND2", "ND3", "ND4", "ND4L", "ND5", "ND6") 
 
 
-###### Read in organelle rates #######
-fpath = "../rate_inference/organelle_data-inference/"
-files <- dir(path = fpath, pattern = "*csv")
-data_frame(filename = files) %>%
-  mutate(file_contents = map(filename,
-           ~ read_csv(file.path(fpath, .)))) %>%
-  unnest() %>%
-  separate(filename, c("dataset", "byebye1", "model", "byebye2", "byebye3"), sep="\\.") %>%
-  dplyr::select(dataset, model, site, MLE, Lower, Upper) %>%
-  mutate(type = ifelse(dataset %in% mito, "mito", "chloro")) -> raw.organelle.rates
-
-###### Read in enzyme rates and merge with organelle to create single tibble of rates #######
-fpath = "../rate_inference/enzyme_data-inference/"
-files <- dir(path = fpath, pattern = "*csv")
-data_frame(filename = files) %>%
-  mutate(file_contents = map(filename,
-           ~ read_csv(file.path(fpath, .)))) %>%
-  unnest() %>%
-  separate(filename, c("dataset", "byebye1", "model", "byebye2", "byebye3"), sep="\\.") %>%
-  dplyr::select(dataset, model, site, MLE, Lower, Upper) %>% 
-  mutate(type = "enzyme") %>%
-  rbind(raw.organelle.rates) -> raw.rates
-
-##### SAVE RATES TO rate_inferences_all.csv
-write_csv(raw.rates, "rate_inferences_all.csv")
+raw.rates <- read_csv("rate_inferences_all.csv")
 
 
-# 
-# ##### For fun, confirm that sites with rate = 0 are consistently 0 for all methods
-# > raw.rates %>% 
-# +     group_by(dataset, site) %>% 
-# +     tally(MLE == 0 & Lower == 0) %>% 
-# +     filter(n!=12, n!=0)
-# A tibble: 0 x 3
-# Groups:   dataset [0]
-# ... with 3 variables: dataset <chr>, site <int>, n <int>
-
-
-### Spread the rates, adding 1e-8 all around to allow median normalization sans NA's and for downstream logging
-raw.rates %>% 
-    group_by(dataset, model) %>%
-    select(-Lower,-Upper) %>%
-    mutate(MLE = MLE + 1e-8) %>%
-    mutate(MLE = MLE/median(MLE)) %>%
-    spread(model, MLE) -> rates.mednorm
-
-    
-##### Rank correlations for noRV - Gamma
-rates.mednorm %>%
-    group_by(dataset, type) %>%
-    do(LG = cor(.$`LG-G`, .$`LG-No`, method = "spearman"),
-       WAG = cor(.$`WAG-G`, .$`WAG-No`, method = "spearman"),
-       JTT = cor(.$`JTT-G`, .$`JTT-No`, method = "spearman"),
-       mtMet = cor(.$`mtMet-G`, .$`mtMet-No`, method = "spearman"),
-       cpREV = cor(.$`cpREV-G`, .$`cpREV-No`, method = "spearman"),
-       JC69 = cor(.$`JC69-G`, .$`JC69-No`, method = "spearman")) %>%
-    unnest(LG, WAG, JTT, mtMet, cpREV, JC69) %>%
-    gather(model, r, LG:JC69) %>%
-    mutate(correlation.type = "Spearman") -> rank.corr.g.norv
-
-
-##### Pearson on transformed data correlations for noRV - Gamma, and merge with spearman correlations to create a single data frame
-rates.mednorm %>%
-  group_by(dataset, type) %>%
-  do(LG = cor(log(.$`LG-G`), log(.$`LG-No`)),
-     WAG = cor(log(.$`WAG-G`), log(.$`WAG-No`)),
-     JTT = cor(log(.$`JTT-G`), log(.$`JTT-No`)),
-     mtMet = cor(log(.$`mtMet-G`), log(.$`mtMet-No`)),
-     cpREV = cor(log(.$`cpREV-G`), log(.$`cpREV-No`)),
-     JC69 = cor(log(.$`JC69-G`), log(.$`JC69-No`))) %>%
-    unnest(LG, WAG, JTT, mtMet, cpREV, JC69) %>%
-    gather(model, r, LG:JC69) %>%
-    mutate(correlation.type = "Pearson") %>%
-  rbind(rank.corr.g.norv) -> corr.gamma.norv
-
-
-##### SAVE NoRV-Gamma correlations to correlations_gamma_noRV.csv
-write_csv(corr.gamma.norv, "correlations_gamma_noRV.csv")
-
-
-
-
-##### Rank correlations between each pair of models. Note that I'm sure there's a better way to do this, but I don't know what that way is.
-rates.mednorm %>%
-    group_by(dataset, type) %>%
-    do(`LG-WAG`      = cor(.$`LG-No`, .$`WAG-No`, method = "spearman"),
-       `LG-JTT`      = cor(.$`LG-No`, .$`JTT-No`, method = "spearman"),
-       `LG-mtMet`    = cor(.$`LG-No`, .$`mtMet-No`, method = "spearman"),
-       `LG-cpREV`    = cor(.$`LG-No`, .$`cpREV-No`, method = "spearman"),
-       `LG-JC69`     = cor(.$`LG-No`, .$`JC69-No`, method = "spearman"),
-       `WAG-JTT`     = cor(.$`WAG-No`, .$`JTT-No`, method = "spearman"),
-       `WAG-mtMet`   = cor(.$`WAG-No`, .$`mtMet-No`, method = "spearman"),
-       `WAG-cpREV`   = cor(.$`WAG-No`, .$`cpREV-No`, method = "spearman"),
-       `WAG-JC69`    = cor(.$`WAG-No`, .$`JC69-No`, method = "spearman"),
-       `JTT-mtMet`   = cor(.$`JTT-No`, .$`mtMet-No`, method = "spearman"),
-       `JTT-cpREV`   = cor(.$`JTT-No`, .$`cpREV-No`, method = "spearman"),
-       `JTT-JC69`    = cor(.$`JTT-No`, .$`JC69-No`, method = "spearman"),
-       `mtMet-cpREV` = cor(.$`mtMet-No`, .$`cpREV-No`, method = "spearman"),
-       `mtMet-JC69`  = cor(.$`mtMet-No`, .$`JC69-No`, method = "spearman"),
-       `cpREV-JC69`  = cor(.$`cpREV-No`, .$`JC69-No`, method = "spearman")) %>%
-    unnest(`LG-WAG`, `LG-JTT`, `LG-mtMet`, `LG-cpREV`, `LG-JC69`, `WAG-JTT`, `WAG-mtMet`, `WAG-cpREV`, `WAG-JC69`, `JTT-mtMet`, `JTT-cpREV`, `JTT-JC69`, `mtMet-cpREV`, `mtMet-JC69`, `cpREV-JC69`) %>% 
-    gather(comparison, r, `LG-WAG`:`cpREV-JC69`) %>%
-    mutate(correlation.type = "Spearman") -> corr.models.rank
-
-
-
-##### Pearson on log-tranformed data correlations between each pair of models, and merge with spearman to create single data frame
-rates.mednorm %>%
-    group_by(dataset, type) %>%
-    do(`LG-WAG`      = cor(log(.$`LG-No`), log(.$`WAG-No`)),
-       `LG-JTT`      = cor(log(.$`LG-No`), log(.$`JTT-No`)),
-       `LG-mtMet`    = cor(log(.$`LG-No`), log(.$`mtMet-No`)),
-       `LG-cpREV`    = cor(log(.$`LG-No`), log(.$`cpREV-No`)),
-       `LG-JC69`     = cor(log(.$`LG-No`), log(.$`JC69-No`)),
-       `WAG-JTT`     = cor(log(.$`WAG-No`), log(.$`JTT-No`)),
-       `WAG-mtMet`   = cor(log(.$`WAG-No`), log(.$`mtMet-No`)),
-       `WAG-cpREV`   = cor(log(.$`WAG-No`), log(.$`cpREV-No`)),
-       `WAG-JC69`    = cor(log(.$`WAG-No`), log(.$`JC69-No`)),
-       `JTT-mtMet`   = cor(log(.$`JTT-No`), log(.$`mtMet-No`)),
-       `JTT-cpREV`   = cor(log(.$`JTT-No`), log(.$`cpREV-No`)),
-       `JTT-JC69`    = cor(log(.$`JTT-No`), log(.$`JC69-No`)),
-       `mtMet-cpREV` = cor(log(.$`mtMet-No`), log(.$`cpREV-No`)),
-       `mtMet-JC69`  = cor(log(.$`mtMet-No`), log(.$`JC69-No`)),
-       `cpREV-JC69`  = cor(log(.$`cpREV-No`), log(.$`JC69-No`))) %>%
-    unnest(`LG-WAG`, `LG-JTT`, `LG-mtMet`, `LG-cpREV`, `LG-JC69`, `WAG-JTT`, `WAG-mtMet`, `WAG-cpREV`, `WAG-JC69`, `JTT-mtMet`, `JTT-cpREV`, `JTT-JC69`, `mtMet-cpREV`, `mtMet-JC69`, `cpREV-JC69`) %>% 
-    gather(comparison, r, `LG-WAG`:`cpREV-JC69`) %>%
-    mutate(correlation.type = "Pearson") %>%
-  rbind( corr.models.rank ) -> corr.models
-
-
-##### SAVE between model correlations to correlations_between_models.csv
-write_csv(corr.models, "correlations_between_models.csv")
-
-
-
-
-#####################################################################
-########################## Plotting #################################
-
-theme_set(theme_classic())
-corrtype.levels <- c("Pearson", "Spearman")
-comparison.levels <- c("LG-WAG", "LG-JTT", "LG-mtMet", "LG-cpREV", "WAG-JTT", "WAG-mtMet", "WAG-cpREV", "JTT-mtMet", "JTT-cpREV", "mtMet-cpREV", "LG-JC69", "WAG-JC69", "JTT-JC69", "mtMet-JC69", "cpREV-JC69")
-model.levels <- c("LG", "WAG", "JTT", "mtMet", "cpREV", "JC69")
+### Plotting things ###
+theme_set(theme_classic() + theme(strip.background = element_rect(fill = "grey90")))
+comparison.levels <- c("LG-WAG", "LG-JTT", "LG-mtVer", "LG-cpREV", "WAG-JTT", "WAG-mtVer", "WAG-cpREV", "JTT-mtVer", "JTT-cpREV", "mtVer-cpREV", "LG-JC69", "WAG-JC69", "JTT-JC69", "mtVer-JC69", "cpREV-JC69")
+model.levels <- c("LG", "WAG", "JTT", "mtVer", "gcpREV", "JC69")
 type.levels <- c("enzyme", "chloro", "mito")
 type.labels <- c("Enzyme", "Chloroplast", "Mitochondria")
 
 
 
-########## Correlations between Gamma, No RV ##########
-corr.gamma.norv$model <- factor(corr.gamma.norv$model, levels=model.levels)
-corr.gamma.norv$type <- factor(corr.gamma.norv$type, levels=type.levels, labels=type.labels)
-corr.gamma.norv$correlation.type <- factor(corr.gamma.norv$correlation.type, levels=corrtype.levels)
-corr.gamma.norv %>% 
-    ggplot(aes(x = model, y = r, fill = type))+
-    geom_point(pch=21, position = position_jitterdodge()) + 
-    facet_wrap(~correlation.type, nrow=2) + theme(strip.background = element_rect(fill = "grey90")) + 
-    ylab("Correlation") + xlab("Model") + scale_fill_discrete(name = "Dataset") -> rv.jitter.plot
+
+
+
+### Obtain a dataframe of rates only, performing the following modifications, right-censoring >=1e3 --> 1e3 ###
+raw.rates %>% 
+    group_by(dataset, model, rv) %>%
+    select(-Lower,-Upper) %>%
+    mutate(MLE  = ifelse(MLE >= 1e3, 1e3, MLE)) -> rates
+
+
+
+##########################################################################################
+############################# Representative scatterplots ################################
+##########################################################################################
+
+repr <- c("1A50_B", "matK", "CYTB")
+rates$model <- factor(rates$model, levels = model.levels)
+rates$type <- factor(rates$type, levels = type.levels, labels = type.labels)
+
+rates %>% 
+    filter(dataset %in% repr) %>%
+    group_by(model, type) %>%
+    filter(MLE >= 1e-8) %>%
+    spread(rv, MLE) %>%
+    ggplot(aes(x = No, y = G)) + 
+        geom_point(size=1) + 
+        geom_abline(color = "blue") + 
+        facet_grid(type~model) + 
+        panel_border() + 
+        scale_x_log10() + scale_y_log10() + 
+        xlab("MLE, no rate variation") + ylab("MLE, Gamma") -> scatter.grid.rv
+
+ggsave("scatterplot_grid_ratevariation.pdf", scatter.grid.rv, width=9, height=3.5)
+
+
+rates %>%
+    ungroup() %>%
+    filter(rv == "G", dataset %in% repr, MLE >= 1e-8) %>%
+    select(-rv) %>%
+    group_by(type) %>%
+    spread(model, MLE) %>%
+    gather(model, MLE, WAG:JC69) -> lg.vs.all
+lg.vs.all$model <- factor(lg.vs.all$model, levels = model.levels[c(-1)])
+#lg.vs.all$type <- factor(lg.vs.all$type, levels = type.levels, labels = type.labels)
+
+
+lg.vs.all %>%
+    ggplot(aes(x = LG, y = MLE)) + 
+        geom_point(size=1) + 
+        geom_abline(color = "blue") + 
+        facet_grid(type~model) + 
+        panel_border() + 
+        scale_x_log10() + scale_y_log10() + 
+        xlab("LG MLE") + ylab("Model MLE") -> scatter.grid.lg.vs.all
+ggsave("scatterplot_grid_LG_vs_all.pdf", scatter.grid.lg.vs.all, width=9, height=3.5)
+
+#########################################################################################
+
+
+rates %>%
+    ungroup() %>% 
+    group_by(dataset, type, model) %>%
+    spread(rv, MLE) %>%
+    summarize( rho = cor(G, No, method = "spearman")) -> rv.correlations
+
+
+####### PLOT ######
+#rv.correlations$model <- factor(rv.correlations$model, levels=model.levels)
+#rv.correlations$type <- factor(rv.correlations$type, levels=type.levels, labels=type.labels)
+rv.correlations %>% 
+    ggplot(aes(x = model, y = rho, fill = type))+
+    geom_point(pch=21, position = position_jitterdodge())  + 
+    ylab("Rank Correlation") + xlab("Model") + scale_fill_discrete(name = "Dataset") -> rv.jitter.plot
 ### Outliers are rpl36 (WAG, JTT, JC), and psbL (JC)
-ggsave("gamma_norv_jitter.pdf", rv.jitter.plot)
+ggsave("jitter_ratevariation.pdf", rv.jitter.plot, width = 6, height=2)
+
+
+ 
+##### SAVE NoRV-Gamma correlations to correlations_rate_variation.csv
+write_csv(rv.correlations, "correlations_rate_variation.csv")
 
 
 
+##########################################################################################
+##########################################################################################
+##########################################################################################
 
-########## Jitter plot of correlations between models ##########
-corr.models$comparison <- factor(corr.models$comparison, levels=comparison.levels)
-corr.models$type <- factor(corr.models$type, levels=type.levels, labels=type.labels)
-corr.models$correlation.type <- factor(corr.models$correlation.type, levels=corrtype.levels, labels=corrtype.labels)
-corr.models %>% 
-    ggplot(aes(x = comparison, y = r, fill = type))+
-    geom_point(pch=21, position = position_jitterdodge()) + 
-    facet_wrap(~correlation.type, nrow=2) + theme(axis.text.x = element_text(angle=10, face = "bold", size=7), strip.background = element_rect(fill = "grey90")) + 
-    ylab("Correlation") + xlab("Compared models") + scale_fill_discrete(name = "Dataset") -> between.jitter.plot
-#    guides(fill = guide_legend(override.aes = list(size = 2))) + 
-ggsave("between_models_jitter.pdf", between.jitter.plot)
+
+
+run.correlation.models <- function(dat, model1, model2) {
+    if (model1 == model2) {
+        rhos <- data.frame(dataset = dat$dataset,
+                           type = dat$type,
+                           rho = 1,
+                           "model1" = model1, 
+                           "model2" = model2)
+    }
+    else{
+        dat %>% 
+            select(dataset, type, model1, model2) %>%
+            ungroup() -> subdat
+        names(subdat) <- c("dataset", "type", "m1", "m2")
+        subdat %>% 
+            group_by(type, dataset) %>%
+            summarize( rho = cor(m1, m2, method = "spearman")) %>%
+            mutate("model1" = model1, "model2" = model2) -> rhos
+    }
+    as.data.frame(rhos)
+}
+
+##### Rank correlations between each pair of models, for gamma only
+rates %>%
+    ungroup() %>%
+    filter(rv == "G") %>%
+    select(-rv) %>%
+    group_by(dataset, type) %>% 
+    spread(model, MLE) -> spread.gamma
+
+corr.between.models <- data.frame("dataset" = character(), "type" = character(), "rho" = numeric(), "model1" = character(), "model2" = character())
+for (m1 in model.levels){
+    for (m2 in model.levels) {
+            thisrho <- run.correlation.models(spread.gamma, m1, m2)
+            corr.between.models <- rbind( corr.between.models, thisrho) 
+    }
+}
+
+write_csv(corr.between.models, "correlation_between_models.csv")
+
+##########################################################################################
+############################ Upper triangle heatmap #####################################
+extract.corr.type <- function(dat, mytype){
+    meanrho %>% 
+        ungroup() %>%
+        filter(type == mytype) %>%
+        select(-type) %>%
+        spread(model2, x) %>% 
+        select(-model1) %>% as.matrix() -> w
+    rownames(w) <- model.levels
+    w[upper.tri(w, diag=FALSE)] <- NA
+    as.tibble(w) %>% mutate(type = mytype) -> w
+    w
+}
+
+#### mean ####
+corr.between.models %>%
+    ungroup() %>%
+    group_by(type, model1, model2) %>%
+    summarize(x = mean(rho)) -> meanrho
+ecorr <- extract.corr.type(meanrho, "Enzyme")
+ccorr <- extract.corr.type(meanrho, "Chloroplast")
+mcorr <- extract.corr.type(meanrho, "Mitochondria")
+ecorr %>% 
+    rbind(ccorr) %>% 
+    rbind(mcorr) %>%
+    mutate(model2 = rep(model.levels, 3)) %>%
+    gather(model1, x, LG:JC69) %>%
+    rename(meanrho = x) -> all.meanrho
+
+### standard deviation ###
+corr.between.models %>%
+    ungroup() %>%
+    group_by(type, model1, model2) %>%
+    summarize(x = sd(rho)) -> sdrho
+ecorr <- extract.corr.type(sdrho, "Enzyme")
+ccorr <- extract.corr.type(sdrho, "Chloroplast")
+mcorr <- extract.corr.type(sdrho, "Mitochondria")
+ecorr %>% 
+    rbind(ccorr) %>% 
+    rbind(mcorr) %>%
+    mutate(model2 = rep(model.levels, 3)) %>%
+    gather(model1, x, LG:JC69) %>%
+    rename(sdrho = x) -> all.sdrho
+    
+### join up mean and sd and format the label ###
+left_join(all.meanrho, all.sdrho) %>%
+    mutate(label = paste0( round(meanrho, 2), "\n(",  round(sdrho, 3), ")") ) %>%
+    mutate(label = ifelse(label == "NA\n(NA)", "", label)) -> all.corr
+    
+    
+### factor order
+all.corr$model1 <- factor(all.corr$model1, levels=model.levels)
+all.corr$model2 <- factor(all.corr$model2, levels=model.levels)
+all.corr$type <- factor(all.corr$type, levels=c("Enzyme", "Chloroplast", "Mitochondria"))
+
+
+### PLOT!
+all.corr %>%
+    ggplot(aes(x = model1, y = model2, fill = meanrho)) + 
+    geom_tile(color="white") + geom_text(aes(label = label), size=2.25) +
+    scale_fill_gradient(name = "Rank correlation", low = "red", high = "yellow", na.value = "grey90") + 
+    facet_grid(~type) + 
+    xlab("Model 1") + ylab("Model 2") +
+    theme(axis.text.x = element_text(angle=15)) -> heatmap.rho.between.models
+ggsave("between_heatmap.pdf", heatmap.rho.between.models, width=10, height=3)    
+
+
+
+##########################################################################################
+
+###################### OLD PLOTTING BELOW IN EVENT OF RESUSCITATION #######################
+    
+# Code commented out here will make a symmetric heatmap.
+# 
+# ### heatmap
+# corr.between.models$model1 <- factor(corr.between.models$model1, levels=model.levels)
+# corr.between.models$model2 <- factor(corr.between.models$model2, levels=model.levels)
+# corr.between.models$type <- factor(corr.between.models$type, levels=type.levels, labels=type.labels)
+# corr.between.models %>%
+#     ungroup() %>%
+#     group_by(type, model1, model2) %>%
+#     summarize(meanrho = mean(rho)) %>%
+#     ggplot(aes(x = model1, y = model2, fill = meanrho)) + 
+#     geom_tile(color="white") + geom_text(aes(label = round(meanrho, 2)), size=2.5) +
+#     scale_fill_gradient(name = "Mean correlation", low = "red", high = "yellow") + facet_grid(~type) + 
+#     xlab("Model 1") + ylab("Model 2")
+#     
+#     
+#     
+#     
+#     
+    
+# 
+# Code commented out below is an older jitter plot for correlations between models. Now using heatmap in a valiant attempt to diversify figures
+# ########## Jitter plot of correlations between models ##########
+# corr.models$comparison <- factor(corr.models$comparison, levels=comparison.levels)
+# corr.models$type <- factor(corr.models$type, levels=type.levels, labels=type.labels)
+# corr.models$correlation.type <- factor(corr.models$correlation.type, levels=corrtype.levels, labels=corrtype.labels)
+# corr.models %>% 
+#     ggplot(aes(x = comparison, y = r, fill = type))+
+#     geom_point(pch=21, position = position_jitterdodge()) + 
+#     facet_wrap(~correlation.type, nrow=2) + theme(axis.text.x = element_text(angle=10, face = "bold", size=7), strip.background = element_rect(fill = "grey90")) + 
+#     ylab("Correlation") + xlab("Compared models") + scale_fill_discrete(name = "Dataset") -> between.jitter.plot
+# #    guides(fill = guide_legend(override.aes = list(size = 2))) + 
+# ggsave("between_models_jitter.pdf", between.jitter.plot, height = 3)
