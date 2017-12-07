@@ -1,6 +1,6 @@
 {
  "input":{
-   "file name":"/home/sjspielman/leisr_validation/compare_models/organelle_data/ND6.fna",
+   "file name":"/home/sjspielman/leisr_rates_across_models/rate_inference/organelle_data/ND6.fna",
    "number of sequences":362,
    "number of sites":401,
    "partition count":1,
