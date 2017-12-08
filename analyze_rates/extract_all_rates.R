@@ -1,6 +1,7 @@
 ###############################################################################################################################
 ### SJS
-### This script generates the file `rate_inferences_all.csv`, which contains all inferred rates in one easy place.
+### This script generates the two files, `rate_inferences_enzymes.csv` and `rate_inferences_organelles.csv` which together contain all inferred rates.
+### Note that two files are used because of GitHub file size constraints.
 ###############################################################################################################################
 
 
@@ -21,6 +22,8 @@ data_frame(filename = files) %>%
   select(dataset, model, site, MLE, Lower, Upper) %>%
   separate(model, c("model", "rv"), "-") %>%  
   mutate(type = ifelse(dataset %in% mito, "mito", "chloro")) -> raw.organelle.rates
+write_csv(raw.organelle.rates, "rate_inferences_organelles.csv")
+
 
 ###### Read in enzyme rates and merge with organelle to create single tibble of rates #######
 fpath = "../rate_inference/enzyme_data-inference/"
@@ -32,8 +35,6 @@ data_frame(filename = files) %>%
   separate(filename, c("dataset", "byebye1", "model", "byebye2", "byebye3"), sep="\\.") %>%
   select(dataset, model, site, MLE, Lower, Upper) %>% 
   separate(model, c("model", "rv"), "-") %>%  
-  mutate(type = "enzyme") %>%
-  rbind(raw.organelle.rates) -> raw.rates
+  mutate(type = "enzyme") -> raw.enzyme.rates
+write_csv(raw.enzyme.rates, "rate_inferences_enzyme.csv")
 
-##### SAVE RATES TO rate_inferences_all.csv
-write_csv(raw.rates, "rate_inferences_all.csv")
