@@ -8,6 +8,7 @@
 
 export PATH=/usr/local/bin:$PATH
 
+LISTFILE=$1
 
 WDIR=/home/sjspielman/leisr_rates_across_models/matrix_inference
 
@@ -16,4 +17,4 @@ MP=${WDIR}/hyphy/HYPHYMP
 BATCHFILE=${LIBPATH}/TemplateBatchFiles/ProteinGTRFit.bf
 
 
-$MP LIBPATH=$LIBPATH $BATCHFILE $WDIR/rpoC1.list
+$MP LIBPATH=$LIBPATH $BATCHFILE $WDIR/$LISTFILE
