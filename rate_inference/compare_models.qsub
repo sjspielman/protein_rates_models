@@ -11,9 +11,9 @@ TYPE=$1
 FILE=$2
 
 
-PROJPATH=/home/sjspielman/leisr_rates_across_models/rate_inference
-DATAPATH=$PROJPATH/$TYPE
-RESULTPATH=$PROJPATH/$TYPE-inference
+PROJPATH=/home/sjspielman/leisr_rates_across_models
+DATAPATH=$PROJPATH/data/${TYPE}_data
+RESULTPATH=$PROJPATH/rate_inference/$TYPE-inference
 mkdir -p $RESULTPATH
 
 HYPATH=/home/sjspielman/hyphy
@@ -21,8 +21,10 @@ MPI=$HYPATH/HYPHYMPI
 LIBPATH=$HYPATH/res
 BATCHFILE=$LIBPATH/TemplateBatchFiles/LEISR.bf
 
-for MODEL in LG WAG JTT JC69 mtVer gcpREV AB permWAG RAND; do
-    for RV in No Gamma; do
+# for MODEL in LG WAG JTT JC69 mtVer gcpREV permWAG RAND; do
+for MODEL in LG WAG JTT JC69; do
+#    for RV in No Gamma; do
+    for RV in No; do
        if [ $RV == "Gamma" ]; then
 	  RV2=G
        else
@@ -31,7 +33,7 @@ for MODEL in LG WAG JTT JC69 mtVer gcpREV AB permWAG RAND; do
         JSON=$RESULTPATH/$FILE.$MODEL-$RV2.LEISR.json
         if [ ! -e $JSON ]; then
             /opt/scyld/openmpi/1.6.3/gnu/bin/mpirun -np 128 $MPI LIBPATH=$LIBPATH  $BATCHFILE ${DATAPATH}/$FILE y Protein $MODEL $RV
-            mv ${DATAPATH}/$FILE.LEISR.json  $JSON
+            mv ${DATAPATH}/$FILE.LEISR.json $JSON
        fi
     done
 done
