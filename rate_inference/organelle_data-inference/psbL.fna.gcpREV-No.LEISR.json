@@ -1,0 +1,1547 @@
+{
+ "input":{
+   "file name":"/home/sjspielman/leisr_rates_across_models/data/organelle_data/psbL.fna",
+   "number of sequences":324,
+   "number of sites":68,
+   "partition count":1,
+   "trees":{
+     "0":"((YP_007474639_1_psbL:0.0247613,(YP_567091_1_psbL:1e-10,YP_009019806_1_psbL:1e-10,YP_009123088_1_psbL:1e-10,YP_009123172_1_psbL:1e-10,YP_009389774_1_psbL:1e-10)Node3:0.0247076)Node1:5e-09,YP_009141551_1_psbL:5e-09,((((((YP_008082209_1_psbL:0.0246557,(YP_009032839_1_psbL:0.0278539,((YP_005352967_1_psbL:1e-10,YP_007374814_1_psbL:1e-10,YP_009109467_1_psbL:1e-10)Node20:5e-09,(YP_009427666_1_psbL:5e-09,(YP_009424135_1_psbL:0.145835,(YP_009425738_1_psbL:5e-09,(YP_003795595_1_psbL:0.0251732,((YP_009183830_1_psbL:1e-10,YP_009426177_1_psbL:1e-10)Node33:5e-09,((YP_009425035_1_psbL:1e-10,YP_009425474_1_psbL:1e-10)Node37:5e-09,YP_009425826_1_psbL:0.0521401)Node36:0.0266779)Node32:5e-09)Node30:0.0259041)Node28:0.0252288)Node26:5e-09)Node24:0.0262393)Node19:5e-09)Node17:0.0518348)Node15:5e-09,(YP_009000347_1_psbL:1e-10,YP_009020235_1_psbL:1e-10,YP_009122740_1_psbL:1e-10,YP_009136494_1_psbL:1e-10,YP_009143738_1_psbL:1e-10,YP_009164515_1_psbL:1e-10,YP_009172075_1_psbL:1e-10,YP_009230752_1_psbL:1e-10,YP_009231090_1_psbL:1e-10,YP_009232057_1_psbL:1e-10,YP_009257843_1_psbL:1e-10,YP_009258098_1_psbL:1e-10,YP_009298375_1_psbL:1e-10,YP_009307493_1_psbL:1e-10,YP_009308661_1_psbL:1e-10,YP_009317814_1_psbL:1e-10,YP_009326432_1_psbL:1e-10,YP_009338176_1_psbL:1e-10,YP_009377160_1_psbL:1e-10,YP_009378510_1_psbL:1e-10,YP_009378691_1_psbL:1e-10,YP_009409057_1_psbL:1e-10,YP_009410237_1_psbL:1e-10,YP_009424947_1_psbL:1e-10,YP_009428290_1_psbL:1e-10,YP_009438973_1_psbL:1e-10)Node41:5e-09)Node14:0.0246144,(YP_001687298_1_psbL:1e-10,YP_009228680_1_psbL:1e-10,YP_009262442_1_psbL:1e-10)Node68:0.0247251)Node13:5e-09,(YP_009267492_1_psbL:0.0249896,(((YP_008993449_1_psbL:1e-10,YP_008993621_1_psbL:1e-10,YP_009020758_1_psbL:1e-10,YP_009429816_1_psbL:1e-10)Node76:5e-09,((YP_003934200_1_psbL:5e-09,YP_009388257_1_psbL:0.0549271)Node82:0.0306221,(YP_009252607_1_psbL:1.70236,((YP_009331793_1_psbL:5e-09,YP_009433330_1_psbL:1.12374)Node88:0.0248781,YP_009268346_1_psbL:5e-09)Node87:5e-09)Node85:0.0535136)Node81:0.0212155)Node75:5e-09,(YP_009239211_1_psbL:1e-10,YP_009269974_1_psbL:1e-10,YP_009270146_1_psbL:1e-10)Node92:0.0251643)Node74:5e-09)Node72:5e-09)Node12:5e-09,((YP_053170_1_psbL:1e-10,YP_054645_1_psbL:1e-10,YP_538950_1_psbL:1e-10,YP_784401_1_psbL:1e-10,YP_874751_1_psbL:1e-10,YP_001123740_1_psbL:1e-10,YP_001542536_1_psbL:1e-10,YP_002456446_1_psbL:1e-10,YP_003587480_1_psbL:1e-10,YP_004021331_1_psbL:1e-10,YP_004286019_1_psbL:1e-10,YP_004564387_1_psbL:1e-10,YP_004564512_1_psbL:1e-10,YP_004734116_1_psbL:1e-10,YP_004891531_1_psbL:1e-10,YP_004935681_1_psbL:1e-10,YP_005089592_1_psbL:1e-10,YP_006073119_1_psbL:1e-10,YP_006280774_1_psbL:1e-10,YP_006503541_1_psbL:1e-10,YP_006665795_1_psbL:1e-10,YP_007353930_1_psbL:1e-10,YP_007624810_1_psbL:1e-10,YP_007889740_1_psbL:1e-10,YP_008081280_1_psbL:1e-10,YP_008081821_1_psbL:1e-10,YP_008082448_1_psbL:1e-10,YP_008378798_1_psbL:1e-10,YP_008474405_1_psbL:1e-10,YP_008815132_1_psbL:1e-10,YP_008855105_1_psbL:1e-10,YP_008992738_1_psbL:1e-10,YP_008992824_1_psbL:1e-10,YP_008992910_1_psbL:1e-10,YP_008994088_1_psbL:1e-10,YP_008994583_1_psbL:1e-10,YP_009027985_1_psbL:1e-10,YP_009040420_1_psbL:1e-10,YP_009040815_1_psbL:1e-10,YP_009045581_1_psbL:1e-10,YP_009046929_1_psbL:1e-10,YP_009048036_1_psbL:1e-10,YP_009051350_1_psbL:1e-10,YP_009052599_1_psbL:1e-10,YP_009052682_1_psbL:1e-10,YP_009052766_1_psbL:1e-10,YP_009057942_1_psbL:1e-10,YP_009058106_1_psbL:1e-10,YP_009107575_1_psbL:1e-10,YP_009109786_1_psbL:1e-10,YP_009110617_1_psbL:1e-10,YP_009114249_1_psbL:1e-10,YP_009115995_1_psbL:1e-10,YP_009121188_1_psbL:1e-10,YP_009122602_1_psbL:1e-10,YP_009123267_1_psbL:1e-10,YP_009123447_1_psbL:1e-10,YP_009129446_1_psbL:1e-10,YP_009129708_1_psbL:1e-10,YP_009130142_1_psbL:1e-10,YP_009131727_1_psbL:1e-10,YP_009132059_1_psbL:1e-10,YP_009132142_1_psbL:1e-10,YP_009138393_1_psbL:1e-10,YP_009138844_1_psbL:1e-10,YP_009139803_1_psbL:1e-10,YP_009141625_1_psbL:1e-10,YP_009144994_1_psbL:1e-10,YP_009154800_1_psbL:1e-10,YP_009155804_1_psbL:1e-10,YP_009159021_1_psbL:1e-10,YP_009159770_1_psbL:1e-10,YP_009161379_1_psbL:1e-10,YP_009161569_1_psbL:1e-10,YP_009166439_1_psbL:1e-10,YP_009166523_1_psbL:1e-10,YP_009166704_1_psbL:1e-10,YP_009169683_1_psbL:1e-10,YP_009170278_1_psbL:1e-10,YP_009171994_1_psbL:1e-10,YP_009175285_1_psbL:1e-10,YP_009175775_1_psbL:1e-10,YP_009176147_1_psbL:1e-10,YP_009176523_1_psbL:1e-10,YP_009178677_1_psbL:1e-10,YP_009179168_1_psbL:1e-10,YP_009179745_1_psbL:1e-10,YP_009180203_1_psbL:1e-10,YP_009183375_1_psbL:1e-10,YP_009184066_1_psbL:1e-10,YP_009186183_1_psbL:1e-10,YP_009192716_1_psbL:1e-10,YP_009231174_1_psbL:1e-10,YP_009231765_1_psbL:1e-10,YP_009232371_1_psbL:1e-10,YP_009232759_1_psbL:1e-10,YP_009232844_1_psbL:1e-10,YP_009233172_1_psbL:1e-10,YP_009234997_1_psbL:1e-10,YP_009235894_1_psbL:1e-10,YP_009235979_1_psbL:1e-10,YP_009242342_1_psbL:1e-10,YP_009242881_1_psbL:1e-10,YP_009242969_1_psbL:1e-10,YP_009243581_1_psbL:1e-10,YP_009245521_1_psbL:1e-10,YP_009246737_1_psbL:1e-10,YP_009251994_1_psbL:1e-10,YP_009252077_1_psbL:1e-10,YP_009252690_1_psbL:1e-10,YP_009252863_1_psbL:1e-10,YP_009253403_1_psbL:1e-10,YP_009253578_1_psbL:1e-10,YP_009254230_1_psbL:1e-10,YP_009256254_1_psbL:1e-10,YP_009258981_1_psbL:1e-10,YP_009259594_1_psbL:1e-10,YP_009260166_1_psbL:1e-10,YP_009260747_1_psbL:1e-10,YP_009262676_1_psbL:1e-10,YP_009262766_1_psbL:1e-10,YP_009263295_1_psbL:1e-10,YP_009263627_1_psbL:1e-10,YP_009263876_1_psbL:1e-10,YP_009263959_1_psbL:1e-10,YP_009264042_1_psbL:1e-10,YP_009264208_1_psbL:1e-10,YP_009264374_1_psbL:1e-10,YP_009264706_1_psbL:1e-10,YP_009265534_1_psbL:1e-10,YP_009265949_1_psbL:1e-10,YP_009266032_1_psbL:1e-10,YP_009266115_1_psbL:1e-10,YP_009267409_1_psbL:1e-10,YP_009267907_1_psbL:1e-10,YP_009267990_1_psbL:1e-10,YP_009270558_1_psbL:1e-10,YP_009270927_1_psbL:1e-10,YP_009272092_1_psbL:1e-10,YP_009299222_1_psbL:1e-10,YP_009299513_1_psbL:1e-10,YP_009300117_1_psbL:1e-10,YP_009300206_1_psbL:1e-10,YP_009305319_1_psbL:1e-10,YP_009309008_1_psbL:1e-10,YP_009309640_1_psbL:1e-10,YP_009309976_1_psbL:1e-10,YP_009316993_1_psbL:1e-10,YP_009318172_1_psbL:1e-10,YP_009319575_1_psbL:1e-10,YP_009320381_1_psbL:1e-10,YP_009326222_1_psbL:1e-10,YP_009327319_1_psbL:1e-10,YP_009327690_1_psbL:1e-10,YP_009328142_1_psbL:1e-10,YP_009328276_1_psbL:1e-10,YP_009332162_1_psbL:1e-10,YP_009334334_1_psbL:1e-10,YP_009335519_1_psbL:1e-10,YP_009335688_1_psbL:1e-10,YP_009338441_1_psbL:1e-10,YP_009338523_1_psbL:1e-10,YP_009341342_1_psbL:1e-10,YP_009342607_1_psbL:1e-10,YP_009344091_1_psbL:1e-10,YP_009344178_1_psbL:1e-10,YP_009344451_1_psbL:1e-10,YP_009344541_1_psbL:1e-10,YP_009346499_1_psbL:1e-10,YP_009347463_1_psbL:1e-10,YP_009349289_1_psbL:1e-10,YP_009349537_1_psbL:1e-10,YP_009353957_1_psbL:1e-10,YP_009354045_1_psbL:1e-10,YP_009354220_1_psbL:1e-10,YP_009354420_1_psbL:1e-10,YP_009355949_1_psbL:1e-10,YP_009356036_1_psbL:1e-10,YP_009363593_1_psbL:1e-10,YP_009363803_1_psbL:1e-10,YP_009363927_1_psbL:1e-10,YP_009367347_1_psbL:1e-10,YP_009367973_1_psbL:1e-10,YP_009368468_1_psbL:1e-10,YP_009368666_1_psbL:1e-10,YP_009369055_1_psbL:1e-10,YP_009370513_1_psbL:1e-10,YP_009371310_1_psbL:1e-10,YP_009371395_1_psbL:1e-10,YP_009372245_1_psbL:1e-10,YP_009371735_1_psbL:1e-10,YP_009371480_1_psbL:1e-10,YP_009371990_1_psbL:1e-10,YP_009372585_1_psbL:1e-10,YP_009372840_1_psbL:1e-10,YP_009373506_1_psbL:1e-10,YP_009373931_1_psbL:1e-10,YP_009374355_1_psbL:1e-10,YP_009376650_1_psbL:1e-10,YP_009376735_1_psbL:1e-10,YP_009377245_1_psbL:1e-10,YP_009377330_1_psbL:1e-10,YP_009378010_1_psbL:1e-10,YP_009378095_1_psbL:1e-10,YP_009379141_1_psbL:1e-10,YP_009379540_1_psbL:1e-10,YP_009383243_1_psbL:1e-10,YP_009383892_1_psbL:1e-10,YP_009384165_1_psbL:1e-10,YP_009385159_1_psbL:1e-10,YP_009385325_1_psbL:1e-10,YP_009386818_1_psbL:1e-10,YP_009387478_1_psbL:1e-10,YP_009390320_1_psbL:1e-10,YP_009390491_1_psbL:1e-10,YP_009400545_1_psbL:1e-10,YP_009401333_1_psbL:1e-10,YP_009401477_1_psbL:1e-10,YP_009402453_1_psbL:1e-10,YP_009407435_1_psbL:1e-10,YP_009409252_1_psbL:1e-10,YP_009409823_1_psbL:1e-10,YP_009409988_1_psbL:1e-10,YP_009411233_1_psbL:1e-10,YP_009411316_1_psbL:1e-10,YP_009412536_1_psbL:1e-10,YP_009413443_1_psbL:1e-10,YP_009413914_1_psbL:1e-10,YP_009413998_1_psbL:1e-10,YP_009415002_1_psbL:1e-10,YP_009416876_1_psbL:1e-10,YP_009421023_1_psbL:1e-10,YP_009421458_1_psbL:1e-10,YP_009421862_1_psbL:1e-10,YP_009423366_1_psbL:1e-10,YP_009423453_1_psbL:1e-10,YP_009424649_1_psbL:1e-10,YP_009424796_1_psbL:1e-10,YP_009424870_1_psbL:1e-10,YP_009428006_1_psbL:1e-10,YP_009428190_1_psbL:1e-10,YP_009428387_1_psbL:1e-10,YP_009430979_1_psbL:1e-10,YP_009431404_1_psbL:1e-10,YP_009432183_1_psbL:1e-10,YP_009432822_1_psbL:1e-10,YP_009432892_1_psbL:1e-10,YP_009433119_1_psbL:1e-10,YP_009433435_1_psbL:1e-10,YP_009434410_1_psbL:1e-10,YP_009437395_1_psbL:1e-10,YP_009437984_1_psbL:1e-10,YP_009438069_1_psbL:1e-10,YP_009438153_1_psbL:1e-10,YP_009438809_1_psbL:1e-10,YP_009439055_1_psbL:1e-10,YP_009439383_1_psbL:1e-10,YP_009439465_1_psbL:1e-10)Node97:5e-09,YP_009428993_1_psbL:0.024975)Node96:5e-09)Node11:6e-09,YP_009330706_1_psbL:5e-09)Node10:5e-09)"
+    }
+  },
+ "analysis":{
+   "info":"LEISR (Likelihood Estimation of Individual Site Rates) infer relative amino-acid or nucleotide rates from a fixed nucleotide or amino-acid alignment and tree, with possibility for partitions. Relative site-specific substitution rates are\n    inferred by first optimizing alignment-wide branch lengths, and then inferring a site-specific uniform tree scaler.",
+   "version":"0.4",
+   "citation":"Spielman, S.J. and Kosakovsky Pond, S.L. Relative evolutionary rate inference in HyPhy with LEISR. bioRxiv. https://doi.org/10.1101/206011. (2017); Pupko, T., Bell, R. E., Mayrose, I., Glaser, F. & Ben-Tal, N. Rate4Site: an algorithmic tool for the identification of functional regions in proteins by surface mapping of evolutionary determinants within their homologues. Bioinformatics 18, S71–S77 (2002).",
+   "authors":"Sergei L Kosakovsky Pond and Stephanie J Spielman",
+   "contact":"{spond,stephanie.spielman}@temple.edu"
+  },
+ "fits":{
+   "gcpREVF":{
+     "Log Likelihood":-512.3509929185681,
+     "estimated parameters":376,
+     "AIC-c":1789.793835294536,
+     "Rate Distributions":{
+      },
+     "Equilibrium frequencies":[
+      [0.03695760711691282],
+      [0.02238789034132686],
+      [0.02243327886710756],
+      [0.05030183369642587],
+      [0.08075753449526617],
+      [0.03695760711691282],
+      [0.02238789034132685],
+      [0.03727532679737732],
+      [0.02306871822803732],
+      [0.1240127995643564],
+      [0.03663988743644853],
+      [0.1075367647059369],
+      [0.03772921205518358],
+      [0.05084649600579406],
+      [0.03736610384893849],
+      [0.06782180464777068],
+      [0.05175426652140786],
+      [0.06591548656498188],
+      [0.0364583333333258],
+      [0.05139115831516235]
+      ]
+    }
+  },
+ "MLE":{
+   "headers":[
+    ["MLE", "Relative rate estimate at a site"],
+    ["Lower", "Lower bound of 95% profile likelihood CI"],
+    ["Upper", "Upper bound of 95% profile likelihood CI"],
+    ["LogL global", "Site log likelihood under the global (average rate) model fit"],
+    ["LogL local", "Site log likelihood under the local (site-specific rate) model fit"]
+    ],
+   "content":{
+     "0":[
+      [0.3002159513698955, 0.01676742427173702, 1.498848754788592, -12.23914416364752, -11.25716680127693],
+      [0, 0, 4965.170845893917, -2.961248405376925, -2.961248405376926],
+      [0, 0, 2.094488075436326, -3.882273272944893, -2.961248405376926],
+      [5.041964385408724, 1.542314045154718, 12.11229180539697, -22.63321020111394, -19.42421507487334],
+      [5.591361442998253, 1.701403721440754, 13.58102349246806, -24.058085384357, -20.53493719533852],
+      [0, 0, 2.112185685480228, -3.153774614598747, -2.229922492617625],
+      [0, 0, 5.786524519035518, -3.611133243062744, -3.277320628998607],
+      [0, 0, 2.112185685480228, -3.153774614598747, -2.229922492617625],
+      [3.169220829007992, 0.7771310233966422, 8.52602214854557, -17.49012546478227, -16.10920819725206],
+      [0, 0, 2.172923695813984, -3.868457502349594, -2.978944067302492],
+      [1.757497484860692, 0.2880642124732373, 5.669067352344465, -13.1468082928893, -12.8874995694023],
+      [0, 0, 2.62658435661421, -3.464510744484435, -2.719381864096014],
+      [1.650526753366157, 0.09331992538279585, 7.537971077180762, -11.47705235550679, -11.37151354838291],
+      [0.6101839863362764, 0.03282250408669032, 3.493014197997647, -9.891385497354447, -9.771268027282355],
+      [0.5517121200656565, 0.03050764443017889, 2.839689994136283, -5.809474909011387, -5.61447571676875],
+      [1.318342184654176, 0.07032565265042043, 5.677618674615764, -8.778213219668924, -8.743579714208501],
+      [0, 0, 0.8914992019163313, -5.098325119793651, -2.961248405376926],
+      [0, 0, 0.6138387498040682, -5.638465561642231, -2.690871533264284],
+      [0, 0, 3.074241723058472, -2.722632345177211, -2.087370496410957],
+      [0, 0, 1.158044806992042, -4.64742021318853, -2.968289138532416],
+      [3.384716177424126, 0.4933102000936651, 13.88845516428023, -13.85690841109814, -12.97189964355506],
+      [0, 0, 1.224440473094443, -4.876195926974221, -3.29798377681231],
+      [0.9179949777336206, 0.1499464182623561, 3.585833647347132, -7.174985083915557, -7.168379382511925],
+      [0.8425048114097897, 0.1175602122465863, 4.522116353397919, -11.82098693529175, -11.80126771323617],
+      [2.394794869547165, 0.5259106290805713, 9.309027775191083, -18.4952046737548, -17.83418667531419],
+      [0.9147188739952261, 0.07645581322825185, 3.188306982603112, -9.605733055686683, -9.599417824926173],
+      [0.4454624531822942, 0.02301484858410011, 3.592897104719144, -9.863511071827578, -9.583071142773628],
+      [0.8527401519246924, 0.1137277418311218, 3.861518528817186, -10.57157932040552, -10.55534844633488],
+      [2.933115536960146, 0.8117318038442354, 9.020408101525522, -16.20191203405276, -14.81392797526903],
+      [0.6835417257279035, 0.1115100906703653, 2.899459719804007, -9.871917522168442, -9.738700907244382],
+      [0.9970841300221487, 0.1344946690857984, 4.239807118596564, -10.55558032278012, -10.5555746026673],
+      [10.35414577673701, 3.139888642456726, 25.13380803498763, -38.57035065596364, -32.43805043582151],
+      [1.559443081182054, 0.3394540092219547, 5.010599244196166, -10.89214989734282, -10.68007570557739],
+      [0.2068956049156183, 0.01136463882790994, 1.118232861613827, -8.304981091221148, -6.654494833238394],
+      [1.111923837712793, 0.2300391843861649, 3.705090599816105, -9.725927533661169, -9.713717813543518],
+      [2.104929367713303, 0.6116215237374342, 6.384560053226741, -12.45105244275499, -11.69695493245177],
+      [0.7695811760802395, 0.1075453780155309, 4.987275174670881, -15.8256269789682, -15.78325290222386],
+      [0.902180031697557, 0.1399112191014989, 3.668229239632506, -8.549842809630583, -8.541028947963897],
+      [0.9619423964553289, 0.1459698552561862, 3.60855311331018, -9.517040246740949, -9.515777835027549],
+      [0, 0, 2.234762828116447, -3.569295362557112, -2.087370496410957],
+      [2.288864461175355, 0.08662332563573326, 4965.170820437963, -6.06496263501227, -5.960448940554018],
+      [0, 0, 0.4875198705783196, -6.723054720507557, -3.769277768459748],
+      [324.6363577746579, 0.2382223824027444, 4965.178954375519, -7.208575290102787, -6.576414950881341],
+      [0.3464727405961986, 0.01814254093031613, 4965.170829602793, -6.262133102109638, -5.788001060494205],
+      [324.6363577746579, 0.1879231923082336, 4965.178954375519, -5.947840119561177, -5.374361796122457],
+      [0, 0, 0.5130623567721498, -5.823074852928166, -3.289423651169838],
+      [0, 0, 4965.170845893917, -2.229922492617626, -2.229922492617625],
+      [0, 0, 4965.170845893917, -3.769277768459747, -3.769277768459748],
+      [0, 0, 4965.170845893917, -3.289423651169838, -3.289423651169838],
+      [0, 0, 4965.170845893917, -2.087370496410958, -2.087370496410957],
+      [0, 0, 4965.170845893917, -2.087370496410958, -2.087370496410957],
+      [0, 0, 4965.170845893917, -3.297983776812304, -3.29798377681231],
+      [0, 0, 4965.170845893917, -3.799235076065483, -3.799235076065482],
+      [0, 0, 4965.170845893917, -2.690871533264281, -2.690871533264284],
+      [0, 0, 4965.170845893917, -2.989713747343589, -2.989713747343585],
+      [0, 0, 4965.170845893917, -3.29798377681231, -3.29798377681231],
+      [0, 0, 4965.170845893917, -2.690871533264281, -2.690871533264284],
+      [0, 0, 4965.170845893917, -3.799235076065483, -3.799235076065482],
+      [0, 0, 4965.170845893917, -2.229922492617626, -2.229922492617625],
+      [0, 0, 4965.170845893917, -2.087370496410958, -2.087370496410957],
+      [0, 0, 4965.170845893917, -3.289423651169838, -3.289423651169838],
+      [0, 0, 4965.170845893917, -3.289423651169838, -3.289423651169838],
+      [0, 0, 4965.170845893917, -3.799235076065483, -3.799235076065482],
+      [0, 0, 4965.170845893917, -3.797209758917479, -3.79720975891748],
+      [0, 0, 4965.170845893917, -3.799235076065481, -3.799235076065481],
+      [0, 0, 4965.170845893917, -2.087370496410958, -2.087370496410957],
+      [0, 0, 4965.170845893917, -3.799235076065481, -3.799235076065481],
+      [0, 0, 4965.170845893917, -2.087370496410958, -2.087370496410957]
+      ]
+    }
+  },
+ "branch attributes":{
+   "0":{
+     "YP_001123740_1_psbL":{
+       "original name":"YP_001123740.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_001542536_1_psbL":{
+       "original name":"YP_001542536.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_001687298_1_psbL":{
+       "original name":"YP_001687298.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_002456446_1_psbL":{
+       "original name":"YP_002456446.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_003587480_1_psbL":{
+       "original name":"YP_003587480.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_003795595_1_psbL":{
+       "original name":"YP_003795595.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_003934200_1_psbL":{
+       "original name":"YP_003934200.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_004021331_1_psbL":{
+       "original name":"YP_004021331.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_004286019_1_psbL":{
+       "original name":"YP_004286019.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_004564387_1_psbL":{
+       "original name":"YP_004564387.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_004564512_1_psbL":{
+       "original name":"YP_004564512.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_004734116_1_psbL":{
+       "original name":"YP_004734116.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_004891531_1_psbL":{
+       "original name":"YP_004891531.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_004935681_1_psbL":{
+       "original name":"YP_004935681.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_005089592_1_psbL":{
+       "original name":"YP_005089592.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_005352967_1_psbL":{
+       "original name":"YP_005352967.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_006073119_1_psbL":{
+       "original name":"YP_006073119.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_006280774_1_psbL":{
+       "original name":"YP_006280774.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_006503541_1_psbL":{
+       "original name":"YP_006503541.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_006665795_1_psbL":{
+       "original name":"YP_006665795.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_007353930_1_psbL":{
+       "original name":"YP_007353930.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_007374814_1_psbL":{
+       "original name":"YP_007374814.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_007474639_1_psbL":{
+       "original name":"YP_007474639.1-psbL",
+       "gcpREVF":0.02730866270196074
+      },
+     "YP_007624810_1_psbL":{
+       "original name":"YP_007624810.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_007889740_1_psbL":{
+       "original name":"YP_007889740.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008081280_1_psbL":{
+       "original name":"YP_008081280.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008081821_1_psbL":{
+       "original name":"YP_008081821.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008082209_1_psbL":{
+       "original name":"YP_008082209.1-psbL",
+       "gcpREVF":0.02730618373832127
+      },
+     "YP_008082448_1_psbL":{
+       "original name":"YP_008082448.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008378798_1_psbL":{
+       "original name":"YP_008378798.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008474405_1_psbL":{
+       "original name":"YP_008474405.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008815132_1_psbL":{
+       "original name":"YP_008815132.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008855105_1_psbL":{
+       "original name":"YP_008855105.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008992738_1_psbL":{
+       "original name":"YP_008992738.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008992824_1_psbL":{
+       "original name":"YP_008992824.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008992910_1_psbL":{
+       "original name":"YP_008992910.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008993449_1_psbL":{
+       "original name":"YP_008993449.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008993621_1_psbL":{
+       "original name":"YP_008993621.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008994088_1_psbL":{
+       "original name":"YP_008994088.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_008994583_1_psbL":{
+       "original name":"YP_008994583.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009000347_1_psbL":{
+       "original name":"YP_009000347.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009019806_1_psbL":{
+       "original name":"YP_009019806.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009020235_1_psbL":{
+       "original name":"YP_009020235.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009020758_1_psbL":{
+       "original name":"YP_009020758.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009027985_1_psbL":{
+       "original name":"YP_009027985.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009032839_1_psbL":{
+       "original name":"YP_009032839.1-psbL",
+       "gcpREVF":0.02723484014715526
+      },
+     "YP_009040420_1_psbL":{
+       "original name":"YP_009040420.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009040815_1_psbL":{
+       "original name":"YP_009040815.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009045581_1_psbL":{
+       "original name":"YP_009045581.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009046929_1_psbL":{
+       "original name":"YP_009046929.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009048036_1_psbL":{
+       "original name":"YP_009048036.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009051350_1_psbL":{
+       "original name":"YP_009051350.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009052599_1_psbL":{
+       "original name":"YP_009052599.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009052682_1_psbL":{
+       "original name":"YP_009052682.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009052766_1_psbL":{
+       "original name":"YP_009052766.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009057942_1_psbL":{
+       "original name":"YP_009057942.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009058106_1_psbL":{
+       "original name":"YP_009058106.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009107575_1_psbL":{
+       "original name":"YP_009107575.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009109467_1_psbL":{
+       "original name":"YP_009109467.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009109786_1_psbL":{
+       "original name":"YP_009109786.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009110617_1_psbL":{
+       "original name":"YP_009110617.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009114249_1_psbL":{
+       "original name":"YP_009114249.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009115995_1_psbL":{
+       "original name":"YP_009115995.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009121188_1_psbL":{
+       "original name":"YP_009121188.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009122602_1_psbL":{
+       "original name":"YP_009122602.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009122740_1_psbL":{
+       "original name":"YP_009122740.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009123088_1_psbL":{
+       "original name":"YP_009123088.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009123172_1_psbL":{
+       "original name":"YP_009123172.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009123267_1_psbL":{
+       "original name":"YP_009123267.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009123447_1_psbL":{
+       "original name":"YP_009123447.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009129446_1_psbL":{
+       "original name":"YP_009129446.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009129708_1_psbL":{
+       "original name":"YP_009129708.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009130142_1_psbL":{
+       "original name":"YP_009130142.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009131727_1_psbL":{
+       "original name":"YP_009131727.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009132059_1_psbL":{
+       "original name":"YP_009132059.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009132142_1_psbL":{
+       "original name":"YP_009132142.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009136494_1_psbL":{
+       "original name":"YP_009136494.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009138393_1_psbL":{
+       "original name":"YP_009138393.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009138844_1_psbL":{
+       "original name":"YP_009138844.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009139803_1_psbL":{
+       "original name":"YP_009139803.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009141551_1_psbL":{
+       "original name":"YP_009141551.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009141625_1_psbL":{
+       "original name":"YP_009141625.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009143738_1_psbL":{
+       "original name":"YP_009143738.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009144994_1_psbL":{
+       "original name":"YP_009144994.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009154800_1_psbL":{
+       "original name":"YP_009154800.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009155804_1_psbL":{
+       "original name":"YP_009155804.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009159021_1_psbL":{
+       "original name":"YP_009159021.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009159770_1_psbL":{
+       "original name":"YP_009159770.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009161379_1_psbL":{
+       "original name":"YP_009161379.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009161569_1_psbL":{
+       "original name":"YP_009161569.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009164515_1_psbL":{
+       "original name":"YP_009164515.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009166439_1_psbL":{
+       "original name":"YP_009166439.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009166523_1_psbL":{
+       "original name":"YP_009166523.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009166704_1_psbL":{
+       "original name":"YP_009166704.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009169683_1_psbL":{
+       "original name":"YP_009169683.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009170278_1_psbL":{
+       "original name":"YP_009170278.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009171994_1_psbL":{
+       "original name":"YP_009171994.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009172075_1_psbL":{
+       "original name":"YP_009172075.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009175285_1_psbL":{
+       "original name":"YP_009175285.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009175775_1_psbL":{
+       "original name":"YP_009175775.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009176147_1_psbL":{
+       "original name":"YP_009176147.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009176523_1_psbL":{
+       "original name":"YP_009176523.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009178677_1_psbL":{
+       "original name":"YP_009178677.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009179168_1_psbL":{
+       "original name":"YP_009179168.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009179745_1_psbL":{
+       "original name":"YP_009179745.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009180203_1_psbL":{
+       "original name":"YP_009180203.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009183375_1_psbL":{
+       "original name":"YP_009183375.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009183830_1_psbL":{
+       "original name":"YP_009183830.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009184066_1_psbL":{
+       "original name":"YP_009184066.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009186183_1_psbL":{
+       "original name":"YP_009186183.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009192716_1_psbL":{
+       "original name":"YP_009192716.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009228680_1_psbL":{
+       "original name":"YP_009228680.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009230752_1_psbL":{
+       "original name":"YP_009230752.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009231090_1_psbL":{
+       "original name":"YP_009231090.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009231174_1_psbL":{
+       "original name":"YP_009231174.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009231765_1_psbL":{
+       "original name":"YP_009231765.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009232057_1_psbL":{
+       "original name":"YP_009232057.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009232371_1_psbL":{
+       "original name":"YP_009232371.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009232759_1_psbL":{
+       "original name":"YP_009232759.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009232844_1_psbL":{
+       "original name":"YP_009232844.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009233172_1_psbL":{
+       "original name":"YP_009233172.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009234997_1_psbL":{
+       "original name":"YP_009234997.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009235894_1_psbL":{
+       "original name":"YP_009235894.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009235979_1_psbL":{
+       "original name":"YP_009235979.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009239211_1_psbL":{
+       "original name":"YP_009239211.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009242342_1_psbL":{
+       "original name":"YP_009242342.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009242881_1_psbL":{
+       "original name":"YP_009242881.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009242969_1_psbL":{
+       "original name":"YP_009242969.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009243581_1_psbL":{
+       "original name":"YP_009243581.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009245521_1_psbL":{
+       "original name":"YP_009245521.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009246737_1_psbL":{
+       "original name":"YP_009246737.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009251994_1_psbL":{
+       "original name":"YP_009251994.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009252077_1_psbL":{
+       "original name":"YP_009252077.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009252607_1_psbL":{
+       "original name":"YP_009252607.1-psbL",
+       "gcpREVF":2.014029090707476
+      },
+     "YP_009252690_1_psbL":{
+       "original name":"YP_009252690.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009252863_1_psbL":{
+       "original name":"YP_009252863.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009253403_1_psbL":{
+       "original name":"YP_009253403.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009253578_1_psbL":{
+       "original name":"YP_009253578.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009254230_1_psbL":{
+       "original name":"YP_009254230.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009256254_1_psbL":{
+       "original name":"YP_009256254.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009257843_1_psbL":{
+       "original name":"YP_009257843.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009258098_1_psbL":{
+       "original name":"YP_009258098.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009258981_1_psbL":{
+       "original name":"YP_009258981.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009259594_1_psbL":{
+       "original name":"YP_009259594.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009260166_1_psbL":{
+       "original name":"YP_009260166.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009260747_1_psbL":{
+       "original name":"YP_009260747.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009262442_1_psbL":{
+       "original name":"YP_009262442.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009262676_1_psbL":{
+       "original name":"YP_009262676.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009262766_1_psbL":{
+       "original name":"YP_009262766.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009263295_1_psbL":{
+       "original name":"YP_009263295.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009263627_1_psbL":{
+       "original name":"YP_009263627.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009263876_1_psbL":{
+       "original name":"YP_009263876.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009263959_1_psbL":{
+       "original name":"YP_009263959.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009264042_1_psbL":{
+       "original name":"YP_009264042.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009264208_1_psbL":{
+       "original name":"YP_009264208.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009264374_1_psbL":{
+       "original name":"YP_009264374.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009264706_1_psbL":{
+       "original name":"YP_009264706.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009265534_1_psbL":{
+       "original name":"YP_009265534.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009265949_1_psbL":{
+       "original name":"YP_009265949.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009266032_1_psbL":{
+       "original name":"YP_009266032.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009266115_1_psbL":{
+       "original name":"YP_009266115.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009267409_1_psbL":{
+       "original name":"YP_009267409.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009267492_1_psbL":{
+       "original name":"YP_009267492.1-psbL",
+       "gcpREVF":0.02755375640934568
+      },
+     "YP_009267907_1_psbL":{
+       "original name":"YP_009267907.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009267990_1_psbL":{
+       "original name":"YP_009267990.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009268346_1_psbL":{
+       "original name":"YP_009268346.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009269974_1_psbL":{
+       "original name":"YP_009269974.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009270146_1_psbL":{
+       "original name":"YP_009270146.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009270558_1_psbL":{
+       "original name":"YP_009270558.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009270927_1_psbL":{
+       "original name":"YP_009270927.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009272092_1_psbL":{
+       "original name":"YP_009272092.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009298375_1_psbL":{
+       "original name":"YP_009298375.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009299222_1_psbL":{
+       "original name":"YP_009299222.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009299513_1_psbL":{
+       "original name":"YP_009299513.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009300117_1_psbL":{
+       "original name":"YP_009300117.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009300206_1_psbL":{
+       "original name":"YP_009300206.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009305319_1_psbL":{
+       "original name":"YP_009305319.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009307493_1_psbL":{
+       "original name":"YP_009307493.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009308661_1_psbL":{
+       "original name":"YP_009308661.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009309008_1_psbL":{
+       "original name":"YP_009309008.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009309640_1_psbL":{
+       "original name":"YP_009309640.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009309976_1_psbL":{
+       "original name":"YP_009309976.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009316993_1_psbL":{
+       "original name":"YP_009316993.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009317814_1_psbL":{
+       "original name":"YP_009317814.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009318172_1_psbL":{
+       "original name":"YP_009318172.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009319575_1_psbL":{
+       "original name":"YP_009319575.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009320381_1_psbL":{
+       "original name":"YP_009320381.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009326222_1_psbL":{
+       "original name":"YP_009326222.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009326432_1_psbL":{
+       "original name":"YP_009326432.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009327319_1_psbL":{
+       "original name":"YP_009327319.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009327690_1_psbL":{
+       "original name":"YP_009327690.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009328142_1_psbL":{
+       "original name":"YP_009328142.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009328276_1_psbL":{
+       "original name":"YP_009328276.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009330706_1_psbL":{
+       "original name":"YP_009330706.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009331793_1_psbL":{
+       "original name":"YP_009331793.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009332162_1_psbL":{
+       "original name":"YP_009332162.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009334334_1_psbL":{
+       "original name":"YP_009334334.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009335519_1_psbL":{
+       "original name":"YP_009335519.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009335688_1_psbL":{
+       "original name":"YP_009335688.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009338176_1_psbL":{
+       "original name":"YP_009338176.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009338441_1_psbL":{
+       "original name":"YP_009338441.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009338523_1_psbL":{
+       "original name":"YP_009338523.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009341342_1_psbL":{
+       "original name":"YP_009341342.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009342607_1_psbL":{
+       "original name":"YP_009342607.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009344091_1_psbL":{
+       "original name":"YP_009344091.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009344178_1_psbL":{
+       "original name":"YP_009344178.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009344451_1_psbL":{
+       "original name":"YP_009344451.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009344541_1_psbL":{
+       "original name":"YP_009344541.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009346499_1_psbL":{
+       "original name":"YP_009346499.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009347463_1_psbL":{
+       "original name":"YP_009347463.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009349289_1_psbL":{
+       "original name":"YP_009349289.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009349537_1_psbL":{
+       "original name":"YP_009349537.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009353957_1_psbL":{
+       "original name":"YP_009353957.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009354045_1_psbL":{
+       "original name":"YP_009354045.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009354220_1_psbL":{
+       "original name":"YP_009354220.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009354420_1_psbL":{
+       "original name":"YP_009354420.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009355949_1_psbL":{
+       "original name":"YP_009355949.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009356036_1_psbL":{
+       "original name":"YP_009356036.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009363593_1_psbL":{
+       "original name":"YP_009363593.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009363803_1_psbL":{
+       "original name":"YP_009363803.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009363927_1_psbL":{
+       "original name":"YP_009363927.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009367347_1_psbL":{
+       "original name":"YP_009367347.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009367973_1_psbL":{
+       "original name":"YP_009367973.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009368468_1_psbL":{
+       "original name":"YP_009368468.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009368666_1_psbL":{
+       "original name":"YP_009368666.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009369055_1_psbL":{
+       "original name":"YP_009369055.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009370513_1_psbL":{
+       "original name":"YP_009370513.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009371310_1_psbL":{
+       "original name":"YP_009371310.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009371395_1_psbL":{
+       "original name":"YP_009371395.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009371480_1_psbL":{
+       "original name":"YP_009371480.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009371735_1_psbL":{
+       "original name":"YP_009371735.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009371990_1_psbL":{
+       "original name":"YP_009371990.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009372245_1_psbL":{
+       "original name":"YP_009372245.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009372585_1_psbL":{
+       "original name":"YP_009372585.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009372840_1_psbL":{
+       "original name":"YP_009372840.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009373506_1_psbL":{
+       "original name":"YP_009373506.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009373931_1_psbL":{
+       "original name":"YP_009373931.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009374355_1_psbL":{
+       "original name":"YP_009374355.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009376650_1_psbL":{
+       "original name":"YP_009376650.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009376735_1_psbL":{
+       "original name":"YP_009376735.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009377160_1_psbL":{
+       "original name":"YP_009377160.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009377245_1_psbL":{
+       "original name":"YP_009377245.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009377330_1_psbL":{
+       "original name":"YP_009377330.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009378010_1_psbL":{
+       "original name":"YP_009378010.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009378095_1_psbL":{
+       "original name":"YP_009378095.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009378510_1_psbL":{
+       "original name":"YP_009378510.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009378691_1_psbL":{
+       "original name":"YP_009378691.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009379141_1_psbL":{
+       "original name":"YP_009379141.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009379540_1_psbL":{
+       "original name":"YP_009379540.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009383243_1_psbL":{
+       "original name":"YP_009383243.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009383892_1_psbL":{
+       "original name":"YP_009383892.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009384165_1_psbL":{
+       "original name":"YP_009384165.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009385159_1_psbL":{
+       "original name":"YP_009385159.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009385325_1_psbL":{
+       "original name":"YP_009385325.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009386818_1_psbL":{
+       "original name":"YP_009386818.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009387478_1_psbL":{
+       "original name":"YP_009387478.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009388257_1_psbL":{
+       "original name":"YP_009388257.1-psbL",
+       "gcpREVF":0.05576819965949088
+      },
+     "YP_009389774_1_psbL":{
+       "original name":"YP_009389774.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009390320_1_psbL":{
+       "original name":"YP_009390320.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009390491_1_psbL":{
+       "original name":"YP_009390491.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009400545_1_psbL":{
+       "original name":"YP_009400545.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009401333_1_psbL":{
+       "original name":"YP_009401333.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009401477_1_psbL":{
+       "original name":"YP_009401477.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009402453_1_psbL":{
+       "original name":"YP_009402453.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009407435_1_psbL":{
+       "original name":"YP_009407435.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009409057_1_psbL":{
+       "original name":"YP_009409057.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009409252_1_psbL":{
+       "original name":"YP_009409252.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009409823_1_psbL":{
+       "original name":"YP_009409823.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009409988_1_psbL":{
+       "original name":"YP_009409988.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009410237_1_psbL":{
+       "original name":"YP_009410237.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009411233_1_psbL":{
+       "original name":"YP_009411233.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009411316_1_psbL":{
+       "original name":"YP_009411316.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009412536_1_psbL":{
+       "original name":"YP_009412536.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009413443_1_psbL":{
+       "original name":"YP_009413443.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009413914_1_psbL":{
+       "original name":"YP_009413914.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009413998_1_psbL":{
+       "original name":"YP_009413998.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009415002_1_psbL":{
+       "original name":"YP_009415002.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009416876_1_psbL":{
+       "original name":"YP_009416876.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009421023_1_psbL":{
+       "original name":"YP_009421023.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009421458_1_psbL":{
+       "original name":"YP_009421458.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009421862_1_psbL":{
+       "original name":"YP_009421862.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009423366_1_psbL":{
+       "original name":"YP_009423366.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009423453_1_psbL":{
+       "original name":"YP_009423453.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009424135_1_psbL":{
+       "original name":"YP_009424135.1-psbL",
+       "gcpREVF":0.1425040930632709
+      },
+     "YP_009424649_1_psbL":{
+       "original name":"YP_009424649.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009424796_1_psbL":{
+       "original name":"YP_009424796.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009424870_1_psbL":{
+       "original name":"YP_009424870.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009424947_1_psbL":{
+       "original name":"YP_009424947.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009425035_1_psbL":{
+       "original name":"YP_009425035.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009425474_1_psbL":{
+       "original name":"YP_009425474.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009425738_1_psbL":{
+       "original name":"YP_009425738.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009425826_1_psbL":{
+       "original name":"YP_009425826.1-psbL",
+       "gcpREVF":0.05332752709610118
+      },
+     "YP_009426177_1_psbL":{
+       "original name":"YP_009426177.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009427666_1_psbL":{
+       "original name":"YP_009427666.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009428006_1_psbL":{
+       "original name":"YP_009428006.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009428190_1_psbL":{
+       "original name":"YP_009428190.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009428290_1_psbL":{
+       "original name":"YP_009428290.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009428387_1_psbL":{
+       "original name":"YP_009428387.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009428993_1_psbL":{
+       "original name":"YP_009428993.1-psbL",
+       "gcpREVF":0.02745072500514331
+      },
+     "YP_009429816_1_psbL":{
+       "original name":"YP_009429816.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009430979_1_psbL":{
+       "original name":"YP_009430979.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009431404_1_psbL":{
+       "original name":"YP_009431404.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009432183_1_psbL":{
+       "original name":"YP_009432183.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009432822_1_psbL":{
+       "original name":"YP_009432822.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009432892_1_psbL":{
+       "original name":"YP_009432892.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009433119_1_psbL":{
+       "original name":"YP_009433119.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009433330_1_psbL":{
+       "original name":"YP_009433330.1-psbL",
+       "gcpREVF":1.202057866765269
+      },
+     "YP_009433435_1_psbL":{
+       "original name":"YP_009433435.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009434410_1_psbL":{
+       "original name":"YP_009434410.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009437395_1_psbL":{
+       "original name":"YP_009437395.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009437984_1_psbL":{
+       "original name":"YP_009437984.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009438069_1_psbL":{
+       "original name":"YP_009438069.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009438153_1_psbL":{
+       "original name":"YP_009438153.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009438809_1_psbL":{
+       "original name":"YP_009438809.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009438973_1_psbL":{
+       "original name":"YP_009438973.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009439055_1_psbL":{
+       "original name":"YP_009439055.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009439383_1_psbL":{
+       "original name":"YP_009439383.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_009439465_1_psbL":{
+       "original name":"YP_009439465.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_053170_1_psbL":{
+       "original name":"YP_053170.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_054645_1_psbL":{
+       "original name":"YP_054645.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_538950_1_psbL":{
+       "original name":"YP_538950.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_567091_1_psbL":{
+       "original name":"YP_567091.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_784401_1_psbL":{
+       "original name":"YP_784401.1-psbL",
+       "gcpREVF":0
+      },
+     "YP_874751_1_psbL":{
+       "original name":"YP_874751.1-psbL",
+       "gcpREVF":0
+      },
+     "Node1":{
+       "gcpREVF":0
+      },
+     "Node10":{
+       "gcpREVF":0
+      },
+     "Node11":{
+       "gcpREVF":0
+      },
+     "Node12":{
+       "gcpREVF":0
+      },
+     "Node13":{
+       "gcpREVF":0
+      },
+     "Node14":{
+       "gcpREVF":0.02715477111788539
+      },
+     "Node15":{
+       "gcpREVF":0
+      },
+     "Node17":{
+       "gcpREVF":0.05522529013639006
+      },
+     "Node19":{
+       "gcpREVF":0
+      },
+     "Node20":{
+       "gcpREVF":0
+      },
+     "Node24":{
+       "gcpREVF":0.02723484392942736
+      },
+     "Node26":{
+       "gcpREVF":0
+      },
+     "Node28":{
+       "gcpREVF":0.02659758482145892
+      },
+     "Node3":{
+       "gcpREVF":0.02730240678584876
+      },
+     "Node30":{
+       "gcpREVF":0.0261885071325334
+      },
+     "Node32":{
+       "gcpREVF":0.02618395990322107
+      },
+     "Node33":{
+       "gcpREVF":0
+      },
+     "Node36":{
+       "gcpREVF":0.02644489308204887
+      },
+     "Node37":{
+       "gcpREVF":0
+      },
+     "Node41":{
+       "gcpREVF":0
+      },
+     "Node68":{
+       "gcpREVF":0.02710078589850317
+      },
+     "Node72":{
+       "gcpREVF":0
+      },
+     "Node74":{
+       "gcpREVF":0
+      },
+     "Node75":{
+       "gcpREVF":1.357529464618629e-13
+      },
+     "Node76":{
+       "gcpREVF":0
+      },
+     "Node81":{
+       "gcpREVF":0.02567585250099966
+      },
+     "Node82":{
+       "gcpREVF":0.02935963140939527
+      },
+     "Node85":{
+       "gcpREVF":0.05464318836882141
+      },
+     "Node87":{
+       "gcpREVF":0
+      },
+     "Node88":{
+       "gcpREVF":0.02737547448643622
+      },
+     "Node92":{
+       "gcpREVF":0.027417732323899
+      },
+     "Node96":{
+       "gcpREVF":0
+      },
+     "Node97":{
+       "gcpREVF":0
+      }
+    },
+   "attributes":{
+     "original name":{
+       "attribute type":"node label",
+       "display order":-1
+      },
+     "gcpREVF":{
+       "attribute type":"branch length",
+       "display order":0
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "name":"leisr.filter.default",
+     "coverage":[
+      [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67]
+      ]
+    }
+  }
+}
