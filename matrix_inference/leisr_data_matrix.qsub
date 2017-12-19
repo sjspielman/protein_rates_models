@@ -1,0 +1,31 @@
+#!/bin/bash
+#PBS -N leisrCUSTOM
+#PBS -q avx
+#PBS -l nodes=2:ppn=32
+#PBS -e e.$PBS_JOBNAME-$PBS_JOBID
+#PBS -o o.$PBS_JOBNAME-$PBS_JOBID
+
+
+export PATH=/usr/local/bin:$PATH
+
+PROJPATH=/home/sjspielman/leisr_rates_across_models
+THISPATH=$PROJPATH/matrix_inference/
+
+
+
+HYPATH=/home/sjspielman/hyphy
+MPI=$HYPATH/HYPHYMPI
+LIBPATH=$HYPATH/res
+BATCHFILE=$LIBPATH/TemplateBatchFiles/LEISR.bf
+
+FILE=$1
+MODEL=$2
+
+JSON=$THISPATH/$FILE.$MODEL.LEISR.json
+/opt/scyld/openmpi/1.6.3/gnu/bin/mpirun -np 64 $MPI LIBPATH=$LIBPATH  $BATCHFILE ${THISPATH}/$FILE y Protein $MODEL No
+mv ${THISPATH}/$FILE.LEISR.json $JSON
+
+
+
+
+

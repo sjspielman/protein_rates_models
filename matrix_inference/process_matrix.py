@@ -107,7 +107,7 @@ def main():
 
     terms = JSON_terms()
      
-    json_file = "rpoC1.list.json"        
+    json_file = sys.argv[1]  #"rpoC1.list.json"        
     with open(json_file, "r") as f:
         parsed_json = json.load(f)
     final_phase = parsed_json[terms.final_phase][terms.global_]

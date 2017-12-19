@@ -1,0 +1,5715 @@
+{
+ "analysis":{
+   "info":"Fit a general time reversible model to a collection\n    of training protein sequence alignments. Generate substitution\n    and scoring matrices following the procedures described in Nickle et al 2007",
+   "version":"0.01",
+   "citation":"Nickle DC, Heath L, Jensen MA, Gilbert PB, Mullins JI, Kosakovsky Pond SL (2007) HIV-Specific Probabilistic Models of Protein Evolution. PLoS ONE 2(6): e503. doi:10.1371/journal.pone.0000503",
+   "authors":"Sergei L Kosakovsky Pond and Stephanie J Spielman",
+   "contact":"{spond,stephanie.spielman}@temple.edu"
+  },
+ "input":{
+   "file name":"/home/sjspielman/leisr_rates_across_models/matrix_inference/1QAZ_A.list",
+   "number of datasets":1
+  },
+ "timers":{
+   "Total time":{
+     "timer":937
+    },
+   "Baseline Phase":{
+     "timer":11
+    },
+   "REV-Phase-0":{
+     "timer":151
+    },
+   "REV-local-Phase-1":{
+     "timer":7
+    },
+   "REV-Phase-1":{
+     "timer":628
+    },
+   "REV-Final":{
+     "timer":140
+    }
+  },
+ "options":{
+   "convergence type":"RMSE",
+   "tolerance":0.1,
+   "baseline model":"JC69",
+   "use rate variation":"Gamma"
+  },
+ "0":{
+   "input":{
+     "number of sequences":43,
+     "number of sites":499,
+     "trees":"(((UniRef90_UPI0003B37235:0.29834,UniRef90_UPI00037BA4C9:0.237989)Node2:0.397644,UniRef90_E8V6F6:0.49702)Node1:0.906269,((UniRef90_K9HKA5:0.227185,((((UniRef90_UPI000693F76C:0.497078,(UniRef90_UPI0006950209:0.213086,UniRef90_W7QEQ1:0.278773)Node14:0.155257)Node12:0.0407716,((((UniRef90_UPI00028907CC:0.213964,UniRef90_UPI000487E449:0.309927)Node20:0.0950106,UniRef90_W7QMF7:0.242127)Node19:0.298849,(UniRef90_A0A0F4R7M9:0.244595,UniRef90_A0A098RF23:0.22086)Node24:0.0360468)Node18:0.0825331,(UniRef90_S2L105:0.239916,UniRef90_UPI0005BE33C2:0.229659)Node27:0.0405011)Node17:0.0457514)Node11:0.139895,UniRef90_UPI00068C8111:0.370892)Node10:0.0667513,(UniRef90_UPI000371DB16:0.263491,UniRef90_UPI000374C630:0.326618)Node31:0.0636342)Node9:0.249833)Node7:1.37433,((((UniRef90_UPI00054E8B75:0.265741,((UniRef90_UPI000476103C:0.195281,(UniRef90_A0A0J5W3Z2:0.0404139,((UniRef90_Q39MU7:0.1129,(((UniRef90_A0A071M1U3:0.111064,UniRef90_A0A0G3Z344:0.0861627)Node49:0.0432112,UniRef90_A0A0G3X4Y0:0.0463496)Node48:0.0987306,UniRef90_A0A070C1Y0:0.0707587)Node47:0.0121042)Node45:0.0107149,UniRef90_A0A088UM11:0.244716)Node44:0.0272237)Node42:0.0617341)Node40:0.115286,UniRef90_B2UH07:0.192717)Node39:0.2909)Node37:0.191495,(UniRef90_UPI00068D044B:0.53158,(UniRef90_UPI00067E6246:0.0408242,(UniRef90_U1ID32:0.0568902,UniRef90_UPI00067A8254:0.0837193)Node60:0.0784823)Node58:0.473977)Node56:0.120511)Node36:1.40604,(UniRef90_E8V0N6:1.70595,((UniRef90_A0A0F3IVH0:1.57239,(UniRef90_A0A0H1RDZ2:1.3402,((UniRef90_I4N1H4:0.646646,UniRef90_A0A0M3F518:0.878522)Node71:0.402182,UniRef90_UPI00036938D4:1.32679)Node70:0.964496)Node68:0.257387)Node66:0.237518,(UniRef90_UPI000700C64E:1.31076,(UniRef90_A0A0A8BI75:0.521407,(UniRef90_UPI0006C892F3:0.159865,UniRef90_F7SXN4:0.11355)Node79:0.387743)Node77:0.724019)Node75:0.53461)Node65:0.0730457)Node63:0.29345)Node35:0.898533,UniRef90_UPI00047FD868:2.42906)Node34:0.261192)Node6:0.370696,1QAZ_A:1.1501)",
+     "file name":"/home/sjspielman/leisr_rates_across_models/matrix_inference/1QAZ_A.fna",
+     "original name":{
+       "1QAZ_A":"1QAZ_A",
+       "UniRef90_UPI00067E6246":"UniRef90_UPI00067E6246",
+       "UniRef90_UPI000693F76C":"UniRef90_UPI000693F76C",
+       "UniRef90_Q39MU7":"UniRef90_Q39MU7",
+       "UniRef90_UPI00068C8111":"UniRef90_UPI00068C8111",
+       "UniRef90_UPI000700C64E":"UniRef90_UPI000700C64E",
+       "UniRef90_UPI00068D044B":"UniRef90_UPI00068D044B",
+       "UniRef90_A0A0A8BI75":"UniRef90_A0A0A8BI75",
+       "UniRef90_K9HKA5":"UniRef90_K9HKA5",
+       "UniRef90_A0A088UM11":"UniRef90_A0A088UM11",
+       "UniRef90_W7QMF7":"UniRef90_W7QMF7",
+       "UniRef90_B2UH07":"UniRef90_B2UH07",
+       "UniRef90_A0A0J5W3Z2":"UniRef90_A0A0J5W3Z2",
+       "UniRef90_F7SXN4":"UniRef90_F7SXN4",
+       "UniRef90_UPI000476103C":"UniRef90_UPI000476103C",
+       "UniRef90_A0A0F3IVH0":"UniRef90_A0A0F3IVH0",
+       "UniRef90_A0A0H1RDZ2":"UniRef90_A0A0H1RDZ2",
+       "UniRef90_A0A071M1U3":"UniRef90_A0A071M1U3",
+       "UniRef90_A0A098RF23":"UniRef90_A0A098RF23",
+       "UniRef90_UPI00037BA4C9":"UniRef90_UPI00037BA4C9",
+       "UniRef90_UPI00054E8B75":"UniRef90_UPI00054E8B75",
+       "UniRef90_UPI0003B37235":"UniRef90_UPI0003B37235",
+       "UniRef90_S2L105":"UniRef90_S2L105",
+       "UniRef90_E8V0N6":"UniRef90_E8V0N6",
+       "UniRef90_UPI00067A8254":"UniRef90_UPI00067A8254",
+       "UniRef90_I4N1H4":"UniRef90_I4N1H4",
+       "UniRef90_A0A0F4R7M9":"UniRef90_A0A0F4R7M9",
+       "UniRef90_W7QEQ1":"UniRef90_W7QEQ1",
+       "UniRef90_A0A0G3Z344":"UniRef90_A0A0G3Z344",
+       "UniRef90_A0A0M3F518":"UniRef90_A0A0M3F518",
+       "UniRef90_UPI0006C892F3":"UniRef90_UPI0006C892F3",
+       "UniRef90_UPI000374C630":"UniRef90_UPI000374C630",
+       "UniRef90_UPI0005BE33C2":"UniRef90_UPI0005BE33C2",
+       "UniRef90_E8V6F6":"UniRef90_E8V6F6",
+       "UniRef90_U1ID32":"UniRef90_U1ID32",
+       "UniRef90_UPI000371DB16":"UniRef90_UPI000371DB16",
+       "UniRef90_UPI00028907CC":"UniRef90_UPI00028907CC",
+       "UniRef90_A0A070C1Y0":"UniRef90_A0A070C1Y0",
+       "UniRef90_UPI000487E449":"UniRef90_UPI000487E449",
+       "UniRef90_A0A0G3X4Y0":"UniRef90_A0A0G3X4Y0",
+       "UniRef90_UPI00047FD868":"UniRef90_UPI00047FD868",
+       "UniRef90_UPI00036938D4":"UniRef90_UPI00036938D4",
+       "UniRef90_UPI0006950209":"UniRef90_UPI0006950209"
+      }
+    },
+   "Baseline Phase":{
+     "EFV":{
+       "GniqVP_A.model":[
+        [0.1060306659831416],
+        [0.02097683739572483],
+        [0.06194248963042272],
+        [0.05415948175420544],
+        [0.04213543365801303],
+        [0.06003169128955523],
+        [0.03141632101412],
+        [0.04707554644171996],
+        [0.0328144661415844],
+        [0.08631681968588273],
+        [0.03262804679125583],
+        [0.03864007083935194],
+        [0.05397306240387583],
+        [0.04353357878547714],
+        [0.06548445728666612],
+        [0.05210886890059057],
+        [0.04870671575709425],
+        [0.04921936897049823],
+        [0.02880645010952147],
+        [0.04399962716129866]
+        ]
+      },
+     "branch length":{
+       "0":{
+         "UniRef90_UPI0003B37235":{
+           "MLE":0.9466844073812722,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.9466844073812722
+            }
+          },
+         "UniRef90_UPI00037BA4C9":{
+           "MLE":0.5852301137602367,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.5852301137602367
+            }
+          },
+         "Node2":{
+           "MLE":1.227684754529551,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.227684754529551
+            }
+          },
+         "UniRef90_E8V6F6":{
+           "MLE":1.413546400468502,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.413546400468502
+            }
+          },
+         "Node1":{
+           "MLE":2.253367477963431,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.253367477963431
+            }
+          },
+         "UniRef90_K9HKA5":{
+           "MLE":0.950766210770422,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.9507662107704218
+            }
+          },
+         "UniRef90_UPI000693F76C":{
+           "MLE":1.601627368543174,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.601627368543174
+            }
+          },
+         "UniRef90_UPI0006950209":{
+           "MLE":0.6277960774663955,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.6277960774663955
+            }
+          },
+         "UniRef90_W7QEQ1":{
+           "MLE":0.9068056270433418,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.9068056270433418
+            }
+          },
+         "Node14":{
+           "MLE":0.3609614791033359,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.3609614791033359
+            }
+          },
+         "Node12":{
+           "MLE":0.2108741464532895,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.2108741464532895
+            }
+          },
+         "UniRef90_UPI00028907CC":{
+           "MLE":0.7004565810401018,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.7004565810401018
+            }
+          },
+         "UniRef90_UPI000487E449":{
+           "MLE":0.8944941260180095,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.8944941260180096
+            }
+          },
+         "Node20":{
+           "MLE":0.3081550166315764,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.3081550166315764
+            }
+          },
+         "UniRef90_W7QMF7":{
+           "MLE":0.6798618802098979,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.6798618802098979
+            }
+          },
+         "Node19":{
+           "MLE":0.8448777838874177,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.8448777838874179
+            }
+          },
+         "UniRef90_A0A0F4R7M9":{
+           "MLE":0.8450320321922844,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.8450320321922844
+            }
+          },
+         "UniRef90_A0A098RF23":{
+           "MLE":0.6776819759516413,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.6776819759516413
+            }
+          },
+         "Node24":{
+           "MLE":0.0978272708121273,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.09782727081212729
+            }
+          },
+         "Node18":{
+           "MLE":0.2207815230694293,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.2207815230694293
+            }
+          },
+         "UniRef90_S2L105":{
+           "MLE":0.7867647717264313,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.7867647717264316
+            }
+          },
+         "UniRef90_UPI0005BE33C2":{
+           "MLE":0.778133494102852,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.778133494102852
+            }
+          },
+         "Node27":{
+           "MLE":0.1277398519390671,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.1277398519390671
+            }
+          },
+         "Node17":{
+           "MLE":0.186812910276221,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.186812910276221
+            }
+          },
+         "Node11":{
+           "MLE":0.4578074482318759,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.457807448231876
+            }
+          },
+         "UniRef90_UPI00068C8111":{
+           "MLE":1.160247213226159,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.160247213226159
+            }
+          },
+         "Node10":{
+           "MLE":0.1441511023802026,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.1441511023802026
+            }
+          },
+         "UniRef90_UPI000371DB16":{
+           "MLE":0.8732796263495093,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.8732796263495093
+            }
+          },
+         "UniRef90_UPI000374C630":{
+           "MLE":0.9945907748482384,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.9945907748482387
+            }
+          },
+         "Node31":{
+           "MLE":0.3158134756890608,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.3158134756890609
+            }
+          },
+         "Node9":{
+           "MLE":0.3969508600673168,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.3969508600673169
+            }
+          },
+         "Node7":{
+           "MLE":4.188721865969185,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":4.188721865969185
+            }
+          },
+         "UniRef90_UPI00054E8B75":{
+           "MLE":0.8710877236047239,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.871087723604724
+            }
+          },
+         "UniRef90_UPI000476103C":{
+           "MLE":0.5652994887002962,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.5652994887002963
+            }
+          },
+         "UniRef90_A0A0J5W3Z2":{
+           "MLE":0.1359611576853594,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.1359611576853594
+            }
+          },
+         "UniRef90_Q39MU7":{
+           "MLE":0.3321878144577026,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.3321878144577026
+            }
+          },
+         "UniRef90_A0A071M1U3":{
+           "MLE":0.3482399297480711,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.3482399297480711
+            }
+          },
+         "UniRef90_A0A0G3Z344":{
+           "MLE":0.2242177495382345,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.2242177495382345
+            }
+          },
+         "Node49":{
+           "MLE":0.1297291322366202,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.1297291322366202
+            }
+          },
+         "UniRef90_A0A0G3X4Y0":{
+           "MLE":0.1318777637551335,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.1318777637551335
+            }
+          },
+         "Node48":{
+           "MLE":0.3108263319194361,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.3108263319194361
+            }
+          },
+         "UniRef90_A0A070C1Y0":{
+           "MLE":0.214461174808658,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.2144611748086581
+            }
+          },
+         "Node47":{
+           "MLE":0.03760391448054962,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.03760391448054962
+            }
+          },
+         "Node45":{
+           "MLE":0.03511198094083261,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.03511198094083261
+            }
+          },
+         "UniRef90_A0A088UM11":{
+           "MLE":0.735003969730452,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.735003969730452
+            }
+          },
+         "Node44":{
+           "MLE":0.05486835814425643,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.05486835814425644
+            }
+          },
+         "Node42":{
+           "MLE":0.2254717365022019,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.2254717365022019
+            }
+          },
+         "Node40":{
+           "MLE":0.4213997069190682,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.4213997069190681
+            }
+          },
+         "UniRef90_B2UH07":{
+           "MLE":0.4961206378389418,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.4961206378389416
+            }
+          },
+         "Node39":{
+           "MLE":0.7460593166721223,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.7460593166721223
+            }
+          },
+         "Node37":{
+           "MLE":0.5381608457891949,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.5381608457891948
+            }
+          },
+         "UniRef90_UPI00068D044B":{
+           "MLE":1.655796983009169,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.655796983009169
+            }
+          },
+         "UniRef90_UPI00067E6246":{
+           "MLE":0.1406997834922715,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.1406997834922716
+            }
+          },
+         "UniRef90_U1ID32":{
+           "MLE":0.1724116000965011,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.1724116000965011
+            }
+          },
+         "UniRef90_UPI00067A8254":{
+           "MLE":0.234660023805868,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.234660023805868
+            }
+          },
+         "Node60":{
+           "MLE":0.2162174606719181,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.2162174606719181
+            }
+          },
+         "Node58":{
+           "MLE":1.20961938967592,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.20961938967592
+            }
+          },
+         "Node56":{
+           "MLE":0.3826093499150538,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.3826093499150538
+            }
+          },
+         "Node36":{
+           "MLE":3.645701814177664,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.645701814177664
+            }
+          },
+         "UniRef90_E8V0N6":{
+           "MLE":4.926997568846508,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":4.926997568846508
+            }
+          },
+         "UniRef90_A0A0F3IVH0":{
+           "MLE":4.492993906064182,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":4.492993906064182
+            }
+          },
+         "UniRef90_A0A0H1RDZ2":{
+           "MLE":3.91933213113156,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.919332131131559
+            }
+          },
+         "UniRef90_I4N1H4":{
+           "MLE":2.068332642149128,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.068332642149128
+            }
+          },
+         "UniRef90_A0A0M3F518":{
+           "MLE":2.314776511524898,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.314776511524898
+            }
+          },
+         "Node71":{
+           "MLE":1.53760475943281,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.53760475943281
+            }
+          },
+         "UniRef90_UPI00036938D4":{
+           "MLE":3.728723263107055,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.728723263107055
+            }
+          },
+         "Node70":{
+           "MLE":2.234105269816936,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.234105269816937
+            }
+          },
+         "Node68":{
+           "MLE":0.7422947803273221,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.7422947803273222
+            }
+          },
+         "Node66":{
+           "MLE":0.4361803402717621,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.4361803402717621
+            }
+          },
+         "UniRef90_UPI000700C64E":{
+           "MLE":3.707257506794678,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.707257506794679
+            }
+          },
+         "UniRef90_A0A0A8BI75":{
+           "MLE":1.381400945975166,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.381400945975166
+            }
+          },
+         "UniRef90_UPI0006C892F3":{
+           "MLE":0.4128137858897831,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.4128137858897832
+            }
+          },
+         "UniRef90_F7SXN4":{
+           "MLE":0.4315792650112594,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.4315792650112595
+            }
+          },
+         "Node79":{
+           "MLE":1.154982281960743,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.154982281960743
+            }
+          },
+         "Node77":{
+           "MLE":2.266217759891267,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.266217759891267
+            }
+          },
+         "Node75":{
+           "MLE":1.248367071170932,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.248367071170932
+            }
+          },
+         "Node65":{
+           "MLE":0.5030742408289952,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.5030742408289952
+            }
+          },
+         "Node63":{
+           "MLE":0.6460841370386174,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.6460841370386174
+            }
+          },
+         "Node35":{
+           "MLE":2.221484079828505,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.221484079828505
+            }
+          },
+         "UniRef90_UPI00047FD868":{
+           "MLE":6.510674897902192,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":6.510674897902192
+            }
+          },
+         "Node34":{
+           "MLE":0.8972341074045515,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.8972341074045513
+            }
+          },
+         "Node6":{
+           "MLE":0.8507539347060392,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.8507539347060392
+            }
+          },
+         "1QAZ_A":{
+           "MLE":3.338421081071679,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.338421081071679
+            }
+          }
+        }
+      },
+     "Trees":[
+      ["(((UniRef90_UPI0003B37235:0.946684,UniRef90_UPI00037BA4C9:0.58523)Node2:1.22768,UniRef90_E8V6F6:1.41355)Node1:2.25337,((UniRef90_K9HKA5:0.950766,((((UniRef90_UPI000693F76C:1.60163,(UniRef90_UPI0006950209:0.627796,UniRef90_W7QEQ1:0.906806)Node14:0.360961)Node12:0.210874,((((UniRef90_UPI00028907CC:0.700457,UniRef90_UPI000487E449:0.894494)Node20:0.308155,UniRef90_W7QMF7:0.679862)Node19:0.844878,(UniRef90_A0A0F4R7M9:0.845032,UniRef90_A0A098RF23:0.677682)Node24:0.0978273)Node18:0.220782,(UniRef90_S2L105:0.786765,UniRef90_UPI0005BE33C2:0.778133)Node27:0.12774)Node17:0.186813)Node11:0.457807,UniRef90_UPI00068C8111:1.16025)Node10:0.144151,(UniRef90_UPI000371DB16:0.87328,UniRef90_UPI000374C630:0.994591)Node31:0.315813)Node9:0.396951)Node7:4.18872,((((UniRef90_UPI00054E8B75:0.871088,((UniRef90_UPI000476103C:0.565299,(UniRef90_A0A0J5W3Z2:0.135961,((UniRef90_Q39MU7:0.332188,(((UniRef90_A0A071M1U3:0.34824,UniRef90_A0A0G3Z344:0.224218)Node49:0.129729,UniRef90_A0A0G3X4Y0:0.131878)Node48:0.310826,UniRef90_A0A070C1Y0:0.214461)Node47:0.0376039)Node45:0.035112,UniRef90_A0A088UM11:0.735004)Node44:0.0548684)Node42:0.225472)Node40:0.4214,UniRef90_B2UH07:0.496121)Node39:0.746059)Node37:0.538161,(UniRef90_UPI00068D044B:1.6558,(UniRef90_UPI00067E6246:0.1407,(UniRef90_U1ID32:0.172412,UniRef90_UPI00067A8254:0.23466)Node60:0.216217)Node58:1.20962)Node56:0.382609)Node36:3.6457,(UniRef90_E8V0N6:4.927,((UniRef90_A0A0F3IVH0:4.49299,(UniRef90_A0A0H1RDZ2:3.91933,((UniRef90_I4N1H4:2.06833,UniRef90_A0A0M3F518:2.31478)Node71:1.5376,UniRef90_UPI00036938D4:3.72872)Node70:2.23411)Node68:0.742295)Node66:0.43618,(UniRef90_UPI000700C64E:3.70726,(UniRef90_A0A0A8BI75:1.3814,(UniRef90_UPI0006C892F3:0.412814,UniRef90_F7SXN4:0.431579)Node79:1.15498)Node77:2.26622)Node75:1.24837)Node65:0.503074)Node63:0.646084)Node35:2.22148,UniRef90_UPI00047FD868:6.51067)Node34:0.897234)Node6:0.850754,1QAZ_A:3.33842)"]
+      ],
+     "LogL":-24075.08122277361,
+     "parameters":103
+    },
+   "REV-local-Phase-1":{
+     "EFV":{
+       "GniqVP_A.model":[
+        [0.1060306659831416],
+        [0.02097683739572483],
+        [0.06194248963042272],
+        [0.05415948175420544],
+        [0.04213543365801303],
+        [0.06003169128955523],
+        [0.03141632101412],
+        [0.04707554644171996],
+        [0.0328144661415844],
+        [0.08631681968588273],
+        [0.03262804679125583],
+        [0.03864007083935194],
+        [0.05397306240387583],
+        [0.04353357878547714],
+        [0.06548445728666612],
+        [0.05210886890059057],
+        [0.04870671575709425],
+        [0.04921936897049823],
+        [0.02880645010952147],
+        [0.04399962716129866]
+        ]
+      },
+     "branch length":{
+       "0":{
+         "UniRef90_UPI0003B37235":{
+           "MLE":0.4622666840004707,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.510885940858207
+            }
+          },
+         "UniRef90_UPI00037BA4C9":{
+           "MLE":0.2857682897867858,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.170391909434032
+            }
+          },
+         "Node2":{
+           "MLE":0.5994793576923705,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":4.553007434026347
+            }
+          },
+         "UniRef90_E8V6F6":{
+           "MLE":0.690235734454437,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":5.242296319090894
+            }
+          },
+         "Node1":{
+           "MLE":1.100320976822782,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":8.356867543486089
+            }
+          },
+         "UniRef90_K9HKA5":{
+           "MLE":0.4642598315612965,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.526023769283998
+            }
+          },
+         "UniRef90_UPI000693F76C":{
+           "MLE":0.7820758078279716,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":5.939815810705826
+            }
+          },
+         "UniRef90_UPI0006950209":{
+           "MLE":0.3065532807936203,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.328252588631682
+            }
+          },
+         "UniRef90_W7QEQ1":{
+           "MLE":0.4427938465848928,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.362990984381308
+            }
+          },
+         "Node14":{
+           "MLE":0.2238495087856962,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.700122722369748
+            }
+          },
+         "Node12":{
+           "MLE":0.08595118199602488,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.6527937377154385
+            }
+          },
+         "UniRef90_UPI00028907CC":{
+           "MLE":0.3420334574849582,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.597722264548574
+            }
+          },
+         "UniRef90_UPI000487E449":{
+           "MLE":0.4367821316884874,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.317332393700314
+            }
+          },
+         "Node20":{
+           "MLE":0.1464469574971271,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.11225528889207
+            }
+          },
+         "UniRef90_W7QMF7":{
+           "MLE":0.3319770501051265,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.521344492783049
+            }
+          },
+         "Node19":{
+           "MLE":0.4125544357740829,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.13332459060892
+            }
+          },
+         "UniRef90_A0A0F4R7M9":{
+           "MLE":0.2827544559242335,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.147502033735989
+            }
+          },
+         "UniRef90_A0A098RF23":{
+           "MLE":0.3309126012718661,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.513260071878832
+            }
+          },
+         "Node24":{
+           "MLE":0.04148705009726047,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.3150914957868856
+            }
+          },
+         "Node18":{
+           "MLE":0.1078077781382263,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.818793189474745
+            }
+          },
+         "UniRef90_S2L105":{
+           "MLE":0.3841778097100193,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.917805928015424
+            }
+          },
+         "UniRef90_UPI0005BE33C2":{
+           "MLE":0.3799631505747993,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.885795861065978
+            }
+          },
+         "Node27":{
+           "MLE":0.05359874203657908,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.4070790225144575
+            }
+          },
+         "Node17":{
+           "MLE":0.05286656355785721,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.4015181737314616
+            }
+          },
+         "Node11":{
+           "MLE":0.171991667459582,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.306265729563135
+            }
+          },
+         "UniRef90_UPI00068C8111":{
+           "MLE":0.5665495572727169,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":4.302907703005042
+            }
+          },
+         "Node10":{
+           "MLE":0.0818010881477568,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.6212740399967258
+            }
+          },
+         "UniRef90_UPI000371DB16":{
+           "MLE":0.4264230760855598,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.238656028009963
+            }
+          },
+         "UniRef90_UPI000374C630":{
+           "MLE":0.4856593980441314,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.688552109970063
+            }
+          },
+         "Node31":{
+           "MLE":0.07988074830286387,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.6066891815233482
+            }
+          },
+         "Node9":{
+           "MLE":0.2500210592886477,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.898893976910729
+            }
+          },
+         "Node7":{
+           "MLE":2.062983508468621,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":15.66822798784574
+            }
+          },
+         "UniRef90_UPI00054E8B75":{
+           "MLE":0.4253527683826092,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.230527109364643
+            }
+          },
+         "UniRef90_UPI000476103C":{
+           "MLE":0.2760361510881021,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.096476937591381
+            }
+          },
+         "UniRef90_A0A0J5W3Z2":{
+           "MLE":0.0568827551117875,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.4320208920767728
+            }
+          },
+         "UniRef90_Q39MU7":{
+           "MLE":0.1622075511727328,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.23195599125808
+            }
+          },
+         "UniRef90_A0A071M1U3":{
+           "MLE":0.1700458107327461,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.291487072001118
+            }
+          },
+         "UniRef90_A0A0G3Z344":{
+           "MLE":0.1313570842761458,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.9976486655412472
+            }
+          },
+         "Node49":{
+           "MLE":0.06334682953442644,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.4811151244681365
+            }
+          },
+         "UniRef90_A0A0G3X4Y0":{
+           "MLE":0.05525402358551784,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.4196507801588505
+            }
+          },
+         "Node48":{
+           "MLE":0.1517767237276985,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.152734523010865
+            }
+          },
+         "UniRef90_A0A070C1Y0":{
+           "MLE":0.1047215474900245,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.7953534648135441
+            }
+          },
+         "Node47":{
+           "MLE":0.01629852039591276,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.1237862214503492
+            }
+          },
+         "Node45":{
+           "MLE":0.01523233472400187,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.1156886093675096
+            }
+          },
+         "UniRef90_A0A088UM11":{
+           "MLE":0.3589029724851472,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.725845153550023
+            }
+          },
+         "Node44":{
+           "MLE":0.03709438788213708,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.2817295068143035
+            }
+          },
+         "Node42":{
+           "MLE":0.09144195099072369,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.6944957775448297
+            }
+          },
+         "Node40":{
+           "MLE":0.1601624787023389,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.216423796460467
+            }
+          },
+         "UniRef90_B2UH07":{
+           "MLE":0.2422560679460315,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.839919363599316
+            }
+          },
+         "Node39":{
+           "MLE":0.3643013064297584,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.766845155077656
+            }
+          },
+         "Node37":{
+           "MLE":0.2627843320352351,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.995830218254237
+            }
+          },
+         "UniRef90_UPI00068D044B":{
+           "MLE":0.8085268699322343,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":6.140709938006873
+            }
+          },
+         "UniRef90_UPI00067E6246":{
+           "MLE":0.05876695988686558,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.4463313070027873
+            }
+          },
+         "UniRef90_U1ID32":{
+           "MLE":0.08418870960417749,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.639407872465237
+            }
+          },
+         "UniRef90_UPI00067A8254":{
+           "MLE":0.1145846601321724,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.8702631753917405
+            }
+          },
+         "Node60":{
+           "MLE":0.1055791431532001,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.8018668491023005
+            }
+          },
+         "Node58":{
+           "MLE":0.6729273258287216,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":5.110840061034904
+            }
+          },
+         "Node56":{
+           "MLE":0.1211955241973422,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0.9204722657429409
+            }
+          },
+         "Node36":{
+           "MLE":2.082720548389183,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":15.81812954547386
+            }
+          },
+         "UniRef90_E8V0N6":{
+           "MLE":2.405856492903841,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":18.27232640596251
+            }
+          },
+         "UniRef90_A0A0F3IVH0":{
+           "MLE":2.19393218901315,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":16.66277485312936
+            }
+          },
+         "UniRef90_A0A0H1RDZ2":{
+           "MLE":1.913812727481631,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":14.53528543351377
+            }
+          },
+         "UniRef90_I4N1H4":{
+           "MLE":1.009968332045357,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":7.670644977059271
+            }
+          },
+         "UniRef90_A0A0M3F518":{
+           "MLE":1.130307052531643,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":8.584609873339222
+            }
+          },
+         "Node71":{
+           "MLE":0.7508135212795173,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":5.702380741035227
+            }
+          },
+         "UniRef90_UPI00036938D4":{
+           "MLE":1.820738278725781,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":13.82839093970745
+            }
+          },
+         "Node70":{
+           "MLE":1.090915226588618,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":8.28543147118563
+            }
+          },
+         "Node68":{
+           "MLE":0.5501628313341238,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":4.178451566091562
+            }
+          },
+         "Node66":{
+           "MLE":0.2794981935817619,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":2.122770929216422
+            }
+          },
+         "UniRef90_UPI000700C64E":{
+           "MLE":2.080192662530923,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":15.79893041383181
+            }
+          },
+         "UniRef90_A0A0A8BI75":{
+           "MLE":0.6745390856679341,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":5.123081274073577
+            }
+          },
+         "UniRef90_UPI0006C892F3":{
+           "MLE":0.2015772716071518,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.530966503485647
+            }
+          },
+         "UniRef90_F7SXN4":{
+           "MLE":0.2107404686974692,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":1.600560400150014
+            }
+          },
+         "Node79":{
+           "MLE":0.5639786875102296,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":4.283382111355688
+            }
+          },
+         "Node77":{
+           "MLE":1.106595778825369,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":8.404524263935643
+            }
+          },
+         "Node75":{
+           "MLE":0.609578547936462,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":4.629710138913462
+            }
+          },
+         "Node65":{
+           "MLE":0,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":0
+            }
+          },
+         "Node63":{
+           "MLE":0.4563849998029397,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.466214925030342
+            }
+          },
+         "Node35":{
+           "MLE":1.084752290346505,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":8.238624364042225
+            }
+          },
+         "UniRef90_UPI00047FD868":{
+           "MLE":3.179167283407276,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":24.14557246989406
+            }
+          },
+         "Node34":{
+           "MLE":0.4381200665904504,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":3.327493923829275
+            }
+          },
+         "Node6":{
+           "MLE":0.6676025553628208,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":5.070398769429712
+            }
+          },
+         "1QAZ_A":{
+           "MLE":1.630153439638029,
+           "Evolutionary time parameter":{
+             "ID":"t",
+             "MLE":12.38091125914013
+            }
+          }
+        }
+      },
+     "Trees":[
+      ["(((UniRef90_UPI0003B37235:0.462267,UniRef90_UPI00037BA4C9:0.285768)Node2:0.599479,UniRef90_E8V6F6:0.690236)Node1:1.10032,((UniRef90_K9HKA5:0.46426,((((UniRef90_UPI000693F76C:0.782076,(UniRef90_UPI0006950209:0.306553,UniRef90_W7QEQ1:0.442794)Node14:0.22385)Node12:0.0859512,((((UniRef90_UPI00028907CC:0.342033,UniRef90_UPI000487E449:0.436782)Node20:0.146447,UniRef90_W7QMF7:0.331977)Node19:0.412554,(UniRef90_A0A0F4R7M9:0.282754,UniRef90_A0A098RF23:0.330913)Node24:0.0414871)Node18:0.107808,(UniRef90_S2L105:0.384178,UniRef90_UPI0005BE33C2:0.379963)Node27:0.0535987)Node17:0.0528666)Node11:0.171992,UniRef90_UPI00068C8111:0.56655)Node10:0.0818011,(UniRef90_UPI000371DB16:0.426423,UniRef90_UPI000374C630:0.485659)Node31:0.0798807)Node9:0.250021)Node7:2.06298,((((UniRef90_UPI00054E8B75:0.425353,((UniRef90_UPI000476103C:0.276036,(UniRef90_A0A0J5W3Z2:0.0568828,((UniRef90_Q39MU7:0.162208,(((UniRef90_A0A071M1U3:0.170046,UniRef90_A0A0G3Z344:0.131357)Node49:0.0633468,UniRef90_A0A0G3X4Y0:0.055254)Node48:0.151777,UniRef90_A0A070C1Y0:0.104722)Node47:0.0162985)Node45:0.0152323,UniRef90_A0A088UM11:0.358903)Node44:0.0370944)Node42:0.091442)Node40:0.160162,UniRef90_B2UH07:0.242256)Node39:0.364301)Node37:0.262784,(UniRef90_UPI00068D044B:0.808527,(UniRef90_UPI00067E6246:0.058767,(UniRef90_U1ID32:0.0841887,UniRef90_UPI00067A8254:0.114585)Node60:0.105579)Node58:0.672927)Node56:0.121196)Node36:2.08272,(UniRef90_E8V0N6:2.40586,((UniRef90_A0A0F3IVH0:2.19393,(UniRef90_A0A0H1RDZ2:1.91381,((UniRef90_I4N1H4:1.00997,UniRef90_A0A0M3F518:1.13031)Node71:0.750814,UniRef90_UPI00036938D4:1.82074)Node70:1.09092)Node68:0.550163)Node66:0.279498,(UniRef90_UPI000700C64E:2.08019,(UniRef90_A0A0A8BI75:0.674539,(UniRef90_UPI0006C892F3:0.201577,UniRef90_F7SXN4:0.21074)Node79:0.563979)Node77:1.1066)Node75:0.609579)Node65:0)Node63:0.456385)Node35:1.08475,UniRef90_UPI00047FD868:3.17917)Node34:0.43812)Node6:0.667603,1QAZ_A:1.63015)"]
+      ],
+     "LogL":-22308.47062813316,
+     "parameters":273
+    }
+  },
+ "REV-Phase-0":{
+   "global":{
+     "Gamma distribution shape parameter":{
+       "ID":"GniqVP_A.model.rv_gamma_alpha",
+       "MLE":0.7647058823529411
+      },
+     "Substitution rate from amino-acid A to amino-acid C":{
+       "ID":"GniqVP_A.model.theta_AC",
+       "MLE":0.04953305111266992
+      },
+     "Substitution rate from amino-acid A to amino-acid D":{
+       "ID":"GniqVP_A.model.theta_AD",
+       "MLE":0.0891089108910891
+      },
+     "Substitution rate from amino-acid A to amino-acid E":{
+       "ID":"GniqVP_A.model.theta_AE",
+       "MLE":0.2229794922108921
+      },
+     "Substitution rate from amino-acid A to amino-acid F":{
+       "ID":"GniqVP_A.model.theta_AF",
+       "MLE":0.0114942528735632
+      },
+     "Substitution rate from amino-acid A to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_AG",
+       "MLE":0.2229794922108921
+      },
+     "Substitution rate from amino-acid A to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_AH",
+       "MLE":0.02325581395348834
+      },
+     "Substitution rate from amino-acid A to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_AI",
+       "MLE":0.04292948084143454
+      },
+     "Substitution rate from amino-acid A to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_AK",
+       "MLE":0.1111111111111111
+      },
+     "Substitution rate from amino-acid A to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_AL",
+       "MLE":0.06796116504854367
+      },
+     "Substitution rate from amino-acid A to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_AM",
+       "MLE":0.02803738317757008
+      },
+     "Substitution rate from amino-acid A to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_AN",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid A to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_AP",
+       "MLE":0.1521686290342006
+      },
+     "Substitution rate from amino-acid A to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_AQ",
+       "MLE":0.0891089108910891
+      },
+     "Substitution rate from amino-acid A to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_AR",
+       "MLE":0.04953305111266992
+      },
+     "Substitution rate from amino-acid A to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_AS",
+       "MLE":0.4979840349550387
+      },
+     "Substitution rate from amino-acid A to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_AT",
+       "MLE":0.3748930481201445
+      },
+     "Substitution rate from amino-acid A to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_AV",
+       "MLE":0.2229794922108921
+      },
+     "Substitution rate from amino-acid A to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_AW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid A to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_AY",
+       "MLE":0.009551977186639887
+      },
+     "Substitution rate from amino-acid C to amino-acid D":{
+       "ID":"GniqVP_A.model.theta_CD",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid E":{
+       "ID":"GniqVP_A.model.theta_CE",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid F":{
+       "ID":"GniqVP_A.model.theta_CF",
+       "MLE":0.05235097847121376
+      },
+     "Substitution rate from amino-acid C to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_CG",
+       "MLE":0.1
+      },
+     "Substitution rate from amino-acid C to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_CH",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_CI",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_CK",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_CL",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_CM",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_CN",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_CP",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_CQ",
+       "MLE":0.0185185185185185
+      },
+     "Substitution rate from amino-acid C to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_CR",
+       "MLE":0.03773584905660374
+      },
+     "Substitution rate from amino-acid C to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_CS",
+       "MLE":0.02803738317757008
+      },
+     "Substitution rate from amino-acid C to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_CT",
+       "MLE":0.04292948084143454
+      },
+     "Substitution rate from amino-acid C to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_CV",
+       "MLE":0.1956521739130435
+      },
+     "Substitution rate from amino-acid C to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_CW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_CY",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid D to amino-acid E":{
+       "ID":"GniqVP_A.model.theta_DE",
+       "MLE":0.5101992247872976
+      },
+     "Substitution rate from amino-acid D to amino-acid F":{
+       "ID":"GniqVP_A.model.theta_DF",
+       "MLE":0.02299065434764882
+      },
+     "Substitution rate from amino-acid D to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_DG",
+       "MLE":0.1827956989247312
+      },
+     "Substitution rate from amino-acid D to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_DH",
+       "MLE":0.1340206185567011
+      },
+     "Substitution rate from amino-acid D to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_DI",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid D to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_DK",
+       "MLE":0.1827956989247312
+      },
+     "Substitution rate from amino-acid D to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_DL",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid D to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_DM",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid D to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_DN",
+       "MLE":0.7878299452346119
+      },
+     "Substitution rate from amino-acid D to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_DP",
+       "MLE":0.01616628175519629
+      },
+     "Substitution rate from amino-acid D to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_DQ",
+       "MLE":0.2941176470588235
+      },
+     "Substitution rate from amino-acid D to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_DR",
+       "MLE":0.05235097847121376
+      },
+     "Substitution rate from amino-acid D to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_DS",
+       "MLE":0.1827956989247312
+      },
+     "Substitution rate from amino-acid D to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_DT",
+       "MLE":0.1111111111111111
+      },
+     "Substitution rate from amino-acid D to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_DV",
+       "MLE":0.004930350969602701
+      },
+     "Substitution rate from amino-acid D to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_DW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid D to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_DY",
+       "MLE":0.02325581395348834
+      },
+     "Substitution rate from amino-acid E to amino-acid F":{
+       "ID":"GniqVP_A.model.theta_EF",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid E to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_EG",
+       "MLE":0.05235097847121376
+      },
+     "Substitution rate from amino-acid E to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_EH",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid E to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_EI",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid E to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_EK",
+       "MLE":0.4692896364536583
+      },
+     "Substitution rate from amino-acid E to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_EL",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid E to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_EM",
+       "MLE":0.02325581395348834
+      },
+     "Substitution rate from amino-acid E to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_EN",
+       "MLE":0.1111111111111111
+      },
+     "Substitution rate from amino-acid E to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_EP",
+       "MLE":0.06796116504854367
+      },
+     "Substitution rate from amino-acid E to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_EQ",
+       "MLE":0.7591528113770544
+      },
+     "Substitution rate from amino-acid E to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_ER",
+       "MLE":0.1827956989247312
+      },
+     "Substitution rate from amino-acid E to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_ES",
+       "MLE":0.06796116504854367
+      },
+     "Substitution rate from amino-acid E to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_ET",
+       "MLE":0.06796116504854367
+      },
+     "Substitution rate from amino-acid E to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_EV",
+       "MLE":0.04706332534065558
+      },
+     "Substitution rate from amino-acid E to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_EW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid E to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_EY",
+       "MLE":0.03286384976525818
+      },
+     "Substitution rate from amino-acid F to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_FG",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid F to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_FH",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid F to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_FI",
+       "MLE":0.1521686290342006
+      },
+     "Substitution rate from amino-acid F to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_FK",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid F to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_FL",
+       "MLE":0.2941176470588235
+      },
+     "Substitution rate from amino-acid F to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_FM",
+       "MLE":0.1827956989247312
+      },
+     "Substitution rate from amino-acid F to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_FN",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid F to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_FP",
+       "MLE":0.04706332534065558
+      },
+     "Substitution rate from amino-acid F to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_FQ",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid F to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_FR",
+       "MLE":0.005048355241079586
+      },
+     "Substitution rate from amino-acid F to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_FS",
+       "MLE":0.02299065434764882
+      },
+     "Substitution rate from amino-acid F to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_FT",
+       "MLE":0.03773584905660374
+      },
+     "Substitution rate from amino-acid F to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_FV",
+       "MLE":0.0891089108910891
+      },
+     "Substitution rate from amino-acid F to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_FW",
+       "MLE":0.1521686290342006
+      },
+     "Substitution rate from amino-acid F to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_FY",
+       "MLE":0.7534375876771401
+      },
+     "Substitution rate from amino-acid G to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_GH",
+       "MLE":0.1340206185567011
+      },
+     "Substitution rate from amino-acid G to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_GI",
+       "MLE":0.01462560377115537
+      },
+     "Substitution rate from amino-acid G to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_GK",
+       "MLE":0.1340206185567011
+      },
+     "Substitution rate from amino-acid G to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_GL",
+       "MLE":0.02299065434764882
+      },
+     "Substitution rate from amino-acid G to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_GM",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid G to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_GN",
+       "MLE":0.0891089108910891
+      },
+     "Substitution rate from amino-acid G to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_GP",
+       "MLE":0.01616628175519629
+      },
+     "Substitution rate from amino-acid G to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_GQ",
+       "MLE":0.02803738317757008
+      },
+     "Substitution rate from amino-acid G to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_GR",
+       "MLE":0.0891089108910891
+      },
+     "Substitution rate from amino-acid G to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_GS",
+       "MLE":0.2229794922108921
+      },
+     "Substitution rate from amino-acid G to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_GT",
+       "MLE":0.04953305111266992
+      },
+     "Substitution rate from amino-acid G to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_GV",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid G to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_GW",
+       "MLE":0.0185185185185185
+      },
+     "Substitution rate from amino-acid G to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_GY",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid H to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_HI",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid H to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_HK",
+       "MLE":0.4968832399172898
+      },
+     "Substitution rate from amino-acid H to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_HL",
+       "MLE":0.04953305111266992
+      },
+     "Substitution rate from amino-acid H to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_HM",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid H to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_HN",
+       "MLE":0.2941176470588235
+      },
+     "Substitution rate from amino-acid H to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_HP",
+       "MLE":0.0891089108910891
+      },
+     "Substitution rate from amino-acid H to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_HQ",
+       "MLE":0.2941176470588235
+      },
+     "Substitution rate from amino-acid H to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_HR",
+       "MLE":0.4221088339805847
+      },
+     "Substitution rate from amino-acid H to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_HS",
+       "MLE":0.1827956989247312
+      },
+     "Substitution rate from amino-acid H to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_HT",
+       "MLE":0.06796116504854367
+      },
+     "Substitution rate from amino-acid H to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_HV",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid H to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_HW",
+       "MLE":0.02325581395348834
+      },
+     "Substitution rate from amino-acid H to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_HY",
+       "MLE":0.2229794922108921
+      },
+     "Substitution rate from amino-acid I to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_IK",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid I to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_IL",
+       "MLE":1,
+       "constraint":"1"
+      },
+     "Substitution rate from amino-acid I to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_IM",
+       "MLE":0.6693600037331744
+      },
+     "Substitution rate from amino-acid I to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_IN",
+       "MLE":0.05889921340927123
+      },
+     "Substitution rate from amino-acid I to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_IP",
+       "MLE":0.05889921340927123
+      },
+     "Substitution rate from amino-acid I to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_IQ",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid I to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_IR",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid I to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_IS",
+       "MLE":0.01674059334773628
+      },
+     "Substitution rate from amino-acid I to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_IT",
+       "MLE":0.2941176470588235
+      },
+     "Substitution rate from amino-acid I to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_IV",
+       "MLE":1.775863097638761
+      },
+     "Substitution rate from amino-acid I to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_IW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid I to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_IY",
+       "MLE":0.02640494966538409
+      },
+     "Substitution rate from amino-acid K to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_KL",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid K to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_KM",
+       "MLE":0.1521686290342006
+      },
+     "Substitution rate from amino-acid K to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_KN",
+       "MLE":0.1827956989247312
+      },
+     "Substitution rate from amino-acid K to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_KP",
+       "MLE":0.06796116504854367
+      },
+     "Substitution rate from amino-acid K to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_KQ",
+       "MLE":1.08073010387637
+      },
+     "Substitution rate from amino-acid K to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_KR",
+       "MLE":0.6044867580178457
+      },
+     "Substitution rate from amino-acid K to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_KS",
+       "MLE":0.1827956989247312
+      },
+     "Substitution rate from amino-acid K to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_KT",
+       "MLE":0.2941176470588235
+      },
+     "Substitution rate from amino-acid K to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_KV",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid K to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_KW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid K to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_KY",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid L to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_LM",
+       "MLE":0.5661283891280916
+      },
+     "Substitution rate from amino-acid L to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_LN",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid L to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_LP",
+       "MLE":0.05235097847121376
+      },
+     "Substitution rate from amino-acid L to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_LQ",
+       "MLE":0.1340206185567011
+      },
+     "Substitution rate from amino-acid L to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_LR",
+       "MLE":0.06796116504854367
+      },
+     "Substitution rate from amino-acid L to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_LS",
+       "MLE":0.04292948084143454
+      },
+     "Substitution rate from amino-acid L to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_LT",
+       "MLE":0.1
+      },
+     "Substitution rate from amino-acid L to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_LV",
+       "MLE":0.6881439562719079
+      },
+     "Substitution rate from amino-acid L to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_LW",
+       "MLE":0.08971017282859607
+      },
+     "Substitution rate from amino-acid L to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_LY",
+       "MLE":0.02299065434764882
+      },
+     "Substitution rate from amino-acid M to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_MN",
+       "MLE":0.0114942528735632
+      },
+     "Substitution rate from amino-acid M to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_MP",
+       "MLE":0.01616628175519629
+      },
+     "Substitution rate from amino-acid M to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_MQ",
+       "MLE":0.1104860075447744
+      },
+     "Substitution rate from amino-acid M to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_MR",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid M to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_MS",
+       "MLE":0.02803738317757008
+      },
+     "Substitution rate from amino-acid M to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_MT",
+       "MLE":0.3520542879864103
+      },
+     "Substitution rate from amino-acid M to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_MV",
+       "MLE":0.2941176470588235
+      },
+     "Substitution rate from amino-acid M to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_MW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid M to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_MY",
+       "MLE":0.0114942528735632
+      },
+     "Substitution rate from amino-acid N to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_NP",
+       "MLE":0.03773584905660374
+      },
+     "Substitution rate from amino-acid N to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_NQ",
+       "MLE":0.1111111111111111
+      },
+     "Substitution rate from amino-acid N to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_NR",
+       "MLE":0.05235097847121376
+      },
+     "Substitution rate from amino-acid N to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_NS",
+       "MLE":0.4111962087352636
+      },
+     "Substitution rate from amino-acid N to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_NT",
+       "MLE":0.2941176470588235
+      },
+     "Substitution rate from amino-acid N to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_NV",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid N to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_NW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid N to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_NY",
+       "MLE":0.04953305111266992
+      },
+     "Substitution rate from amino-acid P to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_PQ",
+       "MLE":0.1111111111111111
+      },
+     "Substitution rate from amino-acid P to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_PR",
+       "MLE":0.06796116504854367
+      },
+     "Substitution rate from amino-acid P to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_PS",
+       "MLE":0.1827956989247312
+      },
+     "Substitution rate from amino-acid P to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_PT",
+       "MLE":0.1
+      },
+     "Substitution rate from amino-acid P to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_PV",
+       "MLE":0.03773584905660374
+      },
+     "Substitution rate from amino-acid P to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_PW",
+       "MLE":0.01616628175519629
+      },
+     "Substitution rate from amino-acid P to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_PY",
+       "MLE":0.01616628175519629
+      },
+     "Substitution rate from amino-acid Q to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_QR",
+       "MLE":0.4641797651852141
+      },
+     "Substitution rate from amino-acid Q to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_QS",
+       "MLE":0.1111111111111111
+      },
+     "Substitution rate from amino-acid Q to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_QT",
+       "MLE":0.1111111111111111
+      },
+     "Substitution rate from amino-acid Q to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_QV",
+       "MLE":0.1104860075447744
+      },
+     "Substitution rate from amino-acid Q to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_QW",
+       "MLE":0.05889921340927123
+      },
+     "Substitution rate from amino-acid Q to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_QY",
+       "MLE":0.05235097847121376
+      },
+     "Substitution rate from amino-acid R to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_RS",
+       "MLE":0.06796116504854367
+      },
+     "Substitution rate from amino-acid R to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_RT",
+       "MLE":0.0891089108910891
+      },
+     "Substitution rate from amino-acid R to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_RV",
+       "MLE":0.08971017282859607
+      },
+     "Substitution rate from amino-acid R to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_RW",
+       "MLE":0.0185185185185185
+      },
+     "Substitution rate from amino-acid R to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_RY",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid S to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_ST",
+       "MLE":0.8450074086378488
+      },
+     "Substitution rate from amino-acid S to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_SV",
+       "MLE":0.1458333333333333
+      },
+     "Substitution rate from amino-acid S to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_SW",
+       "MLE":0.03286384976525818
+      },
+     "Substitution rate from amino-acid S to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_SY",
+       "MLE":0.08971017282859607
+      },
+     "Substitution rate from amino-acid T to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_TV",
+       "MLE":0.2941176470588235
+      },
+     "Substitution rate from amino-acid T to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_TW",
+       "MLE":0.06269265349330559
+      },
+     "Substitution rate from amino-acid T to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_TY",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid V to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_VW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid V to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_VY",
+       "MLE":0.02325581395348834
+      },
+     "Substitution rate from amino-acid W to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_WY",
+       "MLE":0.1340206185567011
+      }
+    },
+   "EFV":{
+     "GniqVP_A.model":[
+      [0.1060306659831416],
+      [0.02097683739572483],
+      [0.06194248963042272],
+      [0.05415948175420544],
+      [0.04213543365801303],
+      [0.06003169128955523],
+      [0.03141632101412],
+      [0.04707554644171996],
+      [0.0328144661415844],
+      [0.08631681968588273],
+      [0.03262804679125583],
+      [0.03864007083935194],
+      [0.05397306240387583],
+      [0.04353357878547714],
+      [0.06548445728666612],
+      [0.05210886890059057],
+      [0.04870671575709425],
+      [0.04921936897049823],
+      [0.02880645010952147],
+      [0.04399962716129866]
+      ]
+    },
+   "branch length":{
+     "0":{
+       "UniRef90_UPI0003B37235":{
+         "MLE":0.4622666845303604,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.510885944882685,
+           "constraint":"protein_gtr.gtr_scaler_0*9.320980699317744"
+          }
+        },
+       "UniRef90_UPI00037BA4C9":{
+         "MLE":0.2857682901143579,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.170391911921922,
+           "constraint":"protein_gtr.gtr_scaler_0*5.76212996906556"
+          }
+        },
+       "Node2":{
+         "MLE":0.5994793583795452,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.553007439245395,
+           "constraint":"protein_gtr.gtr_scaler_0*12.08768815942681"
+          }
+        },
+       "UniRef90_E8V6F6":{
+         "MLE":0.6902357352456447,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":5.242296325100066,
+           "constraint":"protein_gtr.gtr_scaler_0*13.91766740175173"
+          }
+        },
+       "Node1":{
+         "MLE":1.100320978084065,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":8.356867553065454,
+           "constraint":"protein_gtr.gtr_scaler_0*22.18648010551668"
+          }
+        },
+       "UniRef90_K9HKA5":{
+         "MLE":0.4642598320934713,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.526023773325833,
+           "constraint":"protein_gtr.gtr_scaler_0*9.361169816527269"
+          }
+        },
+       "UniRef90_UPI000693F76C":{
+         "MLE":0.7820758087244543,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":5.939815817514554,
+           "constraint":"protein_gtr.gtr_scaler_0*15.76949791640281"
+          }
+        },
+       "UniRef90_UPI0006950209":{
+         "MLE":0.3065532811450182,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.328252591300526,
+           "constraint":"protein_gtr.gtr_scaler_0*6.181231121529321"
+          }
+        },
+       "UniRef90_W7QEQ1":{
+         "MLE":0.4427938470924613,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.362990988236257,
+           "constraint":"protein_gtr.gtr_scaler_0*8.928337344315835"
+          }
+        },
+       "Node14":{
+         "MLE":0.1762577527286471,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.338666374714642,
+           "constraint":"protein_gtr.gtr_scaler_0*3.553998517020402"
+          }
+        },
+       "Node12":{
+         "MLE":0.1029699990557384,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.7820505663233274,
+           "constraint":"protein_gtr.gtr_scaler_0*2.076250367863722"
+          }
+        },
+       "UniRef90_UPI00028907CC":{
+         "MLE":0.3420334578770262,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.597722267526305,
+           "constraint":"protein_gtr.gtr_scaler_0*6.896640761883165"
+          }
+        },
+       "UniRef90_UPI000487E449":{
+         "MLE":0.4367821321891648,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.317332397502927,
+           "constraint":"protein_gtr.gtr_scaler_0*8.807119267265017"
+          }
+        },
+       "Node20":{
+         "MLE":0.1504723187041001,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.142827650166592,
+           "constraint":"protein_gtr.gtr_scaler_0*3.034070213922998"
+          }
+        },
+       "UniRef90_W7QMF7":{
+         "MLE":0.3319770504856672,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.521344495673231,
+           "constraint":"protein_gtr.gtr_scaler_0*6.693866946818892"
+          }
+        },
+       "Node19":{
+         "MLE":0.4125544362469884,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.133324594200606,
+           "constraint":"protein_gtr.gtr_scaler_0*8.318600639764545"
+          }
+        },
+       "UniRef90_A0A0F4R7M9":{
+         "MLE":0.4126297558064205,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.133896641443971,
+           "constraint":"protein_gtr.gtr_scaler_0*8.320119356521003"
+          }
+        },
+       "UniRef90_A0A098RF23":{
+         "MLE":0.3309126016511867,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.513260074759748,
+           "constraint":"protein_gtr.gtr_scaler_0*6.672403779834055"
+          }
+        },
+       "Node24":{
+         "MLE":0.04776912747519539,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.3628034722475397,
+           "constraint":"protein_gtr.gtr_scaler_0*0.9631996640032624"
+          }
+        },
+       "Node18":{
+         "MLE":0.1078077782618049,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.8187931904133167,
+           "constraint":"protein_gtr.gtr_scaler_0*2.173797623844583"
+          }
+        },
+       "UniRef90_S2L105":{
+         "MLE":0.3841778101503969,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.917805931360063,
+           "constraint":"protein_gtr.gtr_scaler_0*7.746424463091112"
+          }
+        },
+       "UniRef90_UPI0005BE33C2":{
+         "MLE":0.3799631510103461,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.885795864373927,
+           "constraint":"protein_gtr.gtr_scaler_0*7.661441578074148"
+          }
+        },
+       "Node27":{
+         "MLE":0.0623754625911882,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.4737376545736673,
+           "constraint":"protein_gtr.gtr_scaler_0*1.257716600351926"
+          }
+        },
+       "Node17":{
+         "MLE":0.09122087993372469,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.6928167569863249,
+           "constraint":"protein_gtr.gtr_scaler_0*1.83934531665603"
+          }
+        },
+       "Node11":{
+         "MLE":0.2235477098781679,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.697830578942413,
+           "constraint":"protein_gtr.gtr_scaler_0*4.507536361327884"
+          }
+        },
+       "UniRef90_UPI00068C8111":{
+         "MLE":0.5665495579221442,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.302907707937401,
+           "constraint":"protein_gtr.gtr_scaler_0*11.42370339745407"
+          }
+        },
+       "Node10":{
+         "MLE":0.07038908811546045,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.5346006286149487,
+           "constraint":"protein_gtr.gtr_scaler_0*1.419300489788362"
+          }
+        },
+       "UniRef90_UPI000371DB16":{
+         "MLE":0.4264230765743628,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.238656031722391,
+           "constraint":"protein_gtr.gtr_scaler_0*8.598242961271165"
+          }
+        },
+       "UniRef90_UPI000374C630":{
+         "MLE":0.4856593986008362,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.688552114198199,
+           "constraint":"protein_gtr.gtr_scaler_0*9.7926630499009"
+          }
+        },
+       "Node31":{
+         "MLE":0.1542119498309166,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.171229909731381,
+           "constraint":"protein_gtr.gtr_scaler_0*3.109474803356124"
+          }
+        },
+       "Node9":{
+         "MLE":0.1938313936239695,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.4721370549184,
+           "constraint":"protein_gtr.gtr_scaler_0*3.908347149711632"
+          }
+        },
+       "Node7":{
+         "MLE":2.045355933090343,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":15.53434767868863,
+           "constraint":"protein_gtr.gtr_scaler_0*41.24182817747059"
+          }
+        },
+       "UniRef90_UPI00054E8B75":{
+         "MLE":0.4253527688701852,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.230527113067752,
+           "constraint":"protein_gtr.gtr_scaler_0*8.576661658125541"
+          }
+        },
+       "UniRef90_UPI000476103C":{
+         "MLE":0.2760361514045186,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.096476939994544,
+           "constraint":"protein_gtr.gtr_scaler_0*5.565894592143134"
+          }
+        },
+       "UniRef90_A0A0J5W3Z2":{
+         "MLE":0.06638993216543811,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.5042272945932856,
+           "constraint":"protein_gtr.gtr_scaler_0*1.338662934301121"
+          }
+        },
+       "UniRef90_Q39MU7":{
+         "MLE":0.1622075513586689,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.231955992670253,
+           "constraint":"protein_gtr.gtr_scaler_0*3.270695263349537"
+          }
+        },
+       "UniRef90_A0A071M1U3":{
+         "MLE":0.1700458109276672,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.29148707348153,
+           "constraint":"protein_gtr.gtr_scaler_0*3.428743136155039"
+          }
+        },
+       "UniRef90_A0A0G3Z344":{
+         "MLE":0.1094856901452637,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.8315368240030306,
+           "constraint":"protein_gtr.gtr_scaler_0*2.20763044114303"
+          }
+        },
+       "Node49":{
+         "MLE":0.06334682960704002,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.481115125019632,
+           "constraint":"protein_gtr.gtr_scaler_0*1.277302898715407"
+          }
+        },
+       "UniRef90_A0A0G3X4Y0":{
+         "MLE":0.06439600793996318,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.4890835674490873,
+           "constraint":"protein_gtr.gtr_scaler_0*1.29845815674845"
+          }
+        },
+       "Node48":{
+         "MLE":0.1517767239016781,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.152734524332228,
+           "constraint":"protein_gtr.gtr_scaler_0*3.060371775505499"
+          }
+        },
+       "UniRef90_A0A070C1Y0":{
+         "MLE":0.1047215476100654,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.7953534657252466,
+           "constraint":"protein_gtr.gtr_scaler_0*2.111567968753317"
+          }
+        },
+       "Node47":{
+         "MLE":0.0183620187855127,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.1394583599275027,
+           "constraint":"protein_gtr.gtr_scaler_0*0.3702452035325789"
+          }
+        },
+       "Node45":{
+         "MLE":0.01714520582599489,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.1302167432155772,
+           "constraint":"protein_gtr.gtr_scaler_0*0.3457098206250521"
+          }
+        },
+       "UniRef90_A0A088UM11":{
+         "MLE":0.3589029728965525,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.72584515667462,
+           "constraint":"protein_gtr.gtr_scaler_0*7.2367916513283"
+          }
+        },
+       "Node44":{
+         "MLE":0.0267922591807881,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.2034854973056253,
+           "constraint":"protein_gtr.gtr_scaler_0*0.5402295667682773"
+          }
+        },
+       "Node42":{
+         "MLE":0.110098012891638,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.8361873761538127,
+           "constraint":"protein_gtr.gtr_scaler_0*2.219977098801275"
+          }
+        },
+       "Node40":{
+         "MLE":0.2057697833202918,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.562808362178911,
+           "constraint":"protein_gtr.gtr_scaler_0*4.149068585333596"
+          }
+        },
+       "UniRef90_B2UH07":{
+         "MLE":0.2422560682237263,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.83991936570839,
+           "constraint":"protein_gtr.gtr_scaler_0*4.884765032332006"
+          }
+        },
+       "Node39":{
+         "MLE":0.3643013068473518,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.766845158249251,
+           "constraint":"protein_gtr.gtr_scaler_0*7.345641733429702"
+          }
+        },
+       "Node37":{
+         "MLE":0.2627843323364611,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.995830220542029,
+           "constraint":"protein_gtr.gtr_scaler_0*5.298689634706704"
+          }
+        },
+       "UniRef90_UPI00068D044B":{
+         "MLE":0.8085268708590376,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":6.140709945045884,
+           "constraint":"protein_gtr.gtr_scaler_0*16.30284770751611"
+          }
+        },
+       "UniRef90_UPI00067E6246":{
+         "MLE":0.06870380659276779,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.5218010230859383,
+           "constraint":"protein_gtr.gtr_scaler_0*1.385319073710554"
+          }
+        },
+       "UniRef90_U1ID32":{
+         "MLE":0.08418870970068182,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.6394078731981812,
+           "constraint":"protein_gtr.gtr_scaler_0*1.697551141972857"
+          }
+        },
+       "UniRef90_UPI00067A8254":{
+         "MLE":0.1145846602635192,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.8702631763893112,
+           "constraint":"protein_gtr.gtr_scaler_0*2.310444257602556"
+          }
+        },
+       "Node60":{
+         "MLE":0.1055791432742241,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.8018668500214695,
+           "constraint":"protein_gtr.gtr_scaler_0*2.128860222123388"
+          }
+        },
+       "Node58":{
+         "MLE":0.5906580275848194,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.486009995261673,
+           "constraint":"protein_gtr.gtr_scaler_0*11.90981798874066"
+          }
+        },
+       "Node56":{
+         "MLE":0.1868284237878188,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.418949946279676,
+           "constraint":"protein_gtr.gtr_scaler_0*3.767141761425906"
+          }
+        },
+       "Node36":{
+         "MLE":1.780198846929449,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":13.52049654439347,
+           "constraint":"protein_gtr.gtr_scaler_0*35.89529518017279"
+          }
+        },
+       "UniRef90_E8V0N6":{
+         "MLE":2.405856495661639,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":18.2723264269078,
+           "constraint":"protein_gtr.gtr_scaler_0*48.5108330577034"
+          }
+        },
+       "UniRef90_A0A0F3IVH0":{
+         "MLE":2.193932191528024,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":16.66277487222966,
+           "constraint":"protein_gtr.gtr_scaler_0*44.23766690783773"
+          }
+        },
+       "UniRef90_A0A0H1RDZ2":{
+         "MLE":1.913812729675408,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":14.53528545017537,
+           "constraint":"protein_gtr.gtr_scaler_0*38.58943789889642"
+          }
+        },
+       "UniRef90_I4N1H4":{
+         "MLE":1.009968333203069,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":7.670644985852018,
+           "constraint":"protein_gtr.gtr_scaler_0*20.36464157107051"
+          }
+        },
+       "UniRef90_A0A0M3F518":{
+         "MLE":1.130307053827299,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":8.584609883179651,
+           "constraint":"protein_gtr.gtr_scaler_0*22.79110865134174"
+          }
+        },
+       "Node71":{
+         "MLE":0.7508135221401648,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":5.702380747571788,
+           "constraint":"protein_gtr.gtr_scaler_0*15.13913630995318"
+          }
+        },
+       "UniRef90_UPI00036938D4":{
+         "MLE":1.820738280812866,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":13.82839095555872,
+           "constraint":"protein_gtr.gtr_scaler_0*36.71271787887427"
+          }
+        },
+       "Node70":{
+         "MLE":1.090915227839119,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":8.285431480683103,
+           "constraint":"protein_gtr.gtr_scaler_0*21.99682590929265"
+          }
+        },
+       "Node68":{
+         "MLE":0.362463081012706,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.752883950439229,
+           "constraint":"protein_gtr.gtr_scaler_0*7.308576402746984"
+          }
+        },
+       "Node66":{
+         "MLE":0.2129871773345327,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.617624008755351,
+           "constraint":"protein_gtr.gtr_scaler_0*4.294597546336826"
+          }
+        },
+       "UniRef90_UPI000700C64E":{
+         "MLE":1.810256536396153,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":13.74878277616358,
+           "constraint":"protein_gtr.gtr_scaler_0*36.50136771959851"
+          }
+        },
+       "UniRef90_A0A0A8BI75":{
+         "MLE":0.6745390864411489,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":5.123081279946094,
+           "constraint":"protein_gtr.gtr_scaler_0*13.60116576871859"
+          }
+        },
+       "UniRef90_UPI0006C892F3":{
+         "MLE":0.2015772718382171,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.530966505240574,
+           "constraint":"protein_gtr.gtr_scaler_0*4.064532277799802"
+          }
+        },
+       "UniRef90_F7SXN4":{
+         "MLE":0.2107404689390381,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.600560401984715,
+           "constraint":"protein_gtr.gtr_scaler_0*4.249295718858871"
+          }
+        },
+       "Node79":{
+         "MLE":0.5639786881567106,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.28338211626567,
+           "constraint":"protein_gtr.gtr_scaler_0*11.37186529562674"
+          }
+        },
+       "Node77":{
+         "MLE":1.106595780093844,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":8.40452427356963,
+           "constraint":"protein_gtr.gtr_scaler_0*22.31300297723219"
+          }
+        },
+       "Node75":{
+         "MLE":0.6095785486352135,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.629710144220435,
+           "constraint":"protein_gtr.gtr_scaler_0*12.29132463292145"
+          }
+        },
+       "Node65":{
+         "MLE":0.2456515176202618,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.865707587013952,
+           "constraint":"protein_gtr.gtr_scaler_0*4.953229664004028"
+          }
+        },
+       "Node63":{
+         "MLE":0.3154833539327706,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.396075923776133,
+           "constraint":"protein_gtr.gtr_scaler_0*6.361293927012928"
+          }
+        },
+       "Node35":{
+         "MLE":1.084752291589943,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":8.238624373486052,
+           "constraint":"protein_gtr.gtr_scaler_0*21.87255865891087"
+          }
+        },
+       "UniRef90_UPI00047FD868":{
+         "MLE":3.179167287051512,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":24.1455724975718,
+           "constraint":"protein_gtr.gtr_scaler_0*64.10359628796327"
+          }
+        },
+       "Node34":{
+         "MLE":0.4381200670926615,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.327493927643535,
+           "constraint":"protein_gtr.gtr_scaler_0*8.834096909889439"
+          }
+        },
+       "Node6":{
+         "MLE":0.4154237649647167,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.155116962552989,
+           "constraint":"protein_gtr.gtr_scaler_0*8.376456761550859"
+          }
+        },
+       "1QAZ_A":{
+         "MLE":1.630153441506652,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":12.38091127333221,
+           "constraint":"protein_gtr.gtr_scaler_0*32.86983309352453"
+          }
+        }
+      }
+    },
+   "Trees":[
+    ["(((UniRef90_UPI0003B37235:0.462267,UniRef90_UPI00037BA4C9:0.285768)Node2:0.599479,UniRef90_E8V6F6:0.690236)Node1:1.10032,((UniRef90_K9HKA5:0.46426,((((UniRef90_UPI000693F76C:0.782076,(UniRef90_UPI0006950209:0.306553,UniRef90_W7QEQ1:0.442794)Node14:0.176258)Node12:0.10297,((((UniRef90_UPI00028907CC:0.342033,UniRef90_UPI000487E449:0.436782)Node20:0.150472,UniRef90_W7QMF7:0.331977)Node19:0.412554,(UniRef90_A0A0F4R7M9:0.41263,UniRef90_A0A098RF23:0.330913)Node24:0.0477691)Node18:0.107808,(UniRef90_S2L105:0.384178,UniRef90_UPI0005BE33C2:0.379963)Node27:0.0623755)Node17:0.0912209)Node11:0.223548,UniRef90_UPI00068C8111:0.56655)Node10:0.0703891,(UniRef90_UPI000371DB16:0.426423,UniRef90_UPI000374C630:0.485659)Node31:0.154212)Node9:0.193831)Node7:2.04536,((((UniRef90_UPI00054E8B75:0.425353,((UniRef90_UPI000476103C:0.276036,(UniRef90_A0A0J5W3Z2:0.0663899,((UniRef90_Q39MU7:0.162208,(((UniRef90_A0A071M1U3:0.170046,UniRef90_A0A0G3Z344:0.109486)Node49:0.0633468,UniRef90_A0A0G3X4Y0:0.064396)Node48:0.151777,UniRef90_A0A070C1Y0:0.104722)Node47:0.018362)Node45:0.0171452,UniRef90_A0A088UM11:0.358903)Node44:0.0267923)Node42:0.110098)Node40:0.20577,UniRef90_B2UH07:0.242256)Node39:0.364301)Node37:0.262784,(UniRef90_UPI00068D044B:0.808527,(UniRef90_UPI00067E6246:0.0687038,(UniRef90_U1ID32:0.0841887,UniRef90_UPI00067A8254:0.114585)Node60:0.105579)Node58:0.590658)Node56:0.186828)Node36:1.7802,(UniRef90_E8V0N6:2.40586,((UniRef90_A0A0F3IVH0:2.19393,(UniRef90_A0A0H1RDZ2:1.91381,((UniRef90_I4N1H4:1.00997,UniRef90_A0A0M3F518:1.13031)Node71:0.750814,UniRef90_UPI00036938D4:1.82074)Node70:1.09092)Node68:0.362463)Node66:0.212987,(UniRef90_UPI000700C64E:1.81026,(UniRef90_A0A0A8BI75:0.674539,(UniRef90_UPI0006C892F3:0.201577,UniRef90_F7SXN4:0.21074)Node79:0.563979)Node77:1.1066)Node75:0.609579)Node65:0.245652)Node63:0.315483)Node35:1.08475,UniRef90_UPI00047FD868:3.17917)Node34:0.43812)Node6:0.415424,1QAZ_A:1.63015)"]
+    ],
+   "LogL":-22320.9948169645,
+   "parameters":292
+  },
+ "REV-Phase-1":{
+   "global":{
+     "Gamma distribution shape parameter":{
+       "ID":"GniqVP_A.model.rv_gamma_alpha",
+       "MLE":1.213465244797727
+      },
+     "Substitution rate from amino-acid A to amino-acid C":{
+       "ID":"GniqVP_A.model.theta_AC",
+       "MLE":0.05545920005028324
+      },
+     "Substitution rate from amino-acid A to amino-acid D":{
+       "ID":"GniqVP_A.model.theta_AD",
+       "MLE":0.09041463514454008
+      },
+     "Substitution rate from amino-acid A to amino-acid E":{
+       "ID":"GniqVP_A.model.theta_AE",
+       "MLE":0.3239816328594696
+      },
+     "Substitution rate from amino-acid A to amino-acid F":{
+       "ID":"GniqVP_A.model.theta_AF",
+       "MLE":0.007881739476855701
+      },
+     "Substitution rate from amino-acid A to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_AG",
+       "MLE":0.3169137192393352
+      },
+     "Substitution rate from amino-acid A to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_AH",
+       "MLE":0.02110224467850157
+      },
+     "Substitution rate from amino-acid A to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_AI",
+       "MLE":0.008337122677497522
+      },
+     "Substitution rate from amino-acid A to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_AK",
+       "MLE":0.1119140546523878
+      },
+     "Substitution rate from amino-acid A to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_AL",
+       "MLE":0.1104440775225655
+      },
+     "Substitution rate from amino-acid A to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_AM",
+       "MLE":0.03671974496618993
+      },
+     "Substitution rate from amino-acid A to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_AN",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid A to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_AP",
+       "MLE":0.1730280016525696
+      },
+     "Substitution rate from amino-acid A to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_AQ",
+       "MLE":0.08686330989776758
+      },
+     "Substitution rate from amino-acid A to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_AR",
+       "MLE":0.05636707815434632
+      },
+     "Substitution rate from amino-acid A to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_AS",
+       "MLE":0.6969748769247966
+      },
+     "Substitution rate from amino-acid A to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_AT",
+       "MLE":0.4152553543719744
+      },
+     "Substitution rate from amino-acid A to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_AV",
+       "MLE":0.3848929172445896
+      },
+     "Substitution rate from amino-acid A to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_AW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid A to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_AY",
+       "MLE":0.005768558793375327
+      },
+     "Substitution rate from amino-acid C to amino-acid D":{
+       "ID":"GniqVP_A.model.theta_CD",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid E":{
+       "ID":"GniqVP_A.model.theta_CE",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid F":{
+       "ID":"GniqVP_A.model.theta_CF",
+       "MLE":0.06414788733809755
+      },
+     "Substitution rate from amino-acid C to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_CG",
+       "MLE":0.1411448171097203
+      },
+     "Substitution rate from amino-acid C to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_CH",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_CI",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_CK",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_CL",
+       "MLE":0.034203482833847
+      },
+     "Substitution rate from amino-acid C to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_CM",
+       "MLE":0.006943602307202127
+      },
+     "Substitution rate from amino-acid C to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_CN",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_CP",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_CQ",
+       "MLE":0.03002080391630878
+      },
+     "Substitution rate from amino-acid C to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_CR",
+       "MLE":0.03259261631717399
+      },
+     "Substitution rate from amino-acid C to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_CS",
+       "MLE":0.03464192231050761
+      },
+     "Substitution rate from amino-acid C to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_CT",
+       "MLE":0.05473167254961724
+      },
+     "Substitution rate from amino-acid C to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_CV",
+       "MLE":0.2035925995889351
+      },
+     "Substitution rate from amino-acid C to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_CW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_CY",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid D to amino-acid E":{
+       "ID":"GniqVP_A.model.theta_DE",
+       "MLE":0.6864355522921884
+      },
+     "Substitution rate from amino-acid D to amino-acid F":{
+       "ID":"GniqVP_A.model.theta_DF",
+       "MLE":0.01436827937051473
+      },
+     "Substitution rate from amino-acid D to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_DG",
+       "MLE":0.1992470524253501
+      },
+     "Substitution rate from amino-acid D to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_DH",
+       "MLE":0.1339673056220614
+      },
+     "Substitution rate from amino-acid D to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_DI",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid D to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_DK",
+       "MLE":0.1653372932441898
+      },
+     "Substitution rate from amino-acid D to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_DL",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid D to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_DM",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid D to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_DN",
+       "MLE":0.926567217453739
+      },
+     "Substitution rate from amino-acid D to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_DP",
+       "MLE":0.01873636625054509
+      },
+     "Substitution rate from amino-acid D to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_DQ",
+       "MLE":0.2185315506966085
+      },
+     "Substitution rate from amino-acid D to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_DR",
+       "MLE":0.06912228550081685
+      },
+     "Substitution rate from amino-acid D to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_DS",
+       "MLE":0.2752746855665795
+      },
+     "Substitution rate from amino-acid D to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_DT",
+       "MLE":0.1445542023337074
+      },
+     "Substitution rate from amino-acid D to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_DV",
+       "MLE":0.003584119953726677
+      },
+     "Substitution rate from amino-acid D to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_DW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid D to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_DY",
+       "MLE":0.03480726590471123
+      },
+     "Substitution rate from amino-acid E to amino-acid F":{
+       "ID":"GniqVP_A.model.theta_EF",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid E to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_EG",
+       "MLE":0.05970278784937462
+      },
+     "Substitution rate from amino-acid E to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_EH",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid E to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_EI",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid E to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_EK",
+       "MLE":0.6720037438574969
+      },
+     "Substitution rate from amino-acid E to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_EL",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid E to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_EM",
+       "MLE":0.04395063911842496
+      },
+     "Substitution rate from amino-acid E to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_EN",
+       "MLE":0.07341496853213056
+      },
+     "Substitution rate from amino-acid E to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_EP",
+       "MLE":0.07455652657030905
+      },
+     "Substitution rate from amino-acid E to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_EQ",
+       "MLE":0.9558889626758851
+      },
+     "Substitution rate from amino-acid E to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_ER",
+       "MLE":0.1041946633845919
+      },
+     "Substitution rate from amino-acid E to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_ES",
+       "MLE":0.07650797622848272
+      },
+     "Substitution rate from amino-acid E to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_ET",
+       "MLE":0.07097866248087779
+      },
+     "Substitution rate from amino-acid E to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_EV",
+       "MLE":0.06149270008655004
+      },
+     "Substitution rate from amino-acid E to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_EW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid E to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_EY",
+       "MLE":0.03435122369842435
+      },
+     "Substitution rate from amino-acid F to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_FG",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid F to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_FH",
+       "MLE":0.01734112194756445
+      },
+     "Substitution rate from amino-acid F to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_FI",
+       "MLE":0.1963101822081352
+      },
+     "Substitution rate from amino-acid F to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_FK",
+       "MLE":0.006497122837584896
+      },
+     "Substitution rate from amino-acid F to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_FL",
+       "MLE":0.2975428244340683
+      },
+     "Substitution rate from amino-acid F to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_FM",
+       "MLE":0.1766287231788604
+      },
+     "Substitution rate from amino-acid F to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_FN",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid F to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_FP",
+       "MLE":0.04753406531930135
+      },
+     "Substitution rate from amino-acid F to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_FQ",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid F to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_FR",
+       "MLE":0.01313145006370823
+      },
+     "Substitution rate from amino-acid F to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_FS",
+       "MLE":0.03960481877487943
+      },
+     "Substitution rate from amino-acid F to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_FT",
+       "MLE":0.03534156723568726
+      },
+     "Substitution rate from amino-acid F to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_FV",
+       "MLE":0.1009499561785533
+      },
+     "Substitution rate from amino-acid F to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_FW",
+       "MLE":0.1070241374478167
+      },
+     "Substitution rate from amino-acid F to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_FY",
+       "MLE":0.6189301189150912
+      },
+     "Substitution rate from amino-acid G to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_GH",
+       "MLE":0.2414757774256019
+      },
+     "Substitution rate from amino-acid G to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_GI",
+       "MLE":0.01409191014394225
+      },
+     "Substitution rate from amino-acid G to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_GK",
+       "MLE":0.2032189001190003
+      },
+     "Substitution rate from amino-acid G to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_GL",
+       "MLE":0.0464511327596755
+      },
+     "Substitution rate from amino-acid G to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_GM",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid G to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_GN",
+       "MLE":0.1119626373476937
+      },
+     "Substitution rate from amino-acid G to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_GP",
+       "MLE":0.01092555346991624
+      },
+     "Substitution rate from amino-acid G to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_GQ",
+       "MLE":0.0513199635056442
+      },
+     "Substitution rate from amino-acid G to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_GR",
+       "MLE":0.1025938352827808
+      },
+     "Substitution rate from amino-acid G to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_GS",
+       "MLE":0.3239470412913364
+      },
+     "Substitution rate from amino-acid G to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_GT",
+       "MLE":0.06158245432131748
+      },
+     "Substitution rate from amino-acid G to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_GV",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid G to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_GW",
+       "MLE":0.02396025482977909
+      },
+     "Substitution rate from amino-acid G to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_GY",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid H to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_HI",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid H to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_HK",
+       "MLE":0.3301665754993337
+      },
+     "Substitution rate from amino-acid H to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_HL",
+       "MLE":0.06433910627362653
+      },
+     "Substitution rate from amino-acid H to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_HM",
+       "MLE":0.0006852637790482034
+      },
+     "Substitution rate from amino-acid H to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_HN",
+       "MLE":0.3713806951986234
+      },
+     "Substitution rate from amino-acid H to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_HP",
+       "MLE":0.0974132227206632
+      },
+     "Substitution rate from amino-acid H to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_HQ",
+       "MLE":0.35613246229032
+      },
+     "Substitution rate from amino-acid H to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_HR",
+       "MLE":0.6087652353486396
+      },
+     "Substitution rate from amino-acid H to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_HS",
+       "MLE":0.2721428355911374
+      },
+     "Substitution rate from amino-acid H to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_HT",
+       "MLE":0.08387541840709577
+      },
+     "Substitution rate from amino-acid H to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_HV",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid H to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_HW",
+       "MLE":0.02052730673728855
+      },
+     "Substitution rate from amino-acid H to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_HY",
+       "MLE":0.2620326353161337
+      },
+     "Substitution rate from amino-acid I to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_IK",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid I to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_IL",
+       "MLE":1,
+       "constraint":"1"
+      },
+     "Substitution rate from amino-acid I to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_IM",
+       "MLE":0.5435881137416071
+      },
+     "Substitution rate from amino-acid I to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_IN",
+       "MLE":0.03984856710274079
+      },
+     "Substitution rate from amino-acid I to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_IP",
+       "MLE":0.06093392010193412
+      },
+     "Substitution rate from amino-acid I to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_IQ",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid I to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_IR",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid I to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_IS",
+       "MLE":0.007364883618341286
+      },
+     "Substitution rate from amino-acid I to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_IT",
+       "MLE":0.3495659990981503
+      },
+     "Substitution rate from amino-acid I to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_IV",
+       "MLE":2.554922240804565
+      },
+     "Substitution rate from amino-acid I to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_IW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid I to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_IY",
+       "MLE":0.02650582571031898
+      },
+     "Substitution rate from amino-acid K to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_KL",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid K to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_KM",
+       "MLE":0.1350753645274613
+      },
+     "Substitution rate from amino-acid K to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_KN",
+       "MLE":0.2265508500727139
+      },
+     "Substitution rate from amino-acid K to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_KP",
+       "MLE":0.07001792174719755
+      },
+     "Substitution rate from amino-acid K to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_KQ",
+       "MLE":1.204817931817933
+      },
+     "Substitution rate from amino-acid K to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_KR",
+       "MLE":0.7186918688994727
+      },
+     "Substitution rate from amino-acid K to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_KS",
+       "MLE":0.266290396686214
+      },
+     "Substitution rate from amino-acid K to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_KT",
+       "MLE":0.4592402508912525
+      },
+     "Substitution rate from amino-acid K to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_KV",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid K to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_KW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid K to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_KY",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid L to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_LM",
+       "MLE":0.7536025894199938
+      },
+     "Substitution rate from amino-acid L to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_LN",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid L to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_LP",
+       "MLE":0.03379253973870797
+      },
+     "Substitution rate from amino-acid L to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_LQ",
+       "MLE":0.1626289549025849
+      },
+     "Substitution rate from amino-acid L to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_LR",
+       "MLE":0.08646724848026735
+      },
+     "Substitution rate from amino-acid L to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_LS",
+       "MLE":0.04655628497591425
+      },
+     "Substitution rate from amino-acid L to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_LT",
+       "MLE":0.1098015137859371
+      },
+     "Substitution rate from amino-acid L to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_LV",
+       "MLE":0.3650837816305115
+      },
+     "Substitution rate from amino-acid L to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_LW",
+       "MLE":0.09307644144266702
+      },
+     "Substitution rate from amino-acid L to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_LY",
+       "MLE":0.02137746891661362
+      },
+     "Substitution rate from amino-acid M to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_MN",
+       "MLE":0.03498055761650049
+      },
+     "Substitution rate from amino-acid M to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_MP",
+       "MLE":0.0420912940333132
+      },
+     "Substitution rate from amino-acid M to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_MQ",
+       "MLE":0.07910801777561763
+      },
+     "Substitution rate from amino-acid M to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_MR",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid M to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_MS",
+       "MLE":0.02242093483776766
+      },
+     "Substitution rate from amino-acid M to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_MT",
+       "MLE":0.5612662723879501
+      },
+     "Substitution rate from amino-acid M to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_MV",
+       "MLE":0.2813194619631229
+      },
+     "Substitution rate from amino-acid M to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_MW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid M to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_MY",
+       "MLE":0.02979206715515149
+      },
+     "Substitution rate from amino-acid N to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_NP",
+       "MLE":0.02242660537202784
+      },
+     "Substitution rate from amino-acid N to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_NQ",
+       "MLE":0.1637324247308335
+      },
+     "Substitution rate from amino-acid N to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_NR",
+       "MLE":0.04803396044503152
+      },
+     "Substitution rate from amino-acid N to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_NS",
+       "MLE":0.501040359597425
+      },
+     "Substitution rate from amino-acid N to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_NT",
+       "MLE":0.343935193525456
+      },
+     "Substitution rate from amino-acid N to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_NV",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid N to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_NW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid N to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_NY",
+       "MLE":0.0308134549417717
+      },
+     "Substitution rate from amino-acid P to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_PQ",
+       "MLE":0.1677086663462334
+      },
+     "Substitution rate from amino-acid P to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_PR",
+       "MLE":0.09954275990803606
+      },
+     "Substitution rate from amino-acid P to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_PS",
+       "MLE":0.3045528548907821
+      },
+     "Substitution rate from amino-acid P to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_PT",
+       "MLE":0.1500738875270991
+      },
+     "Substitution rate from amino-acid P to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_PV",
+       "MLE":0.04302770010738188
+      },
+     "Substitution rate from amino-acid P to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_PW",
+       "MLE":0.02274767810493484
+      },
+     "Substitution rate from amino-acid P to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_PY",
+       "MLE":0.01374253588686338
+      },
+     "Substitution rate from amino-acid Q to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_QR",
+       "MLE":0.6222523239067654
+      },
+     "Substitution rate from amino-acid Q to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_QS",
+       "MLE":0.157253791887662
+      },
+     "Substitution rate from amino-acid Q to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_QT",
+       "MLE":0.2055842859938023
+      },
+     "Substitution rate from amino-acid Q to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_QV",
+       "MLE":0.1048281566727731
+      },
+     "Substitution rate from amino-acid Q to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_QW",
+       "MLE":0.04372022509647654
+      },
+     "Substitution rate from amino-acid Q to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_QY",
+       "MLE":0.0548626786803259
+      },
+     "Substitution rate from amino-acid R to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_RS",
+       "MLE":0.09957383125114828
+      },
+     "Substitution rate from amino-acid R to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_RT",
+       "MLE":0.1370846787550073
+      },
+     "Substitution rate from amino-acid R to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_RV",
+       "MLE":0.07459350694461661
+      },
+     "Substitution rate from amino-acid R to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_RW",
+       "MLE":0.02103030246142059
+      },
+     "Substitution rate from amino-acid R to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_RY",
+       "MLE":0.005125380557610131
+      },
+     "Substitution rate from amino-acid S to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_ST",
+       "MLE":1.221966876622892
+      },
+     "Substitution rate from amino-acid S to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_SV",
+       "MLE":0.1599563382220388
+      },
+     "Substitution rate from amino-acid S to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_SW",
+       "MLE":0.0484668406607799
+      },
+     "Substitution rate from amino-acid S to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_SY",
+       "MLE":0.0851350067254856
+      },
+     "Substitution rate from amino-acid T to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_TV",
+       "MLE":0.4569520871260622
+      },
+     "Substitution rate from amino-acid T to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_TW",
+       "MLE":0.04413508794404648
+      },
+     "Substitution rate from amino-acid T to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_TY",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid V to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_VW",
+       "MLE":0.001375979921901184
+      },
+     "Substitution rate from amino-acid V to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_VY",
+       "MLE":0.03333207115370999
+      },
+     "Substitution rate from amino-acid W to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_WY",
+       "MLE":0.1420097982931172
+      }
+    },
+   "EFV":{
+     "GniqVP_A.model":[
+      [0.1060306659831416],
+      [0.02097683739572483],
+      [0.06194248963042272],
+      [0.05415948175420544],
+      [0.04213543365801303],
+      [0.06003169128955523],
+      [0.03141632101412],
+      [0.04707554644171996],
+      [0.0328144661415844],
+      [0.08631681968588273],
+      [0.03262804679125583],
+      [0.03864007083935194],
+      [0.05397306240387583],
+      [0.04353357878547714],
+      [0.06548445728666612],
+      [0.05210886890059057],
+      [0.04870671575709425],
+      [0.04921936897049823],
+      [0.02880645010952147],
+      [0.04399962716129866]
+      ]
+    },
+   "branch length":{
+     "0":{
+       "UniRef90_UPI0003B37235":{
+         "MLE":0.3039467899263991,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.930054298054285,
+           "constraint":"protein_gtr.gtr_scaler_0*3.510885936833727"
+          }
+        },
+       "UniRef90_UPI00037BA4C9":{
+         "MLE":0.1878966348856801,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.193138798533979,
+           "constraint":"protein_gtr.gtr_scaler_0*2.170391906946142"
+          }
+        },
+       "Node2":{
+         "MLE":0.3941660359792446,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.502944189912254,
+           "constraint":"protein_gtr.gtr_scaler_0*4.5530074288073"
+          }
+        },
+       "UniRef90_E8V6F6":{
+         "MLE":0.4538396190794985,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.881869907702641,
+           "constraint":"protein_gtr.gtr_scaler_0*5.242296313081724"
+          }
+        },
+       "Node1":{
+         "MLE":0.7234763835881884,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.594056426861033,
+           "constraint":"protein_gtr.gtr_scaler_0*8.356867533906732"
+          }
+        },
+       "UniRef90_K9HKA5":{
+         "MLE":0.3052573122372865,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.938376081019773,
+           "constraint":"protein_gtr.gtr_scaler_0*3.526023765242165"
+          }
+        },
+       "UniRef90_UPI000693F76C":{
+         "MLE":0.5142257478113328,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.265320271925794,
+           "constraint":"protein_gtr.gtr_scaler_0*5.939815803897093"
+          }
+        },
+       "UniRef90_UPI0006950209":{
+         "MLE":0.2015630562693376,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.279920222798852,
+           "constraint":"protein_gtr.gtr_scaler_0*2.328252585962839"
+          }
+        },
+       "UniRef90_W7QEQ1":{
+         "MLE":0.2911431278238159,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.84875137303274,
+           "constraint":"protein_gtr.gtr_scaler_0*3.362990980526357"
+          }
+        },
+       "Node14":{
+         "MLE":0.1471841730691203,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.9346157131858834,
+           "constraint":"protein_gtr.gtr_scaler_0*1.700122720420921"
+          }
+        },
+       "Node12":{
+         "MLE":0.05651410054470821,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.3588630848294163,
+           "constraint":"protein_gtr.gtr_scaler_0*0.65279373696715"
+          }
+        },
+       "UniRef90_UPI00028907CC":{
+         "MLE":0.2248917671295441,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.428056936710884,
+           "constraint":"protein_gtr.gtr_scaler_0*2.597722261570839"
+          }
+        },
+       "UniRef90_UPI000487E449":{
+         "MLE":0.2871903414605372,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.823651281297658,
+           "constraint":"protein_gtr.gtr_scaler_0*3.317332389897702"
+          }
+        },
+       "Node20":{
+         "MLE":0.0962909164046403,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.6114448424191774,
+           "constraint":"protein_gtr.gtr_scaler_0*1.112255287617108"
+          }
+        },
+       "UniRef90_W7QMF7":{
+         "MLE":0.218279539064913,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.38606945857714,
+           "constraint":"protein_gtr.gtr_scaler_0*2.521344489892867"
+          }
+        },
+       "Node19":{
+         "MLE":0.2712602935999202,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.722495887128042,
+           "constraint":"protein_gtr.gtr_scaler_0*3.133324587017232"
+          }
+        },
+       "UniRef90_A0A0F4R7M9":{
+         "MLE":0.1859149971003938,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.180555449568179,
+           "constraint":"protein_gtr.gtr_scaler_0*2.147502031274336"
+          }
+        },
+       "UniRef90_A0A098RF23":{
+         "MLE":0.2175796491158677,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.381625175402947,
+           "constraint":"protein_gtr.gtr_scaler_0*2.513260068997916"
+          }
+        },
+       "Node24":{
+         "MLE":0.0272783138759902,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.1732165914724009,
+           "constraint":"protein_gtr.gtr_scaler_0*0.3150914954257005"
+          }
+        },
+       "Node18":{
+         "MLE":0.07088511724582325,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.450118671236871,
+           "constraint":"protein_gtr.gtr_scaler_0*0.8187931885361734"
+          }
+        },
+       "UniRef90_S2L105":{
+         "MLE":0.2526022663190594,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.604017893807699,
+           "constraint":"protein_gtr.gtr_scaler_0*2.917805924670784"
+          }
+        },
+       "UniRef90_UPI0005BE33C2":{
+         "MLE":0.2498310691743764,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.58642086321841,
+           "constraint":"protein_gtr.gtr_scaler_0*2.885795857758029"
+          }
+        },
+       "Node27":{
+         "MLE":0.03524192019447969,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.2237852867586212,
+           "constraint":"protein_gtr.gtr_scaler_0*0.4070790220478283"
+          }
+        },
+       "Node17":{
+         "MLE":0.03476050263625376,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.2207282976466858,
+           "constraint":"protein_gtr.gtr_scaler_0*0.401518173271207"
+          }
+        },
+       "Node11":{
+         "MLE":0.1130869193644407,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.7180990291949126,
+           "constraint":"protein_gtr.gtr_scaler_0*1.306265728065781"
+          }
+        },
+       "UniRef90_UPI00068C8111":{
+         "MLE":0.3725142330765274,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.365455798397632,
+           "constraint":"protein_gtr.gtr_scaler_0*4.302907698072678"
+          }
+        },
+       "Node10":{
+         "MLE":0.0537853559764038,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.3415356270081853,
+           "constraint":"protein_gtr.gtr_scaler_0*0.6212740392845679"
+          }
+        },
+       "UniRef90_UPI000371DB16":{
+         "MLE":0.2803791179695194,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.780400187324826,
+           "constraint":"protein_gtr.gtr_scaler_0*3.238656024297537"
+          }
+        },
+       "UniRef90_UPI000374C630":{
+         "MLE":0.3193278255651896,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.027723478736741,
+           "constraint":"protein_gtr.gtr_scaler_0*3.688552105741925"
+          }
+        },
+       "Node31":{
+         "MLE":0.05252270575387041,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.3335178305724017,
+           "constraint":"protein_gtr.gtr_scaler_0*0.6066891808279088"
+          }
+        },
+       "Node9":{
+         "MLE":0.1643923324240796,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.043887082469582,
+           "constraint":"protein_gtr.gtr_scaler_0*1.898893974734053"
+          }
+        },
+       "Node7":{
+         "MLE":1.356440420156904,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":8.613361778265023,
+           "constraint":"protein_gtr.gtr_scaler_0*15.66822796988547"
+          }
+        },
+       "UniRef90_UPI00054E8B75":{
+         "MLE":0.2796753757319651,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.775931442217687,
+           "constraint":"protein_gtr.gtr_scaler_0*3.230527105661536"
+          }
+        },
+       "UniRef90_UPI000476103C":{
+         "MLE":0.1814976180000497,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.152505205902771,
+           "constraint":"protein_gtr.gtr_scaler_0*2.096476935188219"
+          }
+        },
+       "UniRef90_A0A0J5W3Z2":{
+         "MLE":0.03740120457908593,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.2374966870607595,
+           "constraint":"protein_gtr.gtr_scaler_0*0.4320208915815533"
+          }
+        },
+       "UniRef90_Q39MU7":{
+         "MLE":0.1066537264898891,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.6772484199131127,
+           "constraint":"protein_gtr.gtr_scaler_0*1.231955989845905"
+          }
+        },
+       "UniRef90_A0A071M1U3":{
+         "MLE":0.1118074914362583,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.7099746947598059,
+           "constraint":"protein_gtr.gtr_scaler_0*1.291487070520703"
+          }
+        },
+       "UniRef90_A0A0G3Z344":{
+         "MLE":0.08636911436988898,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.5484416547024964,
+           "constraint":"protein_gtr.gtr_scaler_0*0.9976486643976563"
+          }
+        },
+       "Node49":{
+         "MLE":0.04165142363792784,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.2644854687622424,
+           "constraint":"protein_gtr.gtr_scaler_0*0.4811151239166411"
+          }
+        },
+       "UniRef90_A0A0G3X4Y0":{
+         "MLE":0.03633029089182334,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.2306964126921872,
+           "constraint":"protein_gtr.gtr_scaler_0*0.4196507796778104"
+          }
+        },
+       "Node48":{
+         "MLE":0.0997953120120007,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.6336976643874775,
+           "constraint":"protein_gtr.gtr_scaler_0*1.152734521689502"
+          }
+        },
+       "UniRef90_A0A070C1Y0":{
+         "MLE":0.0688558775645737,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.4372330514560982,
+           "constraint":"protein_gtr.gtr_scaler_0*0.7953534639018414"
+          }
+        },
+       "Node47":{
+         "MLE":0.01071650440394399,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.06804952732008876,
+           "constraint":"protein_gtr.gtr_scaler_0*0.1237862213084548"
+          }
+        },
+       "Node45":{
+         "MLE":0.01001547245927002,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.06359799250302754,
+           "constraint":"protein_gtr.gtr_scaler_0*0.1156886092348973"
+          }
+        },
+       "UniRef90_A0A088UM11":{
+         "MLE":0.2359837084469452,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.498490478774611,
+           "constraint":"protein_gtr.gtr_scaler_0*2.725845150425425"
+          }
+        },
+       "Node44":{
+         "MLE":0.0243900772244465,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.1548763630249819,
+           "constraint":"protein_gtr.gtr_scaler_0*0.281729506491361"
+          }
+        },
+       "Node42":{
+         "MLE":0.06012435771427839,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.3817881249948265,
+           "constraint":"protein_gtr.gtr_scaler_0*0.6944957767487393"
+          }
+        },
+       "Node40":{
+         "MLE":0.1053090628269927,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.6687098402405358,
+           "constraint":"protein_gtr.gtr_scaler_0*1.216423795066097"
+          }
+        },
+       "UniRef90_B2UH07":{
+         "MLE":0.159286742352198,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.011466716836753,
+           "constraint":"protein_gtr.gtr_scaler_0*1.839919361490243"
+          }
+        },
+       "Node39":{
+         "MLE":0.2395331882822982,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.521029584431029,
+           "constraint":"protein_gtr.gtr_scaler_0*2.766845151906058"
+          }
+        },
+       "Node37":{
+         "MLE":0.1727843622080742,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.09717625574205,
+           "constraint":"protein_gtr.gtr_scaler_0*1.995830215966445"
+          }
+        },
+       "UniRef90_UPI00068D044B":{
+         "MLE":0.5316176899412708,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.375758657103433,
+           "constraint":"protein_gtr.gtr_scaler_0*6.140709930967859"
+          }
+        },
+       "UniRef90_UPI00067E6246":{
+         "MLE":0.03864009548939949,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.2453636124750733,
+           "constraint":"protein_gtr.gtr_scaler_0*0.4463313064911638"
+          }
+        },
+       "UniRef90_U1ID32":{
+         "MLE":0.05535525037363389,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.3515044160505009,
+           "constraint":"protein_gtr.gtr_scaler_0*0.6394078717322929"
+          }
+        },
+       "UniRef90_UPI00067A8254":{
+         "MLE":0.07534101164414816,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.4784134860537854,
+           "constraint":"protein_gtr.gtr_scaler_0*0.8702631743941699"
+          }
+        },
+       "Node60":{
+         "MLE":0.06941975867021866,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.4408136819730555,
+           "constraint":"protein_gtr.gtr_scaler_0*0.8018668481831314"
+          }
+        },
+       "Node58":{
+         "MLE":0.4424590990839989,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.809603898455675,
+           "constraint":"protein_gtr.gtr_scaler_0*5.110840055176418"
+          }
+        },
+       "Node56":{
+         "MLE":0.07968774693958233,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.5060151433750831,
+           "constraint":"protein_gtr.gtr_scaler_0*0.9204722646878163"
+          }
+        },
+       "Node36":{
+         "MLE":1.369417799090182,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":8.695767800693217,
+           "constraint":"protein_gtr.gtr_scaler_0*15.81812952734176"
+          }
+        },
+       "UniRef90_E8V0N6":{
+         "MLE":1.581884187961427,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":10.04492390506372,
+           "constraint":"protein_gtr.gtr_scaler_0*18.27232638501718"
+          }
+        },
+       "UniRef90_A0A0F3IVH0":{
+         "MLE":1.442541003379048,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":9.160098267086369,
+           "constraint":"protein_gtr.gtr_scaler_0*16.66277483402904"
+          }
+        },
+       "UniRef90_A0A0H1RDZ2":{
+         "MLE":1.258358551830518,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":7.990544437208793,
+           "constraint":"protein_gtr.gtr_scaler_0*14.53528541685218"
+          }
+        },
+       "UniRef90_I4N1H4":{
+         "MLE":0.6640682598969062,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.216816369489592,
+           "constraint":"protein_gtr.gtr_scaler_0*7.670644968266516"
+          }
+        },
+       "UniRef90_A0A0M3F518":{
+         "MLE":0.7431926464504037,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.719254188903531,
+           "constraint":"protein_gtr.gtr_scaler_0*8.584609863498798"
+          }
+        },
+       "Node71":{
+         "MLE":0.4936703585283965,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.134794078695338,
+           "constraint":"protein_gtr.gtr_scaler_0*5.702380734498666"
+          }
+        },
+       "UniRef90_UPI00036938D4":{
+         "MLE":1.197160804074418,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":7.60194031305764,
+           "constraint":"protein_gtr.gtr_scaler_0*13.82839092385616"
+          }
+        },
+       "Node70":{
+         "MLE":0.7172919716686802,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.554785570244731,
+           "constraint":"protein_gtr.gtr_scaler_0*8.285431461688152"
+          }
+        },
+       "Node68":{
+         "MLE":0.3617397322984572,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.297037995593597,
+           "constraint":"protein_gtr.gtr_scaler_0*4.178451561301859"
+          }
+        },
+       "Node66":{
+         "MLE":0.1837739592094793,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.166959914031656,
+           "constraint":"protein_gtr.gtr_scaler_0*2.122770926783118"
+          }
+        },
+       "UniRef90_UPI000700C64E":{
+         "MLE":1.367755678893093,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":8.685213380193984,
+           "constraint":"protein_gtr.gtr_scaler_0*15.79893039572171"
+          }
+        },
+       "UniRef90_A0A0A8BI75":{
+         "MLE":0.4435188536503921,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.816333312693756,
+           "constraint":"protein_gtr.gtr_scaler_0*5.12308126820106"
+          }
+        },
+       "UniRef90_UPI0006C892F3":{
+         "MLE":0.1325398665914961,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.8416247437270282,
+           "constraint":"protein_gtr.gtr_scaler_0*1.530966501730722"
+          }
+        },
+       "UniRef90_F7SXN4":{
+         "MLE":0.1385647964371045,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.8798828932761911,
+           "constraint":"protein_gtr.gtr_scaler_0*1.600560398315314"
+          }
+        },
+       "Node79":{
+         "MLE":0.3708238503631019,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.35472191164662,
+           "constraint":"protein_gtr.gtr_scaler_0*4.283382106445704"
+          }
+        },
+       "Node77":{
+         "MLE":0.7276021533918975,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.620254958993448,
+           "constraint":"protein_gtr.gtr_scaler_0*8.40452425430165"
+          }
+        },
+       "Node75":{
+         "MLE":0.4008063943736309,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.545110294916388,
+           "constraint":"protein_gtr.gtr_scaler_0*4.629710133606491"
+          }
+        },
+       "Node65":{
+         "MLE":0,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0,
+           "constraint":"0"
+          }
+        },
+       "Node63":{
+         "MLE":0.3000795005605952,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.905497110054054,
+           "constraint":"protein_gtr.gtr_scaler_0*3.466214921057067"
+          }
+        },
+       "Node35":{
+         "MLE":0.7132397551621814,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.529054099657697,
+           "constraint":"protein_gtr.gtr_scaler_0*8.238624354598397"
+          }
+        },
+       "UniRef90_UPI00047FD868":{
+         "MLE":2.090346814674812,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":13.27364850625387,
+           "constraint":"protein_gtr.gtr_scaler_0*24.14557244221633"
+          }
+        },
+       "Node34":{
+         "MLE":0.2880700523128594,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.829237422582389,
+           "constraint":"protein_gtr.gtr_scaler_0*3.327493920015016"
+          }
+        },
+       "Node6":{
+         "MLE":0.4389579882615636,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.78737193478716,
+           "constraint":"protein_gtr.gtr_scaler_0*5.070398763617587"
+          }
+        },
+       "1QAZ_A":{
+         "MLE":1.071848615127436,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":6.806211136466306,
+           "constraint":"protein_gtr.gtr_scaler_0*12.38091124494807"
+          }
+        }
+      }
+    },
+   "Trees":[
+    ["(((UniRef90_UPI0003B37235:0.303947,UniRef90_UPI00037BA4C9:0.187897)Node2:0.394166,UniRef90_E8V6F6:0.45384)Node1:0.723476,((UniRef90_K9HKA5:0.305257,((((UniRef90_UPI000693F76C:0.514226,(UniRef90_UPI0006950209:0.201563,UniRef90_W7QEQ1:0.291143)Node14:0.147184)Node12:0.0565141,((((UniRef90_UPI00028907CC:0.224892,UniRef90_UPI000487E449:0.28719)Node20:0.0962909,UniRef90_W7QMF7:0.21828)Node19:0.27126,(UniRef90_A0A0F4R7M9:0.185915,UniRef90_A0A098RF23:0.21758)Node24:0.0272783)Node18:0.0708851,(UniRef90_S2L105:0.252602,UniRef90_UPI0005BE33C2:0.249831)Node27:0.0352419)Node17:0.0347605)Node11:0.113087,UniRef90_UPI00068C8111:0.372514)Node10:0.0537854,(UniRef90_UPI000371DB16:0.280379,UniRef90_UPI000374C630:0.319328)Node31:0.0525227)Node9:0.164392)Node7:1.35644,((((UniRef90_UPI00054E8B75:0.279675,((UniRef90_UPI000476103C:0.181498,(UniRef90_A0A0J5W3Z2:0.0374012,((UniRef90_Q39MU7:0.106654,(((UniRef90_A0A071M1U3:0.111807,UniRef90_A0A0G3Z344:0.0863691)Node49:0.0416514,UniRef90_A0A0G3X4Y0:0.0363303)Node48:0.0997953,UniRef90_A0A070C1Y0:0.0688559)Node47:0.0107165)Node45:0.0100155,UniRef90_A0A088UM11:0.235984)Node44:0.0243901)Node42:0.0601244)Node40:0.105309,UniRef90_B2UH07:0.159287)Node39:0.239533)Node37:0.172784,(UniRef90_UPI00068D044B:0.531618,(UniRef90_UPI00067E6246:0.0386401,(UniRef90_U1ID32:0.0553553,UniRef90_UPI00067A8254:0.075341)Node60:0.0694198)Node58:0.442459)Node56:0.0796877)Node36:1.36942,(UniRef90_E8V0N6:1.58188,((UniRef90_A0A0F3IVH0:1.44254,(UniRef90_A0A0H1RDZ2:1.25836,((UniRef90_I4N1H4:0.664068,UniRef90_A0A0M3F518:0.743193)Node71:0.49367,UniRef90_UPI00036938D4:1.19716)Node70:0.717292)Node68:0.36174)Node66:0.183774,(UniRef90_UPI000700C64E:1.36776,(UniRef90_A0A0A8BI75:0.443519,(UniRef90_UPI0006C892F3:0.13254,UniRef90_F7SXN4:0.138565)Node79:0.370824)Node77:0.727602)Node75:0.400806)Node65:0)Node63:0.30008)Node35:0.71324,UniRef90_UPI00047FD868:2.09035)Node34:0.28807)Node6:0.438958,1QAZ_A:1.07185)"]
+    ],
+   "LogL":-22213.58084791751,
+   "parameters":273
+  },
+ "REV-Final":{
+   "global":{
+     "Equilibrium frequency for A":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.A",
+       "MLE":0.1276383002332744
+      },
+     "Equilibrium frequency for C":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.C",
+       "MLE":0.01708437370550252
+      },
+     "Equilibrium frequency for D":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.D",
+       "MLE":0.06346419076112444
+      },
+     "Equilibrium frequency for E":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.E",
+       "MLE":0.0536972282341261
+      },
+     "Equilibrium frequency for F":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.F",
+       "MLE":0.04346569582265312
+      },
+     "Equilibrium frequency for G":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.G",
+       "MLE":0.07024122147717826
+      },
+     "Equilibrium frequency for H":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.H",
+       "MLE":0.02679555722473616
+      },
+     "Equilibrium frequency for I":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.I",
+       "MLE":0.03199278050441307
+      },
+     "Equilibrium frequency for K":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.K",
+       "MLE":0.03297705525827786
+      },
+     "Equilibrium frequency for L":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.L",
+       "MLE":0.08676785272424209
+      },
+     "Equilibrium frequency for M":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.M",
+       "MLE":0.024958175539061
+      },
+     "Equilibrium frequency for N":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.N",
+       "MLE":0.03762790539036323
+      },
+     "Equilibrium frequency for P":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.P",
+       "MLE":0.04676092524244579
+      },
+     "Equilibrium frequency for Q":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.Q",
+       "MLE":0.04216860712273687
+      },
+     "Equilibrium frequency for R":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.R",
+       "MLE":0.0700922243275906
+      },
+     "Equilibrium frequency for S":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.S",
+       "MLE":0.05249273352564474
+      },
+     "Equilibrium frequency for T":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.T",
+       "MLE":0.04835786677773647
+      },
+     "Equilibrium frequency for V":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.V",
+       "MLE":0.04984509026878119
+      },
+     "Equilibrium frequency for W":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.W",
+       "MLE":0.02842111011353556
+      },
+     "Equilibrium frequency for Y":{
+       "ID":"GniqVP_A.model.equilibrium_frequency_of.Y",
+       "MLE":0.03727666296918786
+      },
+     "Substitution rate from amino-acid A to amino-acid C":{
+       "ID":"GniqVP_A.model.theta_AC",
+       "MLE":0.07345571592815291
+      },
+     "Substitution rate from amino-acid A to amino-acid D":{
+       "ID":"GniqVP_A.model.theta_AD",
+       "MLE":0.1006773033555877
+      },
+     "Substitution rate from amino-acid A to amino-acid E":{
+       "ID":"GniqVP_A.model.theta_AE",
+       "MLE":0.2820413045336668
+      },
+     "Substitution rate from amino-acid A to amino-acid F":{
+       "ID":"GniqVP_A.model.theta_AF",
+       "MLE":0.005136435680058298
+      },
+     "Substitution rate from amino-acid A to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_AG",
+       "MLE":0.2705316939683507
+      },
+     "Substitution rate from amino-acid A to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_AH",
+       "MLE":0.02757012303612887
+      },
+     "Substitution rate from amino-acid A to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_AI",
+       "MLE":0.004845478747605244
+      },
+     "Substitution rate from amino-acid A to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_AK",
+       "MLE":0.2061645076946781
+      },
+     "Substitution rate from amino-acid A to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_AL",
+       "MLE":0.1206517605923998
+      },
+     "Substitution rate from amino-acid A to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_AM",
+       "MLE":0.03775741947311776
+      },
+     "Substitution rate from amino-acid A to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_AN",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid A to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_AP",
+       "MLE":0.1927986425907704
+      },
+     "Substitution rate from amino-acid A to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_AQ",
+       "MLE":0.115897098659942
+      },
+     "Substitution rate from amino-acid A to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_AR",
+       "MLE":0.04953582338052689
+      },
+     "Substitution rate from amino-acid A to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_AS",
+       "MLE":0.5861893777334849
+      },
+     "Substitution rate from amino-acid A to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_AT",
+       "MLE":0.3549967111835194
+      },
+     "Substitution rate from amino-acid A to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_AV",
+       "MLE":0.3325449340508697
+      },
+     "Substitution rate from amino-acid A to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_AW",
+       "MLE":0.007905541106759001
+      },
+     "Substitution rate from amino-acid A to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_AY",
+       "MLE":0.01699838838008622
+      },
+     "Substitution rate from amino-acid C to amino-acid D":{
+       "ID":"GniqVP_A.model.theta_CD",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid E":{
+       "ID":"GniqVP_A.model.theta_CE",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid F":{
+       "ID":"GniqVP_A.model.theta_CF",
+       "MLE":0.0575222224461076
+      },
+     "Substitution rate from amino-acid C to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_CG",
+       "MLE":0.12532506480927
+      },
+     "Substitution rate from amino-acid C to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_CH",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_CI",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_CK",
+       "MLE":0.02507752757443712
+      },
+     "Substitution rate from amino-acid C to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_CL",
+       "MLE":0.04485702887109676
+      },
+     "Substitution rate from amino-acid C to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_CM",
+       "MLE":0.08066560174387415
+      },
+     "Substitution rate from amino-acid C to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_CN",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_CP",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_CQ",
+       "MLE":0.07822201095664985
+      },
+     "Substitution rate from amino-acid C to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_CR",
+       "MLE":0.05596260651102723
+      },
+     "Substitution rate from amino-acid C to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_CS",
+       "MLE":0.04551794620239943
+      },
+     "Substitution rate from amino-acid C to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_CT",
+       "MLE":0.07202088459395402
+      },
+     "Substitution rate from amino-acid C to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_CV",
+       "MLE":0.1793058000898717
+      },
+     "Substitution rate from amino-acid C to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_CW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid C to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_CY",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid D to amino-acid E":{
+       "ID":"GniqVP_A.model.theta_DE",
+       "MLE":0.6891963575010187
+      },
+     "Substitution rate from amino-acid D to amino-acid F":{
+       "ID":"GniqVP_A.model.theta_DF",
+       "MLE":0.02864440813718433
+      },
+     "Substitution rate from amino-acid D to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_DG",
+       "MLE":0.1978547893241581
+      },
+     "Substitution rate from amino-acid D to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_DH",
+       "MLE":0.1815636955569162
+      },
+     "Substitution rate from amino-acid D to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_DI",
+       "MLE":0.0003501225428900115
+      },
+     "Substitution rate from amino-acid D to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_DK",
+       "MLE":0.3170418902702617
+      },
+     "Substitution rate from amino-acid D to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_DL",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid D to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_DM",
+       "MLE":0.01824444885564017
+      },
+     "Substitution rate from amino-acid D to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_DN",
+       "MLE":0.9250971945211179
+      },
+     "Substitution rate from amino-acid D to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_DP",
+       "MLE":0.0318757552760958
+      },
+     "Substitution rate from amino-acid D to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_DQ",
+       "MLE":0.3032075072707061
+      },
+     "Substitution rate from amino-acid D to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_DR",
+       "MLE":0.09134102899920951
+      },
+     "Substitution rate from amino-acid D to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_DS",
+       "MLE":0.3108168894490373
+      },
+     "Substitution rate from amino-acid D to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_DT",
+       "MLE":0.1953840523681547
+      },
+     "Substitution rate from amino-acid D to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_DV",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid D to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_DW",
+       "MLE":0.007149444244131367
+      },
+     "Substitution rate from amino-acid D to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_DY",
+       "MLE":0.06072743041667109
+      },
+     "Substitution rate from amino-acid E to amino-acid F":{
+       "ID":"GniqVP_A.model.theta_EF",
+       "MLE":0.00497084085669953
+      },
+     "Substitution rate from amino-acid E to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_EG",
+       "MLE":0.06584660182213599
+      },
+     "Substitution rate from amino-acid E to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_EH",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid E to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_EI",
+       "MLE":0.03215390204805919
+      },
+     "Substitution rate from amino-acid E to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_EK",
+       "MLE":0.793402888503402
+      },
+     "Substitution rate from amino-acid E to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_EL",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid E to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_EM",
+       "MLE":0.1666313333696087
+      },
+     "Substitution rate from amino-acid E to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_EN",
+       "MLE":0.08149094108596579
+      },
+     "Substitution rate from amino-acid E to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_EP",
+       "MLE":0.133650308079882
+      },
+     "Substitution rate from amino-acid E to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_EQ",
+       "MLE":0.9560978863195162
+      },
+     "Substitution rate from amino-acid E to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_ER",
+       "MLE":0.1041769557579085
+      },
+     "Substitution rate from amino-acid E to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_ES",
+       "MLE":0.1017796114271075
+      },
+     "Substitution rate from amino-acid E to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_ET",
+       "MLE":0.09394117681192629
+      },
+     "Substitution rate from amino-acid E to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_EV",
+       "MLE":0.08137332165812065
+      },
+     "Substitution rate from amino-acid E to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_EW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid E to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_EY",
+       "MLE":0.03114583435846622
+      },
+     "Substitution rate from amino-acid F to amino-acid G":{
+       "ID":"GniqVP_A.model.theta_FG",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid F to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_FH",
+       "MLE":0.03177931444039352
+      },
+     "Substitution rate from amino-acid F to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_FI",
+       "MLE":0.220170784208452
+      },
+     "Substitution rate from amino-acid F to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_FK",
+       "MLE":0.01429340162232551
+      },
+     "Substitution rate from amino-acid F to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_FL",
+       "MLE":0.297568955290901
+      },
+     "Substitution rate from amino-acid F to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_FM",
+       "MLE":0.1769797600832405
+      },
+     "Substitution rate from amino-acid F to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_FN",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid F to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_FP",
+       "MLE":0.0630228431773058
+      },
+     "Substitution rate from amino-acid F to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_FQ",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid F to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_FR",
+       "MLE":0.02268731594875478
+      },
+     "Substitution rate from amino-acid F to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_FS",
+       "MLE":0.05232149419996687
+      },
+     "Substitution rate from amino-acid F to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_FT",
+       "MLE":0.06129891759605145
+      },
+     "Substitution rate from amino-acid F to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_FV",
+       "MLE":0.1120604668433853
+      },
+     "Substitution rate from amino-acid F to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_FW",
+       "MLE":0.09539131053526566
+      },
+     "Substitution rate from amino-acid F to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_FY",
+       "MLE":0.6202176750541457
+      },
+     "Substitution rate from amino-acid G to amino-acid H":{
+       "ID":"GniqVP_A.model.theta_GH",
+       "MLE":0.2119450911736407
+      },
+     "Substitution rate from amino-acid G to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_GI",
+       "MLE":0.02397638280310836
+      },
+     "Substitution rate from amino-acid G to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_GK",
+       "MLE":0.227601890964523
+      },
+     "Substitution rate from amino-acid G to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_GL",
+       "MLE":0.05082937892363431
+      },
+     "Substitution rate from amino-acid G to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_GM",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid G to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_GN",
+       "MLE":0.09923041374657358
+      },
+     "Substitution rate from amino-acid G to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_GP",
+       "MLE":0.02743245037809541
+      },
+     "Substitution rate from amino-acid G to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_GQ",
+       "MLE":0.08981508897482125
+      },
+     "Substitution rate from amino-acid G to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_GR",
+       "MLE":0.101521608180639
+      },
+     "Substitution rate from amino-acid G to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_GS",
+       "MLE":0.3217083809981189
+      },
+     "Substitution rate from amino-acid G to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_GT",
+       "MLE":0.0808090069430404
+      },
+     "Substitution rate from amino-acid G to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_GV",
+       "MLE":0.01521022198350105
+      },
+     "Substitution rate from amino-acid G to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_GW",
+       "MLE":0.01620292404933817
+      },
+     "Substitution rate from amino-acid G to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_GY",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid H to amino-acid I":{
+       "ID":"GniqVP_A.model.theta_HI",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid H to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_HK",
+       "MLE":0.4762322382710152
+      },
+     "Substitution rate from amino-acid H to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_HL",
+       "MLE":0.06429662278063913
+      },
+     "Substitution rate from amino-acid H to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_HM",
+       "MLE":0.09449458225971298
+      },
+     "Substitution rate from amino-acid H to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_HN",
+       "MLE":0.3714119782172491
+      },
+     "Substitution rate from amino-acid H to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_HP",
+       "MLE":0.1306475286163021
+      },
+     "Substitution rate from amino-acid H to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_HQ",
+       "MLE":0.4063355778363503
+      },
+     "Substitution rate from amino-acid H to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_HR",
+       "MLE":0.6081650880029977
+      },
+     "Substitution rate from amino-acid H to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_HS",
+       "MLE":0.3076308606320755
+      },
+     "Substitution rate from amino-acid H to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_HT",
+       "MLE":0.07471148460628645
+      },
+     "Substitution rate from amino-acid H to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_HV",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid H to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_HW",
+       "MLE":0.002023265937329025
+      },
+     "Substitution rate from amino-acid H to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_HY",
+       "MLE":0.2624724228528763
+      },
+     "Substitution rate from amino-acid I to amino-acid K":{
+       "ID":"GniqVP_A.model.theta_IK",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid I to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_IL",
+       "MLE":1,
+       "constraint":"1"
+      },
+     "Substitution rate from amino-acid I to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_IM",
+       "MLE":0.5439857943286888
+      },
+     "Substitution rate from amino-acid I to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_IN",
+       "MLE":0.05229535843720755
+      },
+     "Substitution rate from amino-acid I to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_IP",
+       "MLE":0.08031854920596541
+      },
+     "Substitution rate from amino-acid I to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_IQ",
+       "MLE":0.007102833429485445
+      },
+     "Substitution rate from amino-acid I to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_IR",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid I to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_IS",
+       "MLE":0.04411403478824444
+      },
+     "Substitution rate from amino-acid I to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_IT",
+       "MLE":0.3985424027158838
+      },
+     "Substitution rate from amino-acid I to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_IV",
+       "MLE":1.846219849539527
+      },
+     "Substitution rate from amino-acid I to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_IW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid I to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_IY",
+       "MLE":0.04535314956965975
+      },
+     "Substitution rate from amino-acid K to amino-acid L":{
+       "ID":"GniqVP_A.model.theta_KL",
+       "MLE":0.02769069182492716
+      },
+     "Substitution rate from amino-acid K to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_KM",
+       "MLE":0.253460701339092
+      },
+     "Substitution rate from amino-acid K to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_KN",
+       "MLE":0.455993437126628
+      },
+     "Substitution rate from amino-acid K to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_KP",
+       "MLE":0.08791837839135046
+      },
+     "Substitution rate from amino-acid K to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_KQ",
+       "MLE":1.205644243363063
+      },
+     "Substitution rate from amino-acid K to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_KR",
+       "MLE":0.854855627279501
+      },
+     "Substitution rate from amino-acid K to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_KS",
+       "MLE":0.7252428716264083
+      },
+     "Substitution rate from amino-acid K to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_KT",
+       "MLE":0.6915976523356553
+      },
+     "Substitution rate from amino-acid K to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_KV",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid K to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_KW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid K to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_KY",
+       "MLE":0.04529777233105105
+      },
+     "Substitution rate from amino-acid L to amino-acid M":{
+       "ID":"GniqVP_A.model.theta_LM",
+       "MLE":0.7559752948269481
+      },
+     "Substitution rate from amino-acid L to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_LN",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid L to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_LP",
+       "MLE":0.06862047374853948
+      },
+     "Substitution rate from amino-acid L to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_LQ",
+       "MLE":0.1626934834633076
+      },
+     "Substitution rate from amino-acid L to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_LR",
+       "MLE":0.1130035044051732
+      },
+     "Substitution rate from amino-acid L to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_LS",
+       "MLE":0.09643466649742422
+      },
+     "Substitution rate from amino-acid L to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_LT",
+       "MLE":0.1089904794598627
+      },
+     "Substitution rate from amino-acid L to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_LV",
+       "MLE":0.3176674766112512
+      },
+     "Substitution rate from amino-acid L to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_LW",
+       "MLE":0.1025144188185801
+      },
+     "Substitution rate from amino-acid L to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_LY",
+       "MLE":0.03018476755716199
+      },
+     "Substitution rate from amino-acid M to amino-acid N":{
+       "ID":"GniqVP_A.model.theta_MN",
+       "MLE":0.09218140439955093
+      },
+     "Substitution rate from amino-acid M to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_MP",
+       "MLE":0.07387700159592007
+      },
+     "Substitution rate from amino-acid M to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_MQ",
+       "MLE":0.1713213933508005
+      },
+     "Substitution rate from amino-acid M to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_MR",
+       "MLE":0.01408537424389536
+      },
+     "Substitution rate from amino-acid M to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_MS",
+       "MLE":0.1494309821025122
+      },
+     "Substitution rate from amino-acid M to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_MT",
+       "MLE":0.5616275454204437
+      },
+     "Substitution rate from amino-acid M to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_MV",
+       "MLE":0.3198063548622719
+      },
+     "Substitution rate from amino-acid M to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_MW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid M to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_MY",
+       "MLE":0.07778550776217072
+      },
+     "Substitution rate from amino-acid N to amino-acid P":{
+       "ID":"GniqVP_A.model.theta_NP",
+       "MLE":0.05740290923242746
+      },
+     "Substitution rate from amino-acid N to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_NQ",
+       "MLE":0.222469052331951
+      },
+     "Substitution rate from amino-acid N to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_NR",
+       "MLE":0.04009050080127385
+      },
+     "Substitution rate from amino-acid N to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_NS",
+       "MLE":0.5785325752895174
+      },
+     "Substitution rate from amino-acid N to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_NT",
+       "MLE":0.2985593507471144
+      },
+     "Substitution rate from amino-acid N to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_NV",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid N to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_NW",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid N to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_NY",
+       "MLE":0.02201512862372346
+      },
+     "Substitution rate from amino-acid P to amino-acid Q":{
+       "ID":"GniqVP_A.model.theta_PQ",
+       "MLE":0.3204474578762479
+      },
+     "Substitution rate from amino-acid P to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_PR",
+       "MLE":0.1792173548040525
+      },
+     "Substitution rate from amino-acid P to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_PS",
+       "MLE":0.4333488290571493
+      },
+     "Substitution rate from amino-acid P to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_PT",
+       "MLE":0.1677009492942934
+      },
+     "Substitution rate from amino-acid P to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_PV",
+       "MLE":0.08954789419000606
+      },
+     "Substitution rate from amino-acid P to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_PW",
+       "MLE":0.01517046846886005
+      },
+     "Substitution rate from amino-acid P to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_PY",
+       "MLE":0.03435597779082911
+      },
+     "Substitution rate from amino-acid Q to amino-acid R":{
+       "ID":"GniqVP_A.model.theta_QR",
+       "MLE":0.6204702513965399
+      },
+     "Substitution rate from amino-acid Q to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_QS",
+       "MLE":0.1750814720114006
+      },
+     "Substitution rate from amino-acid Q to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_QT",
+       "MLE":0.20497045467106
+      },
+     "Substitution rate from amino-acid Q to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_QV",
+       "MLE":0.1161299959244732
+      },
+     "Substitution rate from amino-acid Q to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_QW",
+       "MLE":0.0570264838870642
+      },
+     "Substitution rate from amino-acid Q to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_QY",
+       "MLE":0.09635062690881104
+      },
+     "Substitution rate from amino-acid R to amino-acid S":{
+       "ID":"GniqVP_A.model.theta_RS",
+       "MLE":0.1101129696646761
+      },
+     "Substitution rate from amino-acid R to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_RT",
+       "MLE":0.1523996934125978
+      },
+     "Substitution rate from amino-acid R to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_RV",
+       "MLE":0.08244337053194754
+      },
+     "Substitution rate from amino-acid R to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_RW",
+       "MLE":0.01883416854752041
+      },
+     "Substitution rate from amino-acid R to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_RY",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid S to amino-acid T":{
+       "ID":"GniqVP_A.model.theta_ST",
+       "MLE":0.9805541811443832
+      },
+     "Substitution rate from amino-acid S to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_SV",
+       "MLE":0.1416080079888794
+      },
+     "Substitution rate from amino-acid S to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_SW",
+       "MLE":0.08460338506806576
+      },
+     "Substitution rate from amino-acid S to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_SY",
+       "MLE":0.1276373681534439
+      },
+     "Substitution rate from amino-acid T to amino-acid V":{
+       "ID":"GniqVP_A.model.theta_TV",
+       "MLE":0.4557049722293655
+      },
+     "Substitution rate from amino-acid T to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_TW",
+       "MLE":0.07657894291314937
+      },
+     "Substitution rate from amino-acid T to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_TY",
+       "MLE":0
+      },
+     "Substitution rate from amino-acid V to amino-acid W":{
+       "ID":"GniqVP_A.model.theta_VW",
+       "MLE":0.009289825993587691
+      },
+     "Substitution rate from amino-acid V to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_VY",
+       "MLE":0.06812143982840078
+      },
+     "Substitution rate from amino-acid W to amino-acid Y":{
+       "ID":"GniqVP_A.model.theta_WY",
+       "MLE":0.1583130720858228
+      }
+    },
+   "EFV":{
+     "GniqVP_A.model":[
+      ["GniqVP_A.model.equilibrium_frequency_of.A/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.C/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.D/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.E/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.F/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.G/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.H/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.I/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.K/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.L/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.M/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.N/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.P/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.Q/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.R/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.S/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.T/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.V/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.W/GniqVP_A.model.frequency_scaler"],
+      ["GniqVP_A.model.equilibrium_frequency_of.Y/GniqVP_A.model.frequency_scaler"]
+      ]
+    },
+   "branch length":{
+     "0":{
+       "UniRef90_UPI0003B37235":{
+         "MLE":0.1693674747057539,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.022688592672378
+          }
+        },
+       "UniRef90_UPI00037BA4C9":{
+         "MLE":0.1590507416121153,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.9603932477908425
+          }
+        },
+       "Node2":{
+         "MLE":0.1936278320718855,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.169179474558659
+          }
+        },
+       "UniRef90_E8V6F6":{
+         "MLE":0.3310290345439364,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.998846697452314
+          }
+        },
+       "Node1":{
+         "MLE":0.3927450237546873,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.371505251055832
+          }
+        },
+       "UniRef90_K9HKA5":{
+         "MLE":0.2385071731408092,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.440173596881025
+          }
+        },
+       "UniRef90_UPI000693F76C":{
+         "MLE":0.3653114947539337,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.205853863653617
+          }
+        },
+       "UniRef90_UPI0006950209":{
+         "MLE":0.1581682927164812,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.9550647724106126
+          }
+        },
+       "UniRef90_W7QEQ1":{
+         "MLE":0.2317418830451388,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.399322866721756
+          }
+        },
+       "Node14":{
+         "MLE":0.1271724323637511,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.7679030233329061
+          }
+        },
+       "Node12":{
+         "MLE":0.03751088924092715,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.2265013314648542
+          }
+        },
+       "UniRef90_UPI00028907CC":{
+         "MLE":0.1860950612450073,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.12369447922973
+          }
+        },
+       "UniRef90_UPI000487E449":{
+         "MLE":0.22950045599095,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.385788497837715
+          }
+        },
+       "Node20":{
+         "MLE":0.08569641223892764,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.5174591129847171
+          }
+        },
+       "UniRef90_W7QMF7":{
+         "MLE":0.1945904895634895,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.174992272069069
+          }
+        },
+       "Node19":{
+         "MLE":0.2186084008337544,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.320019196031836
+          }
+        },
+       "UniRef90_A0A0F4R7M9":{
+         "MLE":0.1819600695861085,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.098726233067366
+          }
+        },
+       "UniRef90_A0A098RF23":{
+         "MLE":0.1809082966429824,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.092375331320232
+          }
+        },
+       "Node24":{
+         "MLE":0.02869455786798879,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.1732658354524822
+          }
+        },
+       "Node18":{
+         "MLE":0.06415836782551787,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.3874063247009409
+          }
+        },
+       "UniRef90_S2L105":{
+         "MLE":0.205644197226383,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.241737677308274
+          }
+        },
+       "UniRef90_UPI0005BE33C2":{
+         "MLE":0.1724282563050785,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.041170455448741
+          }
+        },
+       "Node27":{
+         "MLE":0.02435976415443685,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.1470911281177988
+          }
+        },
+       "Node17":{
+         "MLE":0.03658101507840239,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.2208864889439568
+          }
+        },
+       "Node11":{
+         "MLE":0.1187779322800882,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.717214663648355
+          }
+        },
+       "UniRef90_UPI00068C8111":{
+         "MLE":0.2841316674394121,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.715667164619991
+          }
+        },
+       "Node10":{
+         "MLE":0.04921062169930016,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.2971476166697569
+          }
+        },
+       "UniRef90_UPI000371DB16":{
+         "MLE":0.197882734179921,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.194871773840946
+          }
+        },
+       "UniRef90_UPI000374C630":{
+         "MLE":0.2389254685103478,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.442699382327953
+          }
+        },
+       "Node31":{
+         "MLE":0.03527630744070978,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.213008296155413
+          }
+        },
+       "Node9":{
+         "MLE":0.09234112594003824,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.5575817688577269
+          }
+        },
+       "Node7":{
+         "MLE":0.6898893980620695,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.165746810770174
+          }
+        },
+       "UniRef90_UPI00054E8B75":{
+         "MLE":0.1587836792752537,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.9587806500596943
+          }
+        },
+       "UniRef90_UPI000476103C":{
+         "MLE":0.1538120252364413,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.9287604004158926
+          }
+        },
+       "UniRef90_A0A0J5W3Z2":{
+         "MLE":0.03450852067270076,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.2083721830492114
+          }
+        },
+       "UniRef90_Q39MU7":{
+         "MLE":0.09439577491974205,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.5699883190359097
+          }
+        },
+       "UniRef90_A0A071M1U3":{
+         "MLE":0.09855639589116394,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.5951113222175949
+          }
+        },
+       "UniRef90_A0A0G3Z344":{
+         "MLE":0.07733892177216388,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.4669942278078167
+          }
+        },
+       "Node49":{
+         "MLE":0.02846334510144369,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.1718697075404571
+          }
+        },
+       "UniRef90_A0A0G3X4Y0":{
+         "MLE":0.03360901064989631,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.202940687769998
+          }
+        },
+       "Node48":{
+         "MLE":0.08868907513520442,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.5355296558150529
+          }
+        },
+       "UniRef90_A0A070C1Y0":{
+         "MLE":0.06231637091088646,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.3762838276831162
+          }
+        },
+       "Node47":{
+         "MLE":0.007777427834040165,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.04696230335856396
+          }
+        },
+       "Node45":{
+         "MLE":0.007265808424048218,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.04387300102765567
+          }
+        },
+       "UniRef90_A0A088UM11":{
+         "MLE":0.1799142774408307,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.086373162954056
+          }
+        },
+       "Node44":{
+         "MLE":0.02274514476653182,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.1373416007520108
+          }
+        },
+       "Node42":{
+         "MLE":0.03979069193337179,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.2402674232788669
+          }
+        },
+       "Node40":{
+         "MLE":0.09338647473234529,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.5638938797698935
+          }
+        },
+       "UniRef90_B2UH07":{
+         "MLE":0.1368404434943306,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.8262812019899992
+          }
+        },
+       "Node39":{
+         "MLE":0.1823843498210076,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.101288156819736
+          }
+        },
+       "Node37":{
+         "MLE":0.1470802535252634,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.888112063718089
+          }
+        },
+       "UniRef90_UPI00068D044B":{
+         "MLE":0.3742824350986054,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.26002293225418
+          }
+        },
+       "UniRef90_UPI00067E6246":{
+         "MLE":0.02651042096479518,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.1600774006623223
+          }
+        },
+       "UniRef90_U1ID32":{
+         "MLE":0.05052423063068264,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.3050795579807516
+          }
+        },
+       "UniRef90_UPI00067A8254":{
+         "MLE":0.06798840801027531,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.4105331878323257
+          }
+        },
+       "Node60":{
+         "MLE":0.0628800921926841,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.3796877358144897
+          }
+        },
+       "Node58":{
+         "MLE":0.2704074470583214,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.632796450207747
+          }
+        },
+       "Node56":{
+         "MLE":0.0509612892867635,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.3077186414451484
+          }
+        },
+       "Node36":{
+         "MLE":0.6869114571113147,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.14776516320012
+          }
+        },
+       "UniRef90_E8V0N6":{
+         "MLE":0.8908965843193383,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":5.379484907695919
+          }
+        },
+       "UniRef90_A0A0F3IVH0":{
+         "MLE":0.8267386277178382,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.992081066081608
+          }
+        },
+       "UniRef90_A0A0H1RDZ2":{
+         "MLE":0.6552031624060157,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.956301534516155
+          }
+        },
+       "UniRef90_I4N1H4":{
+         "MLE":0.3695923748995649,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.231703025655594
+          }
+        },
+       "UniRef90_A0A0M3F518":{
+         "MLE":0.4757277274284312,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.87257822615739
+          }
+        },
+       "Node71":{
+         "MLE":0.1872443673464231,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.130634313701778
+          }
+        },
+       "UniRef90_UPI00036938D4":{
+         "MLE":0.6429625998870617,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.882389564831446
+          }
+        },
+       "Node70":{
+         "MLE":0.3619310389079347,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.185441717592267
+          }
+        },
+       "Node68":{
+         "MLE":0.1648081079865439,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.9951578501750548
+          }
+        },
+       "Node66":{
+         "MLE":0.1441411097726265,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.870364684575381
+          }
+        },
+       "UniRef90_UPI000700C64E":{
+         "MLE":0.6815395971009585,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":4.115328356997695
+          }
+        },
+       "UniRef90_A0A0A8BI75":{
+         "MLE":0.2807176944974585,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.695052632877731
+          }
+        },
+       "UniRef90_UPI0006C892F3":{
+         "MLE":0.1156380427598276,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.6982551249281792
+          }
+        },
+       "UniRef90_F7SXN4":{
+         "MLE":0.0807133894493008,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.4873702156162501
+          }
+        },
+       "Node79":{
+         "MLE":0.2836206769092623,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.712581659642983
+          }
+        },
+       "Node77":{
+         "MLE":0.3990310699487651,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.409462171337389
+          }
+        },
+       "Node75":{
+         "MLE":0.2363404904870912,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":1.427090555773231
+          }
+        },
+       "Node65":{
+         "MLE":0.01373204749993413,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.08291797676393403
+          }
+        },
+       "Node63":{
+         "MLE":0.08556873896709181,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.5166881857513597
+          }
+        },
+       "Node35":{
+         "MLE":0.3858191626397715,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":2.329684947783535
+          }
+        },
+       "UniRef90_UPI00047FD868":{
+         "MLE":1.2111658235362,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":7.313360925508555
+          }
+        },
+       "Node34":{
+         "MLE":0.07781908042449412,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.469893561208543
+          }
+        },
+       "Node6":{
+         "MLE":0.1119061119516194,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":0.6757206738901165
+          }
+        },
+       "1QAZ_A":{
+         "MLE":0.5926604886151452,
+         "Evolutionary time parameter":{
+           "ID":"t",
+           "MLE":3.578651226201201
+          }
+        }
+      }
+    },
+   "Trees":[
+    ["(((UniRef90_UPI0003B37235:0.169367,UniRef90_UPI00037BA4C9:0.159051)Node2:0.193628,UniRef90_E8V6F6:0.331029)Node1:0.392745,((UniRef90_K9HKA5:0.238507,((((UniRef90_UPI000693F76C:0.365311,(UniRef90_UPI0006950209:0.158168,UniRef90_W7QEQ1:0.231742)Node14:0.127172)Node12:0.0375109,((((UniRef90_UPI00028907CC:0.186095,UniRef90_UPI000487E449:0.2295)Node20:0.0856964,UniRef90_W7QMF7:0.19459)Node19:0.218608,(UniRef90_A0A0F4R7M9:0.18196,UniRef90_A0A098RF23:0.180908)Node24:0.0286946)Node18:0.0641584,(UniRef90_S2L105:0.205644,UniRef90_UPI0005BE33C2:0.172428)Node27:0.0243598)Node17:0.036581)Node11:0.118778,UniRef90_UPI00068C8111:0.284132)Node10:0.0492106,(UniRef90_UPI000371DB16:0.197883,UniRef90_UPI000374C630:0.238925)Node31:0.0352763)Node9:0.0923411)Node7:0.689889,((((UniRef90_UPI00054E8B75:0.158784,((UniRef90_UPI000476103C:0.153812,(UniRef90_A0A0J5W3Z2:0.0345085,((UniRef90_Q39MU7:0.0943958,(((UniRef90_A0A071M1U3:0.0985564,UniRef90_A0A0G3Z344:0.0773389)Node49:0.0284633,UniRef90_A0A0G3X4Y0:0.033609)Node48:0.0886891,UniRef90_A0A070C1Y0:0.0623164)Node47:0.00777743)Node45:0.00726581,UniRef90_A0A088UM11:0.179914)Node44:0.0227451)Node42:0.0397907)Node40:0.0933865,UniRef90_B2UH07:0.13684)Node39:0.182384)Node37:0.14708,(UniRef90_UPI00068D044B:0.374282,(UniRef90_UPI00067E6246:0.0265104,(UniRef90_U1ID32:0.0505242,UniRef90_UPI00067A8254:0.0679884)Node60:0.0628801)Node58:0.270407)Node56:0.0509613)Node36:0.686911,(UniRef90_E8V0N6:0.890897,((UniRef90_A0A0F3IVH0:0.826739,(UniRef90_A0A0H1RDZ2:0.655203,((UniRef90_I4N1H4:0.369592,UniRef90_A0A0M3F518:0.475728)Node71:0.187244,UniRef90_UPI00036938D4:0.642963)Node70:0.361931)Node68:0.164808)Node66:0.144141,(UniRef90_UPI000700C64E:0.68154,(UniRef90_A0A0A8BI75:0.280718,(UniRef90_UPI0006C892F3:0.115638,UniRef90_F7SXN4:0.0807134)Node79:0.283621)Node77:0.399031)Node75:0.23634)Node65:0.013732)Node63:0.0855687)Node35:0.385819,UniRef90_UPI00047FD868:1.21117)Node34:0.0778191)Node6:0.111906,1QAZ_A:0.59266)"]
+    ],
+   "LogL":-22797.68037745143,
+   "parameters":291
+  }
+}
