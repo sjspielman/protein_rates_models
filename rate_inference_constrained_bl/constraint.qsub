@@ -20,7 +20,7 @@ mkdir -p $RESULTPATH
 HYPATH=/home/sjspielman/hyphy
 MPI=$HYPATH/HYPHYMPI
 LIBPATH=$HYPATH/res
-BATCHFILE=RESULTPATH=$PROJPATH/rate_inference_constrained_bl/LEISR_branchlengths.bf
+BATCHFILE=$PROJPATH/rate_inference_constrained_bl/LEISR_branchlengths.bf
 
 for MODEL in LG WAG JC69; do
     for CONSTRAINT in gamma one five; do 
