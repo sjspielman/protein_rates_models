@@ -1,0 +1,30 @@
+#!/bin/bash
+#PBS -N meanbl
+#PBS -q avx
+#PBS -l nodes=2:ppn=32
+#PBS -e e.$PBS_JOBNAME-$PBS_JOBID
+#PBS -o o.$PBS_JOBNAME-$PBS_JOBID
+
+
+export PATH=/usr/local/bin:$PATH
+FILE=$1
+CONSTRAINT1=$2
+
+PROJPATH=/home/sjspielman/leisr_rates_across_models
+DATAPATH=$PROJPATH/data/enzyme
+RESULTPATH=$PROJPATH/rate_inference_constrained_bl/meanbl_constraint_inference
+mkdir -p $RESULTPATH
+
+
+HYPATH=/home/sjspielman/hyphy
+MPI=$HYPATH/HYPHYMPI
+LIBPATH=$HYPATH/res
+BATCHFILE=$PROJPATH/rate_inference_constrained_bl/LEISR_branchlengths.bf
+
+for MODEL in LG WAG JC69; do
+    JSON=$RESULTPATH/$FILE-meanbl.$MODEL.LEISR.json
+    if [ ! -e $JSON ]; then
+        /opt/scyld/openmpi/1.6.3/gnu/bin/mpirun -np 64 $MPI LIBPATH=$LIBPATH $BATCHFILE ${DATAPATH}/$FILE y $MODEL $CONSTRAINT
+        mv ${DATAPATH}/$FILE.LEISR.json $JSON
+    fi
+done

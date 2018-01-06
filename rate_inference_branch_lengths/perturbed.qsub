@@ -1,0 +1,34 @@
+#!/bin/bash
+#PBS -N leisr-perturbedbl
+#PBS -q avx
+#PBS -l nodes=2:ppn=32
+#PBS -e e.$PBS_JOBNAME-$PBS_JOBID
+#PBS -o o.$PBS_JOBNAME-$PBS_JOBID
+
+
+export PATH=/usr/local/bin:$PATH
+NAME=$1
+
+
+PROJPATH=/home/sjspielman/leisr_rates_across_models
+DATAPATH=$PROJPATH/data/enzyme_data_permuted_bl
+RESULTPATH=$PROJPATH/rate_inference_branch_lengths/perturbed_inference
+mkdir -p $RESULTPATH
+
+
+HYPATH=/home/sjspielman/hyphy
+MPI=$HYPATH/HYPHYMPI
+LIBPATH=$HYPATH/res
+BATCHFILE=$PROJPATH/rate_inference_branch_lengths/LEISR_branchlengths.bf
+
+CONSTRAINT=input
+for MODEL in LG WAG JC69; do
+    for X in 1 2 3 4 5 6 7 8 9 10; do
+        FILE=${NAME}_permuted_bl_${X}.fna
+        JSON=$RESULTPATH/$FILE.$MODEL.LEISR.json
+        if [ ! -e $JSON ]; then
+            /opt/scyld/openmpi/1.6.3/gnu/bin/mpirun -np 64 $MPI LIBPATH=$LIBPATH $BATCHFILE ${DATAPATH}/$FILE y $MODEL $CONSTRAINT
+            mv ${DATAPATH}/$FILE.LEISR.json $JSON
+       fi
+    done
+done
