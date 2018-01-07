@@ -1,21 +1,18 @@
 #!/bin/bash
-#PBS -N shuffledAA
+#PBS -N rand_AA
 #PBS -q avx
 #PBS -l nodes=2:ppn=32
 #PBS -e e.$PBS_JOBNAME-$PBS_JOBID
 #PBS -o o.$PBS_JOBNAME-$PBS_JOBID
 
 
-## RUN: for X in {1..10}; do qsub shuffled.qsub -F "1A16_A ${X}"; done
-
 
 export PATH=/usr/local/bin:$PATH
 NAME=$1
-X=$2
 
 PROJPATH=/home/sjspielman/leisr_rates_across_models
-DATAPATH=$PROJPATH/data/shuffled_aminos
-RESULTPATH=$PROJPATH/rate_inference_shuffled/shuffled_inference
+DATAPATH=$PROJPATH/data/randomized_amino_acids
+RESULTPATH=$PROJPATH/rate_inference_randomized_amino_acids
 mkdir -p $RESULTPATH
 
 
@@ -27,10 +24,13 @@ BATCHFILE=$LIBPATH/TemplateBatchFiles/LEISR.bf
 RV=No
 FILE=${NAME}_shuffledAA_${X}.fna
 
-for MODEL in LG WAG JC69; do
-    JSON=$RESULTPATH/$FILE.$MODEL.LEISR.json
-    if [ ! -e $JSON ]; then
-        /opt/scyld/openmpi/1.6.3/gnu/bin/mpirun -np 64 $MPI LIBPATH=$LIBPATH  $BATCHFILE ${DATAPATH}/$FILE y Protein $MODEL $RV
-        mv ${DATAPATH}/$FILE.LEISR.json $JSON
-    fi
+for X in {1..10}; do
+    FILE=${NAME}_randomized_aa_${X}.fna
+    for MODEL in LG WAG JC69; do
+        JSON=$RESULTPATH/$FILE.$MODEL.LEISR.json
+        if [ ! -e $JSON ]; then
+            /opt/scyld/openmpi/1.6.3/gnu/bin/mpirun -np 64 $MPI LIBPATH=$LIBPATH  $BATCHFILE ${DATAPATH}/$FILE y Protein $MODEL $RV
+            mv ${DATAPATH}/$FILE.LEISR.json $JSON
+        fi
+    done
 done
