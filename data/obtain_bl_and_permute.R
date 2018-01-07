@@ -11,7 +11,7 @@ set.seed(101188) # I'm extra creative
 datapath <- paste0("trees/")
 files <- dir(path = datapath, pattern = "*tre")
 
-permpath <- "trees_permuted_bl/"
+permpath <- "permuted_branch_lengths/trees_permuted_bl/"
 
 
 bldf <- data.frame(dataset = as.character(), meanbl = as.numeric(), medianbl = as.numeric(), treelength = as.numeric())
