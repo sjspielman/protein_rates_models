@@ -22,7 +22,6 @@ MPI=$HYPATH/HYPHYMPI
 LIBPATH=$HYPATH/res
 BATCHFILE=$LIBPATH/TemplateBatchFiles/LEISR.bf
 RV=No
-FILE=${NAME}_shuffledAA_${X}.fna
 
 for X in {1..10}; do
     FILE=${NAME}_randomized_aa_${X}.fna
