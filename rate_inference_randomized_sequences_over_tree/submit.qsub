@@ -23,7 +23,7 @@ RV=No
 for X in {1..10}; do
     FILE=${NAME}_randomized_sequences_${X}.fna
     for MODEL in LG WAG JC69; do
-        JSON=$RESULTPATH/$FILE.$MODEL.LEISR.json
+        JSON=$RESULTPATH/${NAME}_randomizedsequences_${X}.$MODEL.LEISR.json
         if [ ! -e $JSON ]; then
             /opt/scyld/openmpi/1.6.3/gnu/bin/mpirun -np 64 $MPI LIBPATH=$LIBPATH  $BATCHFILE ${DATAPATH}/$FILE y Protein $MODEL $RV
             mv ${DATAPATH}/$FILE.LEISR.json $JSON

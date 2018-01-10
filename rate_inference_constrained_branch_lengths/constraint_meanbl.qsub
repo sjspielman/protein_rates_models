@@ -23,7 +23,7 @@ BATCHFILE=$PROJPATH/rate_inference_branch_lengths/LEISR_branchlengths.bf
 
 FILE=${NAME}.fna
 for MODEL in LG WAG JC69; do
-    JSON=$RESULTPATH/$NAME_meanbl.fna.$MODEL.LEISR.json
+    JSON=$RESULTPATH/$NAME_meanbl.$MODEL.LEISR.json
     if [ ! -e $JSON ]; then
         /opt/scyld/openmpi/1.6.3/gnu/bin/mpirun -np 64 $MPI LIBPATH=$LIBPATH $BATCHFILE ${DATAPATH}/$FILE y $MODEL value $CONSTRAINT
         mv ${DATAPATH}/$FILE.LEISR.json $JSON
