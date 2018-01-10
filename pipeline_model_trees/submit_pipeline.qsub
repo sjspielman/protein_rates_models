@@ -17,6 +17,7 @@ CPU=64
 PROJPATH=/home/sjspielman/leisr_rates_across_models
 DATAPATH=$PROJPATH/data/fasta
 PIPEPATH=$PROJPATH/pipeline_model_trees
+JCPATH=$PIPEPATH/jc69raxmat
 RESULTPATH=$PIPEPATH/inference-${TREEMODEL}
 mkdir -p $RESULTPATH
 
@@ -32,10 +33,8 @@ SUFFIX=$TREEMODEL-$NAME
 TREEMODELRAX=PROTCAT${TREEMODEL}F
 FASTA=${DATAPATH}/${NAME}.fasta
 if [ $TREEMODEL == "JC69" ]; then
-
-    
-
-    /home/sjspielman/bin/raxmlHPC-PTHREADS-SSE3 -T $CPU -p 101188 -s $FASTA -m PROTCATLGF -P $PIPEPATH/jc69.raxmat -n $SUFFIX
+    JCRAXMAT=${JCPATH}/JC69_${NAME}.raxmat
+    /home/sjspielman/bin/raxmlHPC-PTHREADS-SSE3 -T $CPU -p 101188 -s $FASTA -m PROTCATLGF -P $JCRAXMAT -n $SUFFIX
 else
     /home/sjspielman/bin/raxmlHPC-PTHREADS-SSE3 -T $CPU -p 101188 -s $FASTA -m $TREEMODELRAX -n $SUFFIX
 fi
