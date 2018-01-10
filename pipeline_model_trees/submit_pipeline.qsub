@@ -9,7 +9,7 @@
 export PATH=/usr/local/bin:$PATH
 
 NAME=$1      ##### dataset
-TREEMODEL=$2 ##### JC69, WAG, LG, JTT, MTMAM
+TREEMODEL=$2 ##### JC69, WAG, LG, JTT
 
 CPU=64
 
@@ -28,26 +28,34 @@ BATCHFILE=$LIBPATH/TemplateBatchFiles/LEISR.bf
 
 
 ##### raxml tree ######
+SUFFIX=$TREEMODEL-$NAME
 TREEMODELRAX=PROTCAT${TREEMODEL}F
 FASTA=${DATAPATH}/${NAME}.fasta
 if [ $TREEMODEL == "JC69" ]; then
-    /home/sjspielman/bin/raxmlHPC-PTHREADS-SSE3 -T $CPU -p 101188 -s $FASTA -m $TREEMODELRAX -P $PIPEPATH/jc69.raxmat -n $TREEMODEL
+
+    
+
+    /home/sjspielman/bin/raxmlHPC-PTHREADS-SSE3 -T $CPU -p 101188 -s $FASTA -m PROTCATLGF -P $PIPEPATH/jc69.raxmat -n $SUFFIX
 else
-    /home/sjspielman/bin/raxmlHPC-PTHREADS-SSE3 -T $CPU -p 101188 -s $FASTA -m $TREEMODELRAX -n $TREEMODEL
+    /home/sjspielman/bin/raxmlHPC-PTHREADS-SSE3 -T $CPU -p 101188 -s $FASTA -m $TREEMODELRAX -n $SUFFIX
 fi
 
-TREEFILE=${NAME}_${TREEMODEL}.tre
-FNA=${NAME}_${TREEMODEL}.fna
-mv RAxML_bestTree.$TREEMODEL $TREEFILE
+TREEFILE=${NAME}_${TREEMODEL}tree.tre
+FNA=${NAME}_${TREEMODEL}tree.fna
+mv RAxML_bestTree.$SUFFIX ${RESULTPATH}/$TREEFILE
+mv RAxML_info.$SUFFIX ${RESULTPATH}/${NAME}_${TREEMODEL}tree_raxmlinfo.txt
+
+rm ~/RAxML_*
+
+cd $RESULTPATH
 cat $FASTA $TREEFILE > $FNA
 
 #### rate inference under a few models ####
-for RATEMODEL in JC69 WAG LG JTT MTMAM;
-    JSON=$RESULTPATH/${NAME}_${TREEMODEL}.fna.${RATEMODEL}.LEISR.json
-        if [ ! -e $JSON ]; then
-            MP CPU=$CPU LIBPATH=$LIBPATH $BATCHFILE $FNA y Protein $RATEMODEL No
-            mv $FNA.LEISR.json $JSON
-       fi
-    done
+for RATEMODEL in JC69 WAG LG JTT; do
+    JSON=$RESULTPATH/${FNA}.${RATEMODEL}.LEISR.json
+    if [ ! -e $JSON ]; then
+        $MP CPU=$CPU LIBPATH=$LIBPATH $BATCHFILE ${RESULTPATH}/$FNA y Protein $RATEMODEL No
+        mv $FNA.LEISR.json $JSON
+    fi
 done
 
