@@ -106,7 +106,7 @@ if (leisr.constraint_choice == "input"){
     if (leisr.constraint_choice == "gamma"){
         // random gamma distribution
         utility.ForEachPair (leisr.initial_bl, "_key_","_value_", "
-            leisr.initial_bl[key] = utility.Map (_value_, '_v2_', '{terms.fit.MLE : random.gamma(0.75, 0.75)}');    
+            leisr.initial_bl[key] = utility.Map (_value_, '_v2_', '{terms.fit.MLE : random.gamma(0.1, 0.1)}');    
         ");
     }
     if (leisr.constraint_choice == "value"){
