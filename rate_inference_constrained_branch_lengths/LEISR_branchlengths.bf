@@ -80,7 +80,8 @@ leisr.baseline_model_desc      = "leisr.Baseline.ModelDescription";
 
 /***************************** CONSTRAINT CHOICE ******************************/
 leisr.constraint_choice =  io.SelectAnOption({
-                                                {"gamma", "gamma w/ a,b=0.75"},
+                                                {"gamma", "gamma w/ a,b=0.1"},
+                                                {"random", "runif(0,0.75)"},
                                                 {"input", "fix to input values."},
                                                 {"value", "provide a value."}
                                              },"How to constrain branch lengths?");
@@ -107,6 +108,11 @@ if (leisr.constraint_choice == "input"){
         // random gamma distribution
         utility.ForEachPair (leisr.initial_bl, "_key_","_value_", "
             leisr.initial_bl[key] = utility.Map (_value_, '_v2_', '{terms.fit.MLE : random.gamma(0.1, 0.1)}');    
+        ");
+    }
+    if (leisr.constraint_choice == "random"){
+        utility.ForEachPair (leisr.initial_bl, "_key_","_value_", "
+            leisr.initial_bl[key] = utility.Map (_value_, '_v2_', '{terms.fit.MLE : Random(0, 0.35)}');
         ");
     }
     if (leisr.constraint_choice == "value"){
