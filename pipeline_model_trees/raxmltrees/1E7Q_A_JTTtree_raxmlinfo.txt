@@ -1,0 +1,71 @@
+
+
+This is RAxML version 8.2.9 released by Alexandros Stamatakis on July 20 2016.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 442 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 36.66%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 1 inferences on the original alignment using 1 distinct randomized MP trees
+
+All free model parameters will be estimated by RAxML
+ML estimate of 25 per site rate categories
+
+Likelihood of final tree will be evaluated and optimized under GAMMA
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 442
+Name: No Name Provided
+DataType: AA
+Substitution Matrix: JTT
+Using empirical base frequencies
+
+
+
+
+RAxML was called as follows:
+
+/home/sjspielman/bin/raxmlHPC-PTHREADS-AVX -T 64 -p 101188 -s /home/sjspielman/leisr_rates_across_models/data/fasta/1E7Q_A.fasta -m PROTCATJTTF -n JTT-1E7Q_A 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.093 0.054 0.052 0.053 0.012 0.036 0.064 0.073 0.030 0.060 0.094 0.049 0.029 0.036 0.044 0.051 0.049 0.010 0.042 0.066 
+
+Inference[0]: Time 1036.881684 CAT-based likelihood -80031.947726, best rearrangement setting 20
+alpha[0]: 1.000000 
+
+
+Conducting final model optimizations on all 1 trees under GAMMA-based models ....
+
+Inference[0] final GAMMA-based Likelihood: -79417.163113 tree written to file /home/sjspielman/leisr_rates_across_models/pipeline_model_trees/raxmltrees/RAxML_result.JTT-1E7Q_A
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -79417.163113 .... 
+
+Final GAMMA-based Score of best tree -79411.708234
+
+Program execution info written to /home/sjspielman/leisr_rates_across_models/pipeline_model_trees/raxmltrees/RAxML_info.JTT-1E7Q_A
+Best-scoring ML tree written to: /home/sjspielman/leisr_rates_across_models/pipeline_model_trees/raxmltrees/RAxML_bestTree.JTT-1E7Q_A
+
+Overall execution time: 1333.496020 secs or 0.370416 hours or 0.015434 days
+

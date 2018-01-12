@@ -1,0 +1,18 @@
+Inference[0]: Time 1786.499362 CAT-based likelihood -67997.239076, best rearrangement setting 10
+alpha[0]: 1.000000 
+
+
+Conducting final model optimizations on all 1 trees under GAMMA-based models ....
+
+Inference[0] final GAMMA-based Likelihood: -67829.625995 tree written to file /home/sjspielman/leisr_rates_across_models/pipeline_model_trees/raxmltrees/RAxML_result.JC69-1MQW_A
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -67829.625995 .... 
+
+Final GAMMA-based Score of best tree -67828.584967
+
+Program execution info written to /home/sjspielman/leisr_rates_across_models/pipeline_model_trees/raxmltrees/RAxML_info.JC69-1MQW_A
+Best-scoring ML tree written to: /home/sjspielman/leisr_rates_across_models/pipeline_model_trees/raxmltrees/RAxML_bestTree.JC69-1MQW_A
+
+Overall execution time: 2081.941274 secs or 0.578317 hours or 0.024097 days
+

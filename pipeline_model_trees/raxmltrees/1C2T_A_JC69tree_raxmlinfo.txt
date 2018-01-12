@@ -1,0 +1,71 @@
+
+
+This is RAxML version 8.2.9 released by Alexandros Stamatakis on July 20 2016.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 272 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 23.94%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 1 inferences on the original alignment using 1 distinct randomized MP trees
+
+All free model parameters will be estimated by RAxML
+ML estimate of 25 per site rate categories
+
+Likelihood of final tree will be evaluated and optimized under GAMMA
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 272
+Name: No Name Provided
+DataType: AA
+Substitution Matrix File name: /home/sjspielman/leisr_rates_across_models/pipeline_model_trees/jc69raxmat/JC69_1C2T_A.raxmat
+Using base frequencies as provided in the model file
+
+
+
+
+RAxML was called as follows:
+
+/home/sjspielman/bin/raxmlHPC-PTHREADS-AVX -T 64 -p 101188 -s /home/sjspielman/leisr_rates_across_models/data/fasta/1C2T_A.fasta -m PROTCATLGF -P /home/sjspielman/leisr_rates_across_models/pipeline_model_trees/jc69raxmat/JC69_1C2T_A.raxmat -n JC69-1C2T_A 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.107 0.055 0.034 0.066 0.008 0.050 0.058 0.077 0.041 0.066 0.103 0.033 0.020 0.033 0.048 0.051 0.037 0.006 0.027 0.079 
+
+Inference[0]: Time 657.378936 CAT-based likelihood -64042.140486, best rearrangement setting 15
+alpha[0]: 1.000000 
+
+
+Conducting final model optimizations on all 1 trees under GAMMA-based models ....
+
+Inference[0] final GAMMA-based Likelihood: -63705.624576 tree written to file /home/sjspielman/leisr_rates_across_models/pipeline_model_trees/raxmltrees/RAxML_result.JC69-1C2T_A
+
+
+Starting final GAMMA-based thorough Optimization on tree 0 likelihood -63705.624576 .... 
+
+Final GAMMA-based Score of best tree -63698.674642
+
+Program execution info written to /home/sjspielman/leisr_rates_across_models/pipeline_model_trees/raxmltrees/RAxML_info.JC69-1C2T_A
+Best-scoring ML tree written to: /home/sjspielman/leisr_rates_across_models/pipeline_model_trees/raxmltrees/RAxML_bestTree.JC69-1C2T_A
+
+Overall execution time: 850.665105 secs or 0.236296 hours or 0.009846 days
+

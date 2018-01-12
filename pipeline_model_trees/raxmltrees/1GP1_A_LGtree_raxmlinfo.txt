@@ -1,0 +1,7 @@
+Final GAMMA-based Score of best tree -50782.433003
+
+Program execution info written to /home/sjspielman/leisr_rates_across_models/pipeline_model_trees/raxmltrees/RAxML_info.LG-1GP1_A
+Best-scoring ML tree written to: /home/sjspielman/leisr_rates_across_models/pipeline_model_trees/raxmltrees/RAxML_bestTree.LG-1GP1_A
+
+Overall execution time: 28598.734263 secs or 7.944093 hours or 0.331004 days
+
