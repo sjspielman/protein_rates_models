@@ -1,0 +1,51 @@
+outside %>% 
+    inner_join(types) %>%
+    select(dataset, site, type) %>% unique() %>%
+    group_by(dataset, type) %>%
+    tally() %>% filter(dataset != "ATP8") %>%
+    left_join(site.count) %>%
+    mutate(perc = n/total) %>% 
+    ungroup() %>%
+    group_by(type) %>%
+    ggplot(aes(x = type, y=perc))+geom_boxplot()
+ 
+    
+outside %>% 
+    inner_join(types) %>% 
+    filter(type == "enzyme") %>%
+    select(dataset, site, main.model, diff.models) %>%
+    group_by(main.model, site) %>% 
+    tally() %>% arrange(site) %>% 
+    filter(n==5) %>% 
+    ggplot(aes(main.model)) + geom_bar() -> e
+
+outside %>% 
+    inner_join(types) %>% 
+    filter(type == "mito") %>%
+    select(dataset, site, main.model, diff.models) %>%
+    group_by(main.model, site) %>% 
+    tally() %>% arrange(site) %>% 
+    filter(n==5) %>% 
+    ggplot(aes(main.model)) + geom_bar() -> m
+
+outside %>% 
+    inner_join(types) %>% 
+    filter(type == "chloro") %>%
+    select(dataset, site, main.model, diff.models) %>%
+    group_by(main.model, site) %>% 
+    tally() %>% arrange(site) %>% 
+    filter(n==5) %>% 
+    ggplot(aes(main.model)) + geom_bar() -> ch
+
+
+outside %>% 
+    inner_join(types) %>% 
+    filter(type == "virus") %>%
+    select(dataset, site, main.model, diff.models) %>%
+    group_by(main.model, site) %>% 
+    tally() %>% arrange(site) %>% 
+    filter(n==5) %>% 
+    ggplot(aes(main.model)) + geom_bar() -> v
+    
+
+plot_grid(e, v, m, ch)
