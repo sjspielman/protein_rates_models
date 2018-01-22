@@ -113,10 +113,10 @@ def main():
     final_phase = parsed_json[terms.final_phase][terms.global_]
     
     matrix = rev_json_to_array(final_phase, terms)
-    frequencies = efv_json_to_array(final_phase, terms)
+    #frequencies = efv_json_to_array(final_phase, terms)
     
+    ### Add this printed business to hyphy, no need for frequencies because they will be the same by definition.. ###
     matrix_to_hyphy(matrix)
-    print frequencies 
     
 #     for headkey in headkeys:
 #             if str(headkey).startswith("REV-"):   # or str(headkey) == "WAG-Phase-0":
