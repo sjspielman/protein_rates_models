@@ -1,0 +1,1673 @@
+{
+ "input":{
+   "file name":"/home/sjspielman/leisr_rates_across_models/data/organelle_data/PETN.fna",
+   "number of sequences":340,
+   "number of sites":49,
+   "partition count":1,
+   "trees":{
+     "0":"(((YP_009138251_1_petN:1e-10,YP_009390632_1_petN:1e-10,YP_009232123_1_petN:1e-10)Node2:5e-09,YP_001430036_1_petN:0.0758891)Node1:0.0375945,(((YP_009231822_1_petN:1e-10,YP_009231904_1_petN:1e-10,YP_009371083_1_petN:1e-10,YP_009434393_1_petN:1e-10)Node9:0.0330447,(YP_009161016_1_petN:1e-10,YP_009370968_1_petN:1e-10,YP_009336184_1_petN:1e-10,YP_009161353_1_petN:1e-10)Node14:0.026277)Node8:0.00246993,((YP_009375685_1_petN:1e-10,YP_009299394_1_petN:1e-10,YP_008575616_1_petN:1e-10,YP_009053155_1_petN:1e-10,YP_008577826_1_petN:1e-10,YP_009410295_1_petN:1e-10,YP_008474289_1_petN:1e-10,YP_009310644_1_petN:1e-10,YP_008593015_1_petN:1e-10,YP_005087782_1_petN:1e-10,YP_762254_1_petN:1e-10,YP_004564357_1_petN:1e-10,YP_009054212_1_petN:1e-10,YP_004891594_1_petN:1e-10,NP_783225_1_petN:1e-10,YP_001430102_1_petN:1e-10,YP_009333915_1_petN:1e-10,YP_009334398_1_petN:1e-10,YP_009270038_1_petN:1e-10,YP_009343265_1_petN:1e-10,YP_009242952_1_petN:1e-10,YP_009265927_1_petN:1e-10,YP_009192396_1_petN:1e-10,YP_009251969_1_petN:1e-10,YP_009141943_1_petN:1e-10,YP_009410876_1_petN:1e-10,YP_009354023_1_petN:1e-10,YP_009144972_1_petN:1e-10,YP_009269837_1_petN:1e-10,YP_009409963_1_petN:1e-10,YP_009265429_1_petN:1e-10,YP_009264601_1_petN:1e-10,YP_009363773_1_petN:1e-10,YP_009386047_1_petN:1e-10,YP_001542440_1_petN:1e-10,YP_009334905_1_petN:1e-10,YP_008577656_1_petN:1e-10,YP_009387124_1_petN:1e-10,YP_009353935_1_petN:1e-10,YP_009413421_1_petN:1e-10,YP_008082574_1_petN:1e-10,YP_009242320_1_petN:1e-10,YP_009348248_1_petN:1e-10,YP_009161547_1_petN:1e-10,YP_009171146_1_petN:1e-10,YP_009374070_1_petN:1e-10,YP_002720105_1_petN:1e-10,YP_009386130_1_petN:1e-10,YP_009341572_1_petN:1e-10,YP_009384306_1_petN:1e-10,YP_009245003_1_petN:1e-10,YP_009259780_1_petN:1e-10,YP_009138903_1_petN:1e-10,YP_009307119_1_petN:1e-10,YP_009171677_1_petN:1e-10,YP_009266511_1_petN:1e-10,YP_009122857_1_petN:1e-10,YP_008593104_1_petN:1e-10,YP_009131789_1_petN:1e-10,YP_009271367_1_petN:1e-10,YP_009354198_1_petN:1e-10,YP_009138455_1_petN:1e-10,YP_009401818_1_petN:1e-10,YP_009390802_1_petN:1e-10,YP_009057917_1_petN:1e-10,YP_009264103_1_petN:1e-10,YP_009052657_1_petN:1e-10,YP_009128833_1_petN:1e-10,YP_002364491_1_petN:1e-10,YP_009375345_1_petN:1e-10,YP_001123366_1_petN:1e-10,YP_009298791_1_petN:1e-10,YP_009335581_1_petN:1e-10,YP_009316886_1_petN:1e-10,YP_009341236_1_petN:1e-10,YP_009155421_1_petN:1e-10,YP_008081568_1_petN:1e-10,YP_874642_1_petN:1e-10,YP_009154771_1_petN:1e-10,YP_009161914_1_petN:1e-10,YP_635632_1_petN:1e-10,YP_008592926_1_petN:1e-10,YP_009253150_1_petN:1e-10,YP_009335326_1_petN:1e-10,YP_009428365_1_petN:1e-10,YP_009410378_1_petN:1e-10,YP_009411208_1_petN:1e-10,YP_009431995_1_petN:1e-10,YP_009327553_1_petN:1e-10,YP_009308071_1_petN:1e-10,YP_009169661_1_petN:1e-10,YP_009176501_1_petN:1e-10,YP_009374580_1_petN:1e-10,YP_009434016_1_petN:1e-10,YP_009053650_1_petN:1e-10,YP_001687449_1_petN:1e-10,YP_004935545_1_petN:1e-10,YP_009232822_1_petN:1e-10,YP_009326282_1_petN:1e-10,YP_009262420_1_petN:1e-10,YP_009229471_1_petN:1e-10,YP_009130954_1_petN:1e-10,YP_009172053_1_petN:1e-10,YP_009233392_1_petN:1e-10,YP_001586175_1_petN:1e-10,YP_009374665_1_petN:1e-10,YP_009368942_1_petN:1e-10,YP_009343099_1_petN:1e-10,YP_009338334_1_petN:1e-10,YP_009236489_1_petN:1e-10,YP_009266875_1_petN:1e-10,YP_008081724_1_petN:1e-10,YP_009111722_1_petN:1e-10,YP_009059342_1_petN:1e-10,YP_009260971_1_petN:1e-10,YP_009260141_1_petN:1e-10,YP_009376110_1_petN:1e-10,YP_004563860_1_petN:1e-10,YP_009384802_1_petN:1e-10,YP_009335497_1_petN:1e-10,YP_009318959_1_petN:1e-10,YP_009357260_1_petN:1e-10,YP_009309618_1_petN:1e-10,YP_009356943_1_petN:1e-10,YP_009327668_1_petN:1e-10,YP_009401962_1_petN:1e-10,YP_009265595_1_petN:1e-10,YP_009409801_1_petN:1e-10,YP_009253639_1_petN:1e-10,YP_009047925_1_petN:1e-10,YP_009243209_1_petN:1e-10,YP_009264518_1_petN:1e-10,YP_009385964_1_petN:1e-10,YP_009131872_1_petN:1e-10,YP_009346679_1_petN:1e-10,YP_009371790_1_petN:1e-10,YP_009317981_1_petN:1e-10,YP_009028461_1_petN:1e-10,YP_009377045_1_petN:1e-10,YP_009401027_1_petN:1e-10,YP_009261220_1_petN:1e-10,YP_009299200_1_petN:1e-10,YP_009378837_1_petN:1e-10,YP_740110_1_petN:1e-10,YP_009307737_1_petN:1e-10,YP_740558_1_petN:1e-10,YP_007890366_1_petN:1e-10,YP_009367325_1_petN:1e-10,YP_001837345_1_petN:1e-10,YP_009242232_1_petN:1e-10,YP_009421436_1_petN:1e-10,YP_009390298_1_petN:1e-10,YP_009410129_1_petN:1e-10,YP_009132932_1_petN:1e-10,YP_009260639_1_petN:1e-10,YP_009327297_1_petN:1e-10,YP_009263024_1_petN:1e-10,YP_009380207_1_petN:1e-10,YP_009262198_1_petN:1e-10,YP_009438128_1_petN:1e-10,YP_009267882_1_petN:1e-10,YP_009384389_1_petN:1e-10,YP_009251886_1_petN:1e-10,YP_009365014_1_petN:1e-10,YP_009316615_1_petN:1e-10,YP_008576296_1_petN:1e-10,YP_009235957_1_petN:1e-10,YP_009334000_1_petN:1e-10,YP_009334483_1_petN:1e-10,YP_009253243_1_petN:1e-10,YP_009373985_1_petN:1e-10,YP_009409458_1_petN:1e-10,YP_009308724_1_petN:1e-10,YP_009028378_1_petN:1e-10,YP_009261137_1_petN:1e-10,YP_009242856_1_petN:1e-10,YP_009401674_1_petN:1e-10,YP_009430707_1_petN:1e-10,YP_007474445_1_petN:1e-10,YP_009378753_1_petN:1e-10,YP_009298353_1_petN:1e-10,YP_009266411_1_petN:1e-10,YP_009254208_1_petN:1e-10,YP_009421943_1_petN:1e-10,YP_009305459_1_petN:1e-10,YP_009054825_1_petN:1e-10,YP_009309066_1_petN:1e-10,YP_009343603_1_petN:1e-10,YP_009269640_1_petN:1e-10,YP_009051555_1_petN:1e-10,YP_009186246_1_petN:1e-10,YP_008963684_1_petN:1e-10,YP_913180_1_petN:1e-10,YP_007507104_1_petN:1e-10,YP_009384555_1_petN:1e-10,YP_009169349_1_petN:1e-10,YP_009183585_1_petN:1e-10,YP_009260058_1_petN:1e-10,YP_009376025_1_petN:1e-10,YP_665551_1_petN:1e-10,YP_009024244_1_petN:1e-10,YP_009232992_1_petN:1e-10,YP_009175998_1_petN:1e-10,YP_009179190_1_petN:1e-10,YP_009373816_1_petN:1e-10,YP_009228579_1_petN:1e-10,YP_009428168_1_petN:1e-10,YP_009308554_1_petN:1e-10,YP_009057144_1_petN:1e-10,YP_009335157_1_petN:1e-10,YP_009434496_1_petN:1e-10,YP_009121166_1_petN:1e-10,YP_008576891_1_petN:1e-10,YP_009234379_1_petN:1e-10,YP_784466_1_petN:1e-10,YP_009439358_1_petN:1e-10,YP_009386793_1_petN:1e-10,YP_024370_1_petN:1e-10,YP_009373320_1_petN:1e-10,YP_009373731_1_petN:1e-10,YP_009253066_1_petN:1e-10,YP_009310511_1_petN:1e-10,YP_001123023_1_petN:1e-10,YP_009052823_1_petN:1e-10,YP_009383046_1_petN:1e-10,YP_006503353_1_petN:1e-10,YP_009423904_1_petN:1e-10,YP_008576211_1_petN:1e-10,YP_009130315_1_petN:1e-10,YP_009260805_1_petN:1e-10,YP_009263190_1_petN:1e-10,YP_009267799_1_petN:1e-10,YP_009326197_1_petN:1e-10,YP_007317241_1_petN:1e-10,YP_009372470_1_petN:1e-10,YP_009024327_1_petN:1e-10,YP_009171972_1_petN:1e-10,YP_009233249_1_petN:1e-10)Node20:5e-09,(YP_009251637_1_petN:0.033125,YP_003587461_1_petN:0.0286804)Node259:6e-09)Node19:6e-09)Node7:5e-09,((YP_009129611_1_petN:0.0284495,(((YP_009408951_1_petN:5e-09,(YP_009338623_1_petN:0.033523,(YP_009338501_1_petN:1e-10,YP_009136388_1_petN:1e-10,YP_009433414_1_petN:1e-10,YP_009371280_1_petN:1e-10,YP_006503685_1_petN:1e-10,YP_009412908_1_petN:1e-10,YP_009430535_1_petN:1e-10,YP_009371450_1_petN:1e-10,YP_009024674_1_petN:1e-10)Node271:5e-09)Node269:5e-09)Node267:0.028391,((YP_009271560_1_petN:5e-09,((YP_009261774_1_petN:1e-10,YP_009410959_1_petN:1e-10,YP_009192868_1_petN:1e-10,YP_009363300_1_petN:1e-10,YP_009230730_1_petN:1e-10,YP_009164493_1_petN:1e-10,YP_009141609_1_petN:1e-10,YP_009387206_1_petN:1e-10,YP_009141684_1_petN:1e-10,YP_009232436_1_petN:1e-10)Node285:5e-09,YP_009327949_1_petN:0.0291758)Node284:6e-09)Node282:0.0271421,(YP_009241300_1_petN:0.06646,YP_009256988_1_petN:5e-09)Node297:0.0301541)Node281:0.00362952)Node266:5e-09,((YP_009231240_1_petN:1e-10,YP_009270729_1_petN:1e-10,YP_009255860_1_petN:1e-10,YP_009270817_1_petN:1e-10,YP_008993771_1_petN:1e-10,YP_009240592_1_petN:1e-10,YP_009123626_1_petN:1e-10,YP_009347441_1_petN:1e-10,YP_009161672_1_petN:1e-10,YP_009354398_1_petN:1e-10)Node301:5e-09,((YP_009430620_1_petN:1e-10,YP_009439971_1_petN:1e-10)Node313:5e-09,(YP_009420787_1_petN:1e-10,YP_009431635_1_petN:1e-10,YP_009431550_1_petN:1e-10,YP_009236273_1_petN:1e-10)Node316:5e-09)Node312:0.0283589)Node300:6e-09)Node265:5e-09)Node263:5e-09,((((YP_006460342_1_petN:1e-10,YP_001122805_1_petN:1e-10)Node324:0.0327734,((YP_008816244_1_petN:1e-10,YP_008145789_1_petN:1e-10,YP_009307551_1_petN:1e-10,YP_008146035_1_petN:1e-10,YP_001294345_1_petN:1e-10,YP_009241580_1_petN:1e-10,YP_009380378_1_petN:1e-10)Node328:5e-09,((YP_009422913_1_petN:1e-10,YP_009423174_1_petN:1e-10,YP_009423000_1_petN:1e-10,YP_009422739_1_petN:1e-10,YP_009423696_1_petN:1e-10)Node337:0.0653389,YP_009111653_1_petN:0.00627154)Node336:0.0298348)Node327:5e-09)Node323:0.0331269,(((YP_009424556_1_petN:0.0333548,YP_009424851_1_petN:5e-09)Node346:0.0334219,(YP_001294263_1_petN:5e-09,((YP_009308236_1_petN:1e-10,YP_009158422_1_petN:1e-10,YP_001023693_1_petN:1e-10)Node352:5e-09,((YP_004021274_1_petN:0.151417,YP_009414467_1_petN:0.0663714)Node357:0.0334941,((YP_007890236_1_petN:0.0458541,(YP_209552_1_petN:0.0591504,((YP_009421239_1_petN:5e-09,YP_009425190_1_petN:0.0343392)Node366:5e-09,(((YP_009421151_1_petN:5e-09,(YP_009427118_1_petN:0.069793,YP_009427030_1_petN:5e-09)Node373:0.0312369)Node371:5e-09,YP_009427557_1_petN:0.0332387)Node370:5e-09,(YP_009426156_1_petN:0.066288,YP_009183898_1_petN:0.0340401)Node377:5e-09)Node369:0.0325835)Node365:0.128662)Node363:0.0431204)Node361:0.00570695,((YP_009259078_1_petN:5e-09,(YP_002519541_1_petN:5e-09,((YP_009132471_1_petN:1e-10,YP_009388245_1_petN:1e-10,YP_009388091_1_petN:1e-10,YP_004276299_1_petN:1e-10)Node386:5e-09,YP_009249740_1_petN:6e-09)Node385:0.0350606)Node383:0.0352137)Node381:0.0292556,(YP_008965104_1_petN:5e-09,(YP_009388007_1_petN:0.0329535,YP_009193289_1_petN:0.0328679)Node394:5e-09)Node392:0.0299858)Node380:0.00961904)Node360:5e-09)Node356:5e-09)Node351:0.0342512)Node349:7.1024e-05)Node345:0.000207151,(NP_043014_1_petN:1e-10,YP_009247059_1_petN:1e-10)Node397:0.0337934)Node344:0.000147729)Node322:0.000148166,YP_009341770_1_petN:0.0265726)Node321:0.0285207)Node262:5e-09)"
+    }
+  },
+ "analysis":{
+   "info":"LEISR (Likelihood Estimation of Individual Site Rates) infer relative amino-acid or nucleotide rates from a fixed nucleotide or amino-acid alignment and tree, with possibility for partitions. Relative site-specific substitution rates are\n    inferred by first optimizing alignment-wide branch lengths, and then inferring a site-specific uniform tree scaler.",
+   "version":"0.4",
+   "citation":"Spielman, S.J. and Kosakovsky Pond, S.L. Relative evolutionary rate inference in HyPhy with LEISR. bioRxiv. https://doi.org/10.1101/206011. (2017); Pupko, T., Bell, R. E., Mayrose, I., Glaser, F. & Ben-Tal, N. Rate4Site: an algorithmic tool for the identification of functional regions in proteins by surface mapping of evolutionary determinants within their homologues. Bioinformatics 18, S71–S77 (2002).",
+   "authors":"Sergei L Kosakovsky Pond and Stephanie J Spielman",
+   "contact":"{spond,stephanie.spielman}@temple.edu"
+  },
+ "fits":{
+   "JTTF":{
+     "Log Likelihood":-491.0600536588568,
+     "estimated parameters":419,
+     "AIC-c":1841.792521110817,
+     "Rate Distributions":{
+      },
+     "Equilibrium frequencies":[
+      [0.08005702280912164],
+      [0.02021308523409794],
+      [0.0404411764705833],
+      [0.02057322929172105],
+      [0.06072929171668299],
+      [0.06234993997598686],
+      [0.02123349339736334],
+      [0.04236194477790588],
+      [0.02021308523409794],
+      [0.1209933973589452],
+      [0.06216986794717533],
+      [0.02129351740696719],
+      [0.02063325330132487],
+      [0.02039315726290949],
+      [0.04134153661464045],
+      [0.1011254501800719],
+      [0.04134153661464045],
+      [0.1213535414165682],
+      [0.06060924369747528],
+      [0.02057322929172103]
+      ]
+    }
+  },
+ "MLE":{
+   "headers":[
+    ["MLE", "Relative rate estimate at a site"],
+    ["Lower", "Lower bound of 95% profile likelihood CI"],
+    ["Upper", "Upper bound of 95% profile likelihood CI"],
+    ["LogL global", "Site log likelihood under the global (average rate) model fit"],
+    ["LogL local", "Site log likelihood under the local (site-specific rate) model fit"]
+    ],
+   "content":{
+     "0":[
+      [0, 0, 10000, -2.77788483476338, -2.77788483476338],
+      [0, 0, 10000, -2.80132913196492, -2.801329131964919],
+      [0, 0, 10000, -2.77788483476338, -2.77788483476338],
+      [0, 0, 10000, -3.8837645972782, -3.883764597278198],
+      [0, 0, 10000, -3.161504848587361, -3.16150484858736],
+      [0, 0, 10000, -2.774992569551235, -2.774992569551233],
+      [0, 0, 10000, -3.207906793497751, -3.207906793497749],
+      [5.936062325246414, 0.3054392915758123, 10000, -8.116282242661818, -7.243065652220212],
+      [1.265223286749907, 0.07128129236735298, 5.929357217644059, -8.658570429253157, -8.633567509693115],
+      [13.5273826609669, 4.636678381925305, 32.376418852352, -29.64878063516128, -21.54328935493013],
+      [0.4771408841871059, 0.02714486386395571, 2.1206881189546, -8.980686911304037, -8.627456957697193],
+      [2.567049569969557, 0.6338913919402349, 6.760108722843211, -20.15217324002806, -19.16567099432851],
+      [1.265840370570801, 0.390158869820026, 2.986222076470593, -22.35466942019582, -22.25363352134368],
+      [1.315872607395265, 0.3219390560844209, 3.538638505499669, -18.22876529666986, -18.12917779852651],
+      [3.458195901957955, 1.468426229833798, 6.837624142983543, -40.85606596347399, -37.21866021311551],
+      [2.269589620431, 0.8887402674571585, 4.744004886492235, -33.75725717054559, -32.24203878870765],
+      [1.223376030163381, 0.3023101453994268, 3.219020790549665, -18.93799816423282, -18.88177354608875],
+      [0, 0, 3.070094863380086, -3.430223013274354, -2.803307861277373],
+      [0.4094520841141361, 0.02332091109081337, 1.823472634963246, -9.84363463215292, -9.301557294267241],
+      [1.671816174872456, 0.5152070540303871, 3.955843412127178, -23.52347444294516, -23.08158717304032],
+      [0.5795092143614867, 0.03294571376210802, 2.592239962846557, -11.1334419665534, -10.95582405507669],
+      [0.7904567429862068, 0.1309148811356395, 2.467085801102151, -14.41645817827406, -14.35724640296215],
+      [0.4123298189292011, 0.02339623349370883, 1.856573150089568, -9.384379537629686, -8.857799705451008],
+      [0.3758585326161302, 0.02136434081053046, 1.681086148791024, -7.681471619120743, -7.01167520052293],
+      [1.292479659280211, 0.2131686367596055, 4.078328419227892, -16.18470382123426, -16.12524902391943],
+      [0.3621306876210162, 0.02064059550612, 1.603076937336803, -10.07958099051769, -9.338686404789271],
+      [0, 0, 1.387519141378958, -4.187538293201351, -2.801329131964919],
+      [0, 0, 0.8572345050263198, -4.52940890694092, -2.291393451894509],
+      [0.5789639998350502, 0.03291095410286432, 2.589261709091963, -9.603451078259674, -9.425054363198345],
+      [1.446489860066024, 0.356915635990309, 3.817610885312823, -19.288042316084, -19.10960394634792],
+      [0.5895400193005844, 0.03353387238083166, 2.629886616047163, -11.07573996480057, -10.90969915801634],
+      [0, 0, 0.7903500539893947, -4.531512610589935, -2.109047163744889],
+      [0.3998756465409869, 0.02269926167511073, 1.797608510920278, -8.708309845445365, -8.13726141171567],
+      [2.69386773298117, 0.4460281014674745, 8.411840244209468, -14.89913399243392, -14.17880113001714],
+      [0, 0, 1.542417696507456, -4.021897906751562, -2.774992569551233],
+      [0, 0, 1.314645597946811, -4.648095161696424, -3.18588755525384],
+      [0.9087347922117208, 0.150168253153043, 2.853566105887543, -16.79445410660849, -16.78514848330144],
+      [0, 0, 1.542417696507456, -4.021897906751562, -2.774992569551233],
+      [0.5898872392685979, 0.03352763568090349, 2.637938792679368, -9.634786643598833, -9.469426728722931],
+      [12.12265608092531, 0.6672187820262714, 71.58363604277999, -8.780872860276364, -7.235496667604109],
+      [0, 0, 10000, -3.892555862689369, -3.892555862689368],
+      [0, 0, 10000, -3.185887555253841, -3.18588755525384],
+      [0, 0, 10000, -2.10904716374489, -2.109047163744889],
+      [0, 0, 10000, -3.849352599680475, -3.849352599680475],
+      [0, 0, 10000, -3.892555862689369, -3.892555862689368],
+      [0, 0, 10000, -3.880851266739843, -3.880851266739842],
+      [0, 0, 10000, -2.774992569551235, -2.774992569551233],
+      [0, 0, 10000, -2.112019302155689, -2.112019302155689],
+      [0, 0, 10000, -3.883764597278198, -3.883764597278199]
+      ]
+    }
+  },
+ "branch attributes":{
+   "0":{
+     "NP_043014_1_petN":{
+       "original name":"NP_043014.1-petN",
+       "JTTF":0
+      },
+     "NP_783225_1_petN":{
+       "original name":"NP_783225.1-petN",
+       "JTTF":0
+      },
+     "YP_001023693_1_petN":{
+       "original name":"YP_001023693.1-petN",
+       "JTTF":0
+      },
+     "YP_001122805_1_petN":{
+       "original name":"YP_001122805.1-petN",
+       "JTTF":0
+      },
+     "YP_001123023_1_petN":{
+       "original name":"YP_001123023.1-petN",
+       "JTTF":0
+      },
+     "YP_001123366_1_petN":{
+       "original name":"YP_001123366.1-petN",
+       "JTTF":0
+      },
+     "YP_001294263_1_petN":{
+       "original name":"YP_001294263.1-petN",
+       "JTTF":0
+      },
+     "YP_001294345_1_petN":{
+       "original name":"YP_001294345.1-petN",
+       "JTTF":0
+      },
+     "YP_001430036_1_petN":{
+       "original name":"YP_001430036.1-petN",
+       "JTTF":0.08282385420025742
+      },
+     "YP_001430102_1_petN":{
+       "original name":"YP_001430102.1-petN",
+       "JTTF":0
+      },
+     "YP_001542440_1_petN":{
+       "original name":"YP_001542440.1-petN",
+       "JTTF":0
+      },
+     "YP_001586175_1_petN":{
+       "original name":"YP_001586175.1-petN",
+       "JTTF":0
+      },
+     "YP_001687449_1_petN":{
+       "original name":"YP_001687449.1-petN",
+       "JTTF":0
+      },
+     "YP_001837345_1_petN":{
+       "original name":"YP_001837345.1-petN",
+       "JTTF":0
+      },
+     "YP_002364491_1_petN":{
+       "original name":"YP_002364491.1-petN",
+       "JTTF":0
+      },
+     "YP_002519541_1_petN":{
+       "original name":"YP_002519541.1-petN",
+       "JTTF":0.02194525440250039
+      },
+     "YP_002720105_1_petN":{
+       "original name":"YP_002720105.1-petN",
+       "JTTF":0
+      },
+     "YP_003587461_1_petN":{
+       "original name":"YP_003587461.1-petN",
+       "JTTF":0.007230774384474874
+      },
+     "YP_004021274_1_petN":{
+       "original name":"YP_004021274.1-petN",
+       "JTTF":0.1431442226798197
+      },
+     "YP_004276299_1_petN":{
+       "original name":"YP_004276299.1-petN",
+       "JTTF":0
+      },
+     "YP_004563860_1_petN":{
+       "original name":"YP_004563860.1-petN",
+       "JTTF":0
+      },
+     "YP_004564357_1_petN":{
+       "original name":"YP_004564357.1-petN",
+       "JTTF":0
+      },
+     "YP_004891594_1_petN":{
+       "original name":"YP_004891594.1-petN",
+       "JTTF":0
+      },
+     "YP_004935545_1_petN":{
+       "original name":"YP_004935545.1-petN",
+       "JTTF":0
+      },
+     "YP_005087782_1_petN":{
+       "original name":"YP_005087782.1-petN",
+       "JTTF":0
+      },
+     "YP_006460342_1_petN":{
+       "original name":"YP_006460342.1-petN",
+       "JTTF":0
+      },
+     "YP_006503353_1_petN":{
+       "original name":"YP_006503353.1-petN",
+       "JTTF":0
+      },
+     "YP_006503685_1_petN":{
+       "original name":"YP_006503685.1-petN",
+       "JTTF":0
+      },
+     "YP_007317241_1_petN":{
+       "original name":"YP_007317241.1-petN",
+       "JTTF":0
+      },
+     "YP_007474445_1_petN":{
+       "original name":"YP_007474445.1-petN",
+       "JTTF":0
+      },
+     "YP_007507104_1_petN":{
+       "original name":"YP_007507104.1-petN",
+       "JTTF":0
+      },
+     "YP_007890236_1_petN":{
+       "original name":"YP_007890236.1-petN",
+       "JTTF":0.03447156127996681
+      },
+     "YP_007890366_1_petN":{
+       "original name":"YP_007890366.1-petN",
+       "JTTF":0
+      },
+     "YP_008081568_1_petN":{
+       "original name":"YP_008081568.1-petN",
+       "JTTF":0
+      },
+     "YP_008081724_1_petN":{
+       "original name":"YP_008081724.1-petN",
+       "JTTF":0
+      },
+     "YP_008082574_1_petN":{
+       "original name":"YP_008082574.1-petN",
+       "JTTF":0
+      },
+     "YP_008145789_1_petN":{
+       "original name":"YP_008145789.1-petN",
+       "JTTF":0
+      },
+     "YP_008146035_1_petN":{
+       "original name":"YP_008146035.1-petN",
+       "JTTF":0
+      },
+     "YP_008474289_1_petN":{
+       "original name":"YP_008474289.1-petN",
+       "JTTF":0
+      },
+     "YP_008575616_1_petN":{
+       "original name":"YP_008575616.1-petN",
+       "JTTF":0
+      },
+     "YP_008576211_1_petN":{
+       "original name":"YP_008576211.1-petN",
+       "JTTF":0
+      },
+     "YP_008576296_1_petN":{
+       "original name":"YP_008576296.1-petN",
+       "JTTF":0
+      },
+     "YP_008576891_1_petN":{
+       "original name":"YP_008576891.1-petN",
+       "JTTF":0
+      },
+     "YP_008577656_1_petN":{
+       "original name":"YP_008577656.1-petN",
+       "JTTF":0
+      },
+     "YP_008577826_1_petN":{
+       "original name":"YP_008577826.1-petN",
+       "JTTF":0
+      },
+     "YP_008592926_1_petN":{
+       "original name":"YP_008592926.1-petN",
+       "JTTF":0
+      },
+     "YP_008593015_1_petN":{
+       "original name":"YP_008593015.1-petN",
+       "JTTF":0
+      },
+     "YP_008593104_1_petN":{
+       "original name":"YP_008593104.1-petN",
+       "JTTF":0
+      },
+     "YP_008816244_1_petN":{
+       "original name":"YP_008816244.1-petN",
+       "JTTF":0
+      },
+     "YP_008963684_1_petN":{
+       "original name":"YP_008963684.1-petN",
+       "JTTF":0
+      },
+     "YP_008965104_1_petN":{
+       "original name":"YP_008965104.1-petN",
+       "JTTF":0
+      },
+     "YP_008993771_1_petN":{
+       "original name":"YP_008993771.1-petN",
+       "JTTF":0
+      },
+     "YP_009024244_1_petN":{
+       "original name":"YP_009024244.1-petN",
+       "JTTF":0
+      },
+     "YP_009024327_1_petN":{
+       "original name":"YP_009024327.1-petN",
+       "JTTF":0
+      },
+     "YP_009024674_1_petN":{
+       "original name":"YP_009024674.1-petN",
+       "JTTF":0
+      },
+     "YP_009028378_1_petN":{
+       "original name":"YP_009028378.1-petN",
+       "JTTF":0
+      },
+     "YP_009028461_1_petN":{
+       "original name":"YP_009028461.1-petN",
+       "JTTF":0
+      },
+     "YP_009047925_1_petN":{
+       "original name":"YP_009047925.1-petN",
+       "JTTF":0
+      },
+     "YP_009051555_1_petN":{
+       "original name":"YP_009051555.1-petN",
+       "JTTF":0
+      },
+     "YP_009052657_1_petN":{
+       "original name":"YP_009052657.1-petN",
+       "JTTF":0
+      },
+     "YP_009052823_1_petN":{
+       "original name":"YP_009052823.1-petN",
+       "JTTF":0
+      },
+     "YP_009053155_1_petN":{
+       "original name":"YP_009053155.1-petN",
+       "JTTF":0
+      },
+     "YP_009053650_1_petN":{
+       "original name":"YP_009053650.1-petN",
+       "JTTF":0
+      },
+     "YP_009054212_1_petN":{
+       "original name":"YP_009054212.1-petN",
+       "JTTF":0
+      },
+     "YP_009054825_1_petN":{
+       "original name":"YP_009054825.1-petN",
+       "JTTF":0
+      },
+     "YP_009057144_1_petN":{
+       "original name":"YP_009057144.1-petN",
+       "JTTF":0
+      },
+     "YP_009057917_1_petN":{
+       "original name":"YP_009057917.1-petN",
+       "JTTF":0
+      },
+     "YP_009059342_1_petN":{
+       "original name":"YP_009059342.1-petN",
+       "JTTF":0
+      },
+     "YP_009111653_1_petN":{
+       "original name":"YP_009111653.1-petN",
+       "JTTF":0
+      },
+     "YP_009111722_1_petN":{
+       "original name":"YP_009111722.1-petN",
+       "JTTF":0
+      },
+     "YP_009121166_1_petN":{
+       "original name":"YP_009121166.1-petN",
+       "JTTF":0
+      },
+     "YP_009122857_1_petN":{
+       "original name":"YP_009122857.1-petN",
+       "JTTF":0
+      },
+     "YP_009123626_1_petN":{
+       "original name":"YP_009123626.1-petN",
+       "JTTF":0
+      },
+     "YP_009128833_1_petN":{
+       "original name":"YP_009128833.1-petN",
+       "JTTF":0
+      },
+     "YP_009129611_1_petN":{
+       "original name":"YP_009129611.1-petN",
+       "JTTF":0.03180686846520687
+      },
+     "YP_009130315_1_petN":{
+       "original name":"YP_009130315.1-petN",
+       "JTTF":0
+      },
+     "YP_009130954_1_petN":{
+       "original name":"YP_009130954.1-petN",
+       "JTTF":0
+      },
+     "YP_009131789_1_petN":{
+       "original name":"YP_009131789.1-petN",
+       "JTTF":0
+      },
+     "YP_009131872_1_petN":{
+       "original name":"YP_009131872.1-petN",
+       "JTTF":0
+      },
+     "YP_009132471_1_petN":{
+       "original name":"YP_009132471.1-petN",
+       "JTTF":0
+      },
+     "YP_009132932_1_petN":{
+       "original name":"YP_009132932.1-petN",
+       "JTTF":0
+      },
+     "YP_009136388_1_petN":{
+       "original name":"YP_009136388.1-petN",
+       "JTTF":0
+      },
+     "YP_009138251_1_petN":{
+       "original name":"YP_009138251.1-petN",
+       "JTTF":3.127236207536158e-16
+      },
+     "YP_009138455_1_petN":{
+       "original name":"YP_009138455.1-petN",
+       "JTTF":0
+      },
+     "YP_009138903_1_petN":{
+       "original name":"YP_009138903.1-petN",
+       "JTTF":0
+      },
+     "YP_009141609_1_petN":{
+       "original name":"YP_009141609.1-petN",
+       "JTTF":0
+      },
+     "YP_009141684_1_petN":{
+       "original name":"YP_009141684.1-petN",
+       "JTTF":0
+      },
+     "YP_009141943_1_petN":{
+       "original name":"YP_009141943.1-petN",
+       "JTTF":0
+      },
+     "YP_009144972_1_petN":{
+       "original name":"YP_009144972.1-petN",
+       "JTTF":0
+      },
+     "YP_009154771_1_petN":{
+       "original name":"YP_009154771.1-petN",
+       "JTTF":0
+      },
+     "YP_009155421_1_petN":{
+       "original name":"YP_009155421.1-petN",
+       "JTTF":0
+      },
+     "YP_009158422_1_petN":{
+       "original name":"YP_009158422.1-petN",
+       "JTTF":0
+      },
+     "YP_009161016_1_petN":{
+       "original name":"YP_009161016.1-petN",
+       "JTTF":0
+      },
+     "YP_009161353_1_petN":{
+       "original name":"YP_009161353.1-petN",
+       "JTTF":0
+      },
+     "YP_009161547_1_petN":{
+       "original name":"YP_009161547.1-petN",
+       "JTTF":0
+      },
+     "YP_009161672_1_petN":{
+       "original name":"YP_009161672.1-petN",
+       "JTTF":0
+      },
+     "YP_009161914_1_petN":{
+       "original name":"YP_009161914.1-petN",
+       "JTTF":0
+      },
+     "YP_009164493_1_petN":{
+       "original name":"YP_009164493.1-petN",
+       "JTTF":0
+      },
+     "YP_009169349_1_petN":{
+       "original name":"YP_009169349.1-petN",
+       "JTTF":0
+      },
+     "YP_009169661_1_petN":{
+       "original name":"YP_009169661.1-petN",
+       "JTTF":0
+      },
+     "YP_009171146_1_petN":{
+       "original name":"YP_009171146.1-petN",
+       "JTTF":0
+      },
+     "YP_009171677_1_petN":{
+       "original name":"YP_009171677.1-petN",
+       "JTTF":0
+      },
+     "YP_009171972_1_petN":{
+       "original name":"YP_009171972.1-petN",
+       "JTTF":0
+      },
+     "YP_009172053_1_petN":{
+       "original name":"YP_009172053.1-petN",
+       "JTTF":0
+      },
+     "YP_009175998_1_petN":{
+       "original name":"YP_009175998.1-petN",
+       "JTTF":0
+      },
+     "YP_009176501_1_petN":{
+       "original name":"YP_009176501.1-petN",
+       "JTTF":0
+      },
+     "YP_009179190_1_petN":{
+       "original name":"YP_009179190.1-petN",
+       "JTTF":0
+      },
+     "YP_009183585_1_petN":{
+       "original name":"YP_009183585.1-petN",
+       "JTTF":0
+      },
+     "YP_009183898_1_petN":{
+       "original name":"YP_009183898.1-petN",
+       "JTTF":0.03294917909749721
+      },
+     "YP_009186246_1_petN":{
+       "original name":"YP_009186246.1-petN",
+       "JTTF":0
+      },
+     "YP_009192396_1_petN":{
+       "original name":"YP_009192396.1-petN",
+       "JTTF":0
+      },
+     "YP_009192868_1_petN":{
+       "original name":"YP_009192868.1-petN",
+       "JTTF":0
+      },
+     "YP_009193289_1_petN":{
+       "original name":"YP_009193289.1-petN",
+       "JTTF":0.03261296295333536
+      },
+     "YP_009228579_1_petN":{
+       "original name":"YP_009228579.1-petN",
+       "JTTF":0
+      },
+     "YP_009229471_1_petN":{
+       "original name":"YP_009229471.1-petN",
+       "JTTF":0
+      },
+     "YP_009230730_1_petN":{
+       "original name":"YP_009230730.1-petN",
+       "JTTF":0
+      },
+     "YP_009231240_1_petN":{
+       "original name":"YP_009231240.1-petN",
+       "JTTF":0
+      },
+     "YP_009231822_1_petN":{
+       "original name":"YP_009231822.1-petN",
+       "JTTF":0
+      },
+     "YP_009231904_1_petN":{
+       "original name":"YP_009231904.1-petN",
+       "JTTF":0
+      },
+     "YP_009232123_1_petN":{
+       "original name":"YP_009232123.1-petN",
+       "JTTF":0
+      },
+     "YP_009232436_1_petN":{
+       "original name":"YP_009232436.1-petN",
+       "JTTF":0
+      },
+     "YP_009232822_1_petN":{
+       "original name":"YP_009232822.1-petN",
+       "JTTF":0
+      },
+     "YP_009232992_1_petN":{
+       "original name":"YP_009232992.1-petN",
+       "JTTF":0
+      },
+     "YP_009233249_1_petN":{
+       "original name":"YP_009233249.1-petN",
+       "JTTF":0
+      },
+     "YP_009233392_1_petN":{
+       "original name":"YP_009233392.1-petN",
+       "JTTF":0
+      },
+     "YP_009234379_1_petN":{
+       "original name":"YP_009234379.1-petN",
+       "JTTF":0
+      },
+     "YP_009235957_1_petN":{
+       "original name":"YP_009235957.1-petN",
+       "JTTF":0
+      },
+     "YP_009236273_1_petN":{
+       "original name":"YP_009236273.1-petN",
+       "JTTF":0
+      },
+     "YP_009236489_1_petN":{
+       "original name":"YP_009236489.1-petN",
+       "JTTF":0
+      },
+     "YP_009240592_1_petN":{
+       "original name":"YP_009240592.1-petN",
+       "JTTF":0
+      },
+     "YP_009241300_1_petN":{
+       "original name":"YP_009241300.1-petN",
+       "JTTF":0.063149500585367
+      },
+     "YP_009241580_1_petN":{
+       "original name":"YP_009241580.1-petN",
+       "JTTF":0
+      },
+     "YP_009242232_1_petN":{
+       "original name":"YP_009242232.1-petN",
+       "JTTF":0
+      },
+     "YP_009242320_1_petN":{
+       "original name":"YP_009242320.1-petN",
+       "JTTF":0
+      },
+     "YP_009242856_1_petN":{
+       "original name":"YP_009242856.1-petN",
+       "JTTF":0
+      },
+     "YP_009242952_1_petN":{
+       "original name":"YP_009242952.1-petN",
+       "JTTF":0
+      },
+     "YP_009243209_1_petN":{
+       "original name":"YP_009243209.1-petN",
+       "JTTF":0
+      },
+     "YP_009245003_1_petN":{
+       "original name":"YP_009245003.1-petN",
+       "JTTF":0
+      },
+     "YP_009247059_1_petN":{
+       "original name":"YP_009247059.1-petN",
+       "JTTF":0
+      },
+     "YP_009249740_1_petN":{
+       "original name":"YP_009249740.1-petN",
+       "JTTF":0
+      },
+     "YP_009251637_1_petN":{
+       "original name":"YP_009251637.1-petN",
+       "JTTF":0.03356201064369977
+      },
+     "YP_009251886_1_petN":{
+       "original name":"YP_009251886.1-petN",
+       "JTTF":0
+      },
+     "YP_009251969_1_petN":{
+       "original name":"YP_009251969.1-petN",
+       "JTTF":0
+      },
+     "YP_009253066_1_petN":{
+       "original name":"YP_009253066.1-petN",
+       "JTTF":0
+      },
+     "YP_009253150_1_petN":{
+       "original name":"YP_009253150.1-petN",
+       "JTTF":0
+      },
+     "YP_009253243_1_petN":{
+       "original name":"YP_009253243.1-petN",
+       "JTTF":0
+      },
+     "YP_009253639_1_petN":{
+       "original name":"YP_009253639.1-petN",
+       "JTTF":0
+      },
+     "YP_009254208_1_petN":{
+       "original name":"YP_009254208.1-petN",
+       "JTTF":0
+      },
+     "YP_009255860_1_petN":{
+       "original name":"YP_009255860.1-petN",
+       "JTTF":0
+      },
+     "YP_009256988_1_petN":{
+       "original name":"YP_009256988.1-petN",
+       "JTTF":0.01396966820322005
+      },
+     "YP_009259078_1_petN":{
+       "original name":"YP_009259078.1-petN",
+       "JTTF":0
+      },
+     "YP_009259780_1_petN":{
+       "original name":"YP_009259780.1-petN",
+       "JTTF":0
+      },
+     "YP_009260058_1_petN":{
+       "original name":"YP_009260058.1-petN",
+       "JTTF":0
+      },
+     "YP_009260141_1_petN":{
+       "original name":"YP_009260141.1-petN",
+       "JTTF":0
+      },
+     "YP_009260639_1_petN":{
+       "original name":"YP_009260639.1-petN",
+       "JTTF":0
+      },
+     "YP_009260805_1_petN":{
+       "original name":"YP_009260805.1-petN",
+       "JTTF":0
+      },
+     "YP_009260971_1_petN":{
+       "original name":"YP_009260971.1-petN",
+       "JTTF":0
+      },
+     "YP_009261137_1_petN":{
+       "original name":"YP_009261137.1-petN",
+       "JTTF":0
+      },
+     "YP_009261220_1_petN":{
+       "original name":"YP_009261220.1-petN",
+       "JTTF":0
+      },
+     "YP_009261774_1_petN":{
+       "original name":"YP_009261774.1-petN",
+       "JTTF":0
+      },
+     "YP_009262198_1_petN":{
+       "original name":"YP_009262198.1-petN",
+       "JTTF":0
+      },
+     "YP_009262420_1_petN":{
+       "original name":"YP_009262420.1-petN",
+       "JTTF":0
+      },
+     "YP_009263024_1_petN":{
+       "original name":"YP_009263024.1-petN",
+       "JTTF":0
+      },
+     "YP_009263190_1_petN":{
+       "original name":"YP_009263190.1-petN",
+       "JTTF":0
+      },
+     "YP_009264103_1_petN":{
+       "original name":"YP_009264103.1-petN",
+       "JTTF":0
+      },
+     "YP_009264518_1_petN":{
+       "original name":"YP_009264518.1-petN",
+       "JTTF":0
+      },
+     "YP_009264601_1_petN":{
+       "original name":"YP_009264601.1-petN",
+       "JTTF":0
+      },
+     "YP_009265429_1_petN":{
+       "original name":"YP_009265429.1-petN",
+       "JTTF":0
+      },
+     "YP_009265595_1_petN":{
+       "original name":"YP_009265595.1-petN",
+       "JTTF":0
+      },
+     "YP_009265927_1_petN":{
+       "original name":"YP_009265927.1-petN",
+       "JTTF":0
+      },
+     "YP_009266411_1_petN":{
+       "original name":"YP_009266411.1-petN",
+       "JTTF":0
+      },
+     "YP_009266511_1_petN":{
+       "original name":"YP_009266511.1-petN",
+       "JTTF":0
+      },
+     "YP_009266875_1_petN":{
+       "original name":"YP_009266875.1-petN",
+       "JTTF":0
+      },
+     "YP_009267799_1_petN":{
+       "original name":"YP_009267799.1-petN",
+       "JTTF":0
+      },
+     "YP_009267882_1_petN":{
+       "original name":"YP_009267882.1-petN",
+       "JTTF":0
+      },
+     "YP_009269640_1_petN":{
+       "original name":"YP_009269640.1-petN",
+       "JTTF":0
+      },
+     "YP_009269837_1_petN":{
+       "original name":"YP_009269837.1-petN",
+       "JTTF":0
+      },
+     "YP_009270038_1_petN":{
+       "original name":"YP_009270038.1-petN",
+       "JTTF":0
+      },
+     "YP_009270729_1_petN":{
+       "original name":"YP_009270729.1-petN",
+       "JTTF":0
+      },
+     "YP_009270817_1_petN":{
+       "original name":"YP_009270817.1-petN",
+       "JTTF":0
+      },
+     "YP_009271367_1_petN":{
+       "original name":"YP_009271367.1-petN",
+       "JTTF":0
+      },
+     "YP_009271560_1_petN":{
+       "original name":"YP_009271560.1-petN",
+       "JTTF":0
+      },
+     "YP_009298353_1_petN":{
+       "original name":"YP_009298353.1-petN",
+       "JTTF":0
+      },
+     "YP_009298791_1_petN":{
+       "original name":"YP_009298791.1-petN",
+       "JTTF":0
+      },
+     "YP_009299200_1_petN":{
+       "original name":"YP_009299200.1-petN",
+       "JTTF":0
+      },
+     "YP_009299394_1_petN":{
+       "original name":"YP_009299394.1-petN",
+       "JTTF":0
+      },
+     "YP_009305459_1_petN":{
+       "original name":"YP_009305459.1-petN",
+       "JTTF":0
+      },
+     "YP_009307119_1_petN":{
+       "original name":"YP_009307119.1-petN",
+       "JTTF":0
+      },
+     "YP_009307551_1_petN":{
+       "original name":"YP_009307551.1-petN",
+       "JTTF":0
+      },
+     "YP_009307737_1_petN":{
+       "original name":"YP_009307737.1-petN",
+       "JTTF":0
+      },
+     "YP_009308071_1_petN":{
+       "original name":"YP_009308071.1-petN",
+       "JTTF":0
+      },
+     "YP_009308236_1_petN":{
+       "original name":"YP_009308236.1-petN",
+       "JTTF":0
+      },
+     "YP_009308554_1_petN":{
+       "original name":"YP_009308554.1-petN",
+       "JTTF":0
+      },
+     "YP_009308724_1_petN":{
+       "original name":"YP_009308724.1-petN",
+       "JTTF":0
+      },
+     "YP_009309066_1_petN":{
+       "original name":"YP_009309066.1-petN",
+       "JTTF":0
+      },
+     "YP_009309618_1_petN":{
+       "original name":"YP_009309618.1-petN",
+       "JTTF":0
+      },
+     "YP_009310511_1_petN":{
+       "original name":"YP_009310511.1-petN",
+       "JTTF":0
+      },
+     "YP_009310644_1_petN":{
+       "original name":"YP_009310644.1-petN",
+       "JTTF":0
+      },
+     "YP_009316615_1_petN":{
+       "original name":"YP_009316615.1-petN",
+       "JTTF":0
+      },
+     "YP_009316886_1_petN":{
+       "original name":"YP_009316886.1-petN",
+       "JTTF":0
+      },
+     "YP_009317981_1_petN":{
+       "original name":"YP_009317981.1-petN",
+       "JTTF":0
+      },
+     "YP_009318959_1_petN":{
+       "original name":"YP_009318959.1-petN",
+       "JTTF":0
+      },
+     "YP_009326197_1_petN":{
+       "original name":"YP_009326197.1-petN",
+       "JTTF":0
+      },
+     "YP_009326282_1_petN":{
+       "original name":"YP_009326282.1-petN",
+       "JTTF":0
+      },
+     "YP_009327297_1_petN":{
+       "original name":"YP_009327297.1-petN",
+       "JTTF":0
+      },
+     "YP_009327553_1_petN":{
+       "original name":"YP_009327553.1-petN",
+       "JTTF":0
+      },
+     "YP_009327668_1_petN":{
+       "original name":"YP_009327668.1-petN",
+       "JTTF":0
+      },
+     "YP_009327949_1_petN":{
+       "original name":"YP_009327949.1-petN",
+       "JTTF":0.0123824246256311
+      },
+     "YP_009333915_1_petN":{
+       "original name":"YP_009333915.1-petN",
+       "JTTF":0
+      },
+     "YP_009334000_1_petN":{
+       "original name":"YP_009334000.1-petN",
+       "JTTF":0
+      },
+     "YP_009334398_1_petN":{
+       "original name":"YP_009334398.1-petN",
+       "JTTF":0
+      },
+     "YP_009334483_1_petN":{
+       "original name":"YP_009334483.1-petN",
+       "JTTF":0
+      },
+     "YP_009334905_1_petN":{
+       "original name":"YP_009334905.1-petN",
+       "JTTF":0
+      },
+     "YP_009335157_1_petN":{
+       "original name":"YP_009335157.1-petN",
+       "JTTF":0
+      },
+     "YP_009335326_1_petN":{
+       "original name":"YP_009335326.1-petN",
+       "JTTF":0
+      },
+     "YP_009335497_1_petN":{
+       "original name":"YP_009335497.1-petN",
+       "JTTF":0
+      },
+     "YP_009335581_1_petN":{
+       "original name":"YP_009335581.1-petN",
+       "JTTF":0
+      },
+     "YP_009336184_1_petN":{
+       "original name":"YP_009336184.1-petN",
+       "JTTF":0
+      },
+     "YP_009338334_1_petN":{
+       "original name":"YP_009338334.1-petN",
+       "JTTF":0
+      },
+     "YP_009338501_1_petN":{
+       "original name":"YP_009338501.1-petN",
+       "JTTF":0
+      },
+     "YP_009338623_1_petN":{
+       "original name":"YP_009338623.1-petN",
+       "JTTF":0.03315328173429708
+      },
+     "YP_009341236_1_petN":{
+       "original name":"YP_009341236.1-petN",
+       "JTTF":0
+      },
+     "YP_009341572_1_petN":{
+       "original name":"YP_009341572.1-petN",
+       "JTTF":0
+      },
+     "YP_009341770_1_petN":{
+       "original name":"YP_009341770.1-petN",
+       "JTTF":0.007000763060904213
+      },
+     "YP_009343099_1_petN":{
+       "original name":"YP_009343099.1-petN",
+       "JTTF":0
+      },
+     "YP_009343265_1_petN":{
+       "original name":"YP_009343265.1-petN",
+       "JTTF":0
+      },
+     "YP_009343603_1_petN":{
+       "original name":"YP_009343603.1-petN",
+       "JTTF":0
+      },
+     "YP_009346679_1_petN":{
+       "original name":"YP_009346679.1-petN",
+       "JTTF":0
+      },
+     "YP_009347441_1_petN":{
+       "original name":"YP_009347441.1-petN",
+       "JTTF":0
+      },
+     "YP_009348248_1_petN":{
+       "original name":"YP_009348248.1-petN",
+       "JTTF":0
+      },
+     "YP_009353935_1_petN":{
+       "original name":"YP_009353935.1-petN",
+       "JTTF":0
+      },
+     "YP_009354023_1_petN":{
+       "original name":"YP_009354023.1-petN",
+       "JTTF":0
+      },
+     "YP_009354198_1_petN":{
+       "original name":"YP_009354198.1-petN",
+       "JTTF":0
+      },
+     "YP_009354398_1_petN":{
+       "original name":"YP_009354398.1-petN",
+       "JTTF":0
+      },
+     "YP_009356943_1_petN":{
+       "original name":"YP_009356943.1-petN",
+       "JTTF":0
+      },
+     "YP_009357260_1_petN":{
+       "original name":"YP_009357260.1-petN",
+       "JTTF":0
+      },
+     "YP_009363300_1_petN":{
+       "original name":"YP_009363300.1-petN",
+       "JTTF":0
+      },
+     "YP_009363773_1_petN":{
+       "original name":"YP_009363773.1-petN",
+       "JTTF":0
+      },
+     "YP_009365014_1_petN":{
+       "original name":"YP_009365014.1-petN",
+       "JTTF":0
+      },
+     "YP_009367325_1_petN":{
+       "original name":"YP_009367325.1-petN",
+       "JTTF":0
+      },
+     "YP_009368942_1_petN":{
+       "original name":"YP_009368942.1-petN",
+       "JTTF":0
+      },
+     "YP_009370968_1_petN":{
+       "original name":"YP_009370968.1-petN",
+       "JTTF":0
+      },
+     "YP_009371083_1_petN":{
+       "original name":"YP_009371083.1-petN",
+       "JTTF":0
+      },
+     "YP_009371280_1_petN":{
+       "original name":"YP_009371280.1-petN",
+       "JTTF":0
+      },
+     "YP_009371450_1_petN":{
+       "original name":"YP_009371450.1-petN",
+       "JTTF":0
+      },
+     "YP_009371790_1_petN":{
+       "original name":"YP_009371790.1-petN",
+       "JTTF":0
+      },
+     "YP_009372470_1_petN":{
+       "original name":"YP_009372470.1-petN",
+       "JTTF":0
+      },
+     "YP_009373320_1_petN":{
+       "original name":"YP_009373320.1-petN",
+       "JTTF":0
+      },
+     "YP_009373731_1_petN":{
+       "original name":"YP_009373731.1-petN",
+       "JTTF":0
+      },
+     "YP_009373816_1_petN":{
+       "original name":"YP_009373816.1-petN",
+       "JTTF":0
+      },
+     "YP_009373985_1_petN":{
+       "original name":"YP_009373985.1-petN",
+       "JTTF":0
+      },
+     "YP_009374070_1_petN":{
+       "original name":"YP_009374070.1-petN",
+       "JTTF":0
+      },
+     "YP_009374580_1_petN":{
+       "original name":"YP_009374580.1-petN",
+       "JTTF":0
+      },
+     "YP_009374665_1_petN":{
+       "original name":"YP_009374665.1-petN",
+       "JTTF":0
+      },
+     "YP_009375345_1_petN":{
+       "original name":"YP_009375345.1-petN",
+       "JTTF":0
+      },
+     "YP_009375685_1_petN":{
+       "original name":"YP_009375685.1-petN",
+       "JTTF":0
+      },
+     "YP_009376025_1_petN":{
+       "original name":"YP_009376025.1-petN",
+       "JTTF":0
+      },
+     "YP_009376110_1_petN":{
+       "original name":"YP_009376110.1-petN",
+       "JTTF":0
+      },
+     "YP_009377045_1_petN":{
+       "original name":"YP_009377045.1-petN",
+       "JTTF":0
+      },
+     "YP_009378753_1_petN":{
+       "original name":"YP_009378753.1-petN",
+       "JTTF":0
+      },
+     "YP_009378837_1_petN":{
+       "original name":"YP_009378837.1-petN",
+       "JTTF":0
+      },
+     "YP_009380207_1_petN":{
+       "original name":"YP_009380207.1-petN",
+       "JTTF":0
+      },
+     "YP_009380378_1_petN":{
+       "original name":"YP_009380378.1-petN",
+       "JTTF":0
+      },
+     "YP_009383046_1_petN":{
+       "original name":"YP_009383046.1-petN",
+       "JTTF":0
+      },
+     "YP_009384306_1_petN":{
+       "original name":"YP_009384306.1-petN",
+       "JTTF":0
+      },
+     "YP_009384389_1_petN":{
+       "original name":"YP_009384389.1-petN",
+       "JTTF":0
+      },
+     "YP_009384555_1_petN":{
+       "original name":"YP_009384555.1-petN",
+       "JTTF":0
+      },
+     "YP_009384802_1_petN":{
+       "original name":"YP_009384802.1-petN",
+       "JTTF":0
+      },
+     "YP_009385964_1_petN":{
+       "original name":"YP_009385964.1-petN",
+       "JTTF":0
+      },
+     "YP_009386047_1_petN":{
+       "original name":"YP_009386047.1-petN",
+       "JTTF":0
+      },
+     "YP_009386130_1_petN":{
+       "original name":"YP_009386130.1-petN",
+       "JTTF":0
+      },
+     "YP_009386793_1_petN":{
+       "original name":"YP_009386793.1-petN",
+       "JTTF":0
+      },
+     "YP_009387124_1_petN":{
+       "original name":"YP_009387124.1-petN",
+       "JTTF":0
+      },
+     "YP_009387206_1_petN":{
+       "original name":"YP_009387206.1-petN",
+       "JTTF":0
+      },
+     "YP_009388007_1_petN":{
+       "original name":"YP_009388007.1-petN",
+       "JTTF":0.03307221653050633
+      },
+     "YP_009388091_1_petN":{
+       "original name":"YP_009388091.1-petN",
+       "JTTF":0
+      },
+     "YP_009388245_1_petN":{
+       "original name":"YP_009388245.1-petN",
+       "JTTF":0
+      },
+     "YP_009390298_1_petN":{
+       "original name":"YP_009390298.1-petN",
+       "JTTF":0
+      },
+     "YP_009390632_1_petN":{
+       "original name":"YP_009390632.1-petN",
+       "JTTF":0
+      },
+     "YP_009390802_1_petN":{
+       "original name":"YP_009390802.1-petN",
+       "JTTF":0
+      },
+     "YP_009401027_1_petN":{
+       "original name":"YP_009401027.1-petN",
+       "JTTF":0
+      },
+     "YP_009401674_1_petN":{
+       "original name":"YP_009401674.1-petN",
+       "JTTF":0
+      },
+     "YP_009401818_1_petN":{
+       "original name":"YP_009401818.1-petN",
+       "JTTF":0
+      },
+     "YP_009401962_1_petN":{
+       "original name":"YP_009401962.1-petN",
+       "JTTF":0
+      },
+     "YP_009408951_1_petN":{
+       "original name":"YP_009408951.1-petN",
+       "JTTF":0
+      },
+     "YP_009409458_1_petN":{
+       "original name":"YP_009409458.1-petN",
+       "JTTF":0
+      },
+     "YP_009409801_1_petN":{
+       "original name":"YP_009409801.1-petN",
+       "JTTF":0
+      },
+     "YP_009409963_1_petN":{
+       "original name":"YP_009409963.1-petN",
+       "JTTF":0
+      },
+     "YP_009410129_1_petN":{
+       "original name":"YP_009410129.1-petN",
+       "JTTF":0
+      },
+     "YP_009410295_1_petN":{
+       "original name":"YP_009410295.1-petN",
+       "JTTF":0
+      },
+     "YP_009410378_1_petN":{
+       "original name":"YP_009410378.1-petN",
+       "JTTF":0
+      },
+     "YP_009410876_1_petN":{
+       "original name":"YP_009410876.1-petN",
+       "JTTF":0
+      },
+     "YP_009410959_1_petN":{
+       "original name":"YP_009410959.1-petN",
+       "JTTF":0
+      },
+     "YP_009411208_1_petN":{
+       "original name":"YP_009411208.1-petN",
+       "JTTF":0
+      },
+     "YP_009412908_1_petN":{
+       "original name":"YP_009412908.1-petN",
+       "JTTF":0
+      },
+     "YP_009413421_1_petN":{
+       "original name":"YP_009413421.1-petN",
+       "JTTF":0
+      },
+     "YP_009414467_1_petN":{
+       "original name":"YP_009414467.1-petN",
+       "JTTF":0.06936723238203817
+      },
+     "YP_009420787_1_petN":{
+       "original name":"YP_009420787.1-petN",
+       "JTTF":0
+      },
+     "YP_009421151_1_petN":{
+       "original name":"YP_009421151.1-petN",
+       "JTTF":0
+      },
+     "YP_009421239_1_petN":{
+       "original name":"YP_009421239.1-petN",
+       "JTTF":0
+      },
+     "YP_009421436_1_petN":{
+       "original name":"YP_009421436.1-petN",
+       "JTTF":0
+      },
+     "YP_009421943_1_petN":{
+       "original name":"YP_009421943.1-petN",
+       "JTTF":0
+      },
+     "YP_009422739_1_petN":{
+       "original name":"YP_009422739.1-petN",
+       "JTTF":0
+      },
+     "YP_009422913_1_petN":{
+       "original name":"YP_009422913.1-petN",
+       "JTTF":0
+      },
+     "YP_009423000_1_petN":{
+       "original name":"YP_009423000.1-petN",
+       "JTTF":0
+      },
+     "YP_009423174_1_petN":{
+       "original name":"YP_009423174.1-petN",
+       "JTTF":0
+      },
+     "YP_009423696_1_petN":{
+       "original name":"YP_009423696.1-petN",
+       "JTTF":0
+      },
+     "YP_009423904_1_petN":{
+       "original name":"YP_009423904.1-petN",
+       "JTTF":0
+      },
+     "YP_009424556_1_petN":{
+       "original name":"YP_009424556.1-petN",
+       "JTTF":0.033735927201664
+      },
+     "YP_009424851_1_petN":{
+       "original name":"YP_009424851.1-petN",
+       "JTTF":0
+      },
+     "YP_009425190_1_petN":{
+       "original name":"YP_009425190.1-petN",
+       "JTTF":0.03326256819027935
+      },
+     "YP_009426156_1_petN":{
+       "original name":"YP_009426156.1-petN",
+       "JTTF":0.06552495984712065
+      },
+     "YP_009427030_1_petN":{
+       "original name":"YP_009427030.1-petN",
+       "JTTF":0.03175020170166097
+      },
+     "YP_009427118_1_petN":{
+       "original name":"YP_009427118.1-petN",
+       "JTTF":0.06673951114676906
+      },
+     "YP_009427557_1_petN":{
+       "original name":"YP_009427557.1-petN",
+       "JTTF":0.03177398161460743
+      },
+     "YP_009428168_1_petN":{
+       "original name":"YP_009428168.1-petN",
+       "JTTF":0
+      },
+     "YP_009428365_1_petN":{
+       "original name":"YP_009428365.1-petN",
+       "JTTF":0
+      },
+     "YP_009430535_1_petN":{
+       "original name":"YP_009430535.1-petN",
+       "JTTF":0
+      },
+     "YP_009430620_1_petN":{
+       "original name":"YP_009430620.1-petN",
+       "JTTF":0
+      },
+     "YP_009430707_1_petN":{
+       "original name":"YP_009430707.1-petN",
+       "JTTF":0
+      },
+     "YP_009431550_1_petN":{
+       "original name":"YP_009431550.1-petN",
+       "JTTF":0
+      },
+     "YP_009431635_1_petN":{
+       "original name":"YP_009431635.1-petN",
+       "JTTF":0
+      },
+     "YP_009431995_1_petN":{
+       "original name":"YP_009431995.1-petN",
+       "JTTF":0
+      },
+     "YP_009433414_1_petN":{
+       "original name":"YP_009433414.1-petN",
+       "JTTF":0
+      },
+     "YP_009434016_1_petN":{
+       "original name":"YP_009434016.1-petN",
+       "JTTF":0
+      },
+     "YP_009434393_1_petN":{
+       "original name":"YP_009434393.1-petN",
+       "JTTF":0
+      },
+     "YP_009434496_1_petN":{
+       "original name":"YP_009434496.1-petN",
+       "JTTF":0
+      },
+     "YP_009438128_1_petN":{
+       "original name":"YP_009438128.1-petN",
+       "JTTF":0
+      },
+     "YP_009439358_1_petN":{
+       "original name":"YP_009439358.1-petN",
+       "JTTF":0
+      },
+     "YP_009439971_1_petN":{
+       "original name":"YP_009439971.1-petN",
+       "JTTF":0
+      },
+     "YP_024370_1_petN":{
+       "original name":"YP_024370.1-petN",
+       "JTTF":0
+      },
+     "YP_209552_1_petN":{
+       "original name":"YP_209552.1-petN",
+       "JTTF":0.05542580492899117
+      },
+     "YP_635632_1_petN":{
+       "original name":"YP_635632.1-petN",
+       "JTTF":0
+      },
+     "YP_665551_1_petN":{
+       "original name":"YP_665551.1-petN",
+       "JTTF":0
+      },
+     "YP_740110_1_petN":{
+       "original name":"YP_740110.1-petN",
+       "JTTF":0
+      },
+     "YP_740558_1_petN":{
+       "original name":"YP_740558.1-petN",
+       "JTTF":0
+      },
+     "YP_762254_1_petN":{
+       "original name":"YP_762254.1-petN",
+       "JTTF":0
+      },
+     "YP_784466_1_petN":{
+       "original name":"YP_784466.1-petN",
+       "JTTF":0
+      },
+     "YP_874642_1_petN":{
+       "original name":"YP_874642.1-petN",
+       "JTTF":0
+      },
+     "YP_913180_1_petN":{
+       "original name":"YP_913180.1-petN",
+       "JTTF":0
+      },
+     "Node1":{
+       "JTTF":0.04129746224574084
+      },
+     "Node14":{
+       "JTTF":0.0141589715205381
+      },
+     "Node19":{
+       "JTTF":0.001604452503652623
+      },
+     "Node2":{
+       "JTTF":0
+      },
+     "Node20":{
+       "JTTF":0
+      },
+     "Node259":{
+       "JTTF":0.0222440098863965
+      },
+     "Node262":{
+       "JTTF":0
+      },
+     "Node263":{
+       "JTTF":0
+      },
+     "Node265":{
+       "JTTF":0
+      },
+     "Node266":{
+       "JTTF":0
+      },
+     "Node267":{
+       "JTTF":0.03128204235291964
+      },
+     "Node269":{
+       "JTTF":0
+      },
+     "Node271":{
+       "JTTF":0
+      },
+     "Node281":{
+       "JTTF":0.006916274116991706
+      },
+     "Node282":{
+       "JTTF":0.03030659168395787
+      },
+     "Node284":{
+       "JTTF":0.01943305847058709
+      },
+     "Node285":{
+       "JTTF":0
+      },
+     "Node297":{
+       "JTTF":0.01830458990906033
+      },
+     "Node300":{
+       "JTTF":0
+      },
+     "Node301":{
+       "JTTF":0
+      },
+     "Node312":{
+       "JTTF":0.03204861435955239
+      },
+     "Node313":{
+       "JTTF":0
+      },
+     "Node316":{
+       "JTTF":0
+      },
+     "Node321":{
+       "JTTF":0.03136316564563014
+      },
+     "Node322":{
+       "JTTF":0.00382141325460018
+      },
+     "Node323":{
+       "JTTF":0.03383324219418678
+      },
+     "Node324":{
+       "JTTF":0.03399905200226661
+      },
+     "Node327":{
+       "JTTF":0
+      },
+     "Node328":{
+       "JTTF":0
+      },
+     "Node336":{
+       "JTTF":0.03477132375711471
+      },
+     "Node337":{
+       "JTTF":0.07061214850068846
+      },
+     "Node344":{
+       "JTTF":0.005906075641967628
+      },
+     "Node345":{
+       "JTTF":0.007959196135475986
+      },
+     "Node346":{
+       "JTTF":0.03362309892913676
+      },
+     "Node349":{
+       "JTTF":0.004818463126685316
+      },
+     "Node351":{
+       "JTTF":0.03895596188893342
+      },
+     "Node352":{
+       "JTTF":0
+      },
+     "Node356":{
+       "JTTF":0
+      },
+     "Node357":{
+       "JTTF":0.03389825728095466
+      },
+     "Node360":{
+       "JTTF":0
+      },
+     "Node361":{
+       "JTTF":0
+      },
+     "Node363":{
+       "JTTF":0.04648053252074664
+      },
+     "Node365":{
+       "JTTF":0.135224100805713
+      },
+     "Node366":{
+       "JTTF":0
+      },
+     "Node369":{
+       "JTTF":0.03163752953055795
+      },
+     "Node370":{
+       "JTTF":0
+      },
+     "Node371":{
+       "JTTF":0
+      },
+     "Node373":{
+       "JTTF":0
+      },
+     "Node377":{
+       "JTTF":0
+      },
+     "Node380":{
+       "JTTF":0.0377628573513485
+      },
+     "Node381":{
+       "JTTF":0
+      },
+     "Node383":{
+       "JTTF":0.02817561331698609
+      },
+     "Node385":{
+       "JTTF":0.02227872201012654
+      },
+     "Node386":{
+       "JTTF":0
+      },
+     "Node392":{
+       "JTTF":0.03306572947651788
+      },
+     "Node394":{
+       "JTTF":0
+      },
+     "Node397":{
+       "JTTF":0.03361582334316666
+      },
+     "Node7":{
+       "JTTF":0
+      },
+     "Node8":{
+       "JTTF":0.01744781904088239
+      },
+     "Node9":{
+       "JTTF":0.03284014089021247
+      }
+    },
+   "attributes":{
+     "original name":{
+       "attribute type":"node label",
+       "display order":-1
+      },
+     "JTTF":{
+       "attribute type":"branch length",
+       "display order":0
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "name":"leisr.filter.default",
+     "coverage":[
+      [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48]
+      ]
+    }
+  }
+}

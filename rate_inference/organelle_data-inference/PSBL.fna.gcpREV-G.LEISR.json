@@ -1,0 +1,1621 @@
+{
+ "input":{
+   "file name":"/home/sjspielman/leisr_rates_across_models/data/organelle_data/PSBL.fna",
+   "number of sequences":332,
+   "number of sites":85,
+   "partition count":1,
+   "trees":{
+     "0":"((YP_009308209_1_psbL:1e-10,YP_009158444_1_psbL:1e-10)Node1:0.0229157,(((YP_009375715_1_psbL:1e-10,YP_009299416_1_psbL:1e-10,YP_762276_1_psbL:1e-10,YP_004891621_1_psbL:1e-10,YP_009138223_1_psbL:1e-10,YP_009171168_1_psbL:1e-10,YP_009374100_1_psbL:1e-10,YP_009245024_1_psbL:1e-10,YP_009371310_1_psbL:1e-10,YP_009122879_1_psbL:1e-10,YP_009131810_1_psbL:1e-10,YP_009390824_1_psbL:1e-10,YP_009255890_1_psbL:1e-10,YP_009128854_1_psbL:1e-10,YP_009298813_1_psbL:1e-10,YP_009316908_1_psbL:1e-10,YP_009154800_1_psbL:1e-10,YP_635654_2_psbL:1e-10,YP_009253172_1_psbL:1e-10,YP_009428387_1_psbL:1e-10,YP_009141625_1_psbL:1e-10,YP_009169683_1_psbL:1e-10,YP_009374610_1_psbL:1e-10,YP_009130975_1_psbL:1e-10,YP_009233409_1_psbL:1e-10,YP_009374695_1_psbL:1e-10,YP_009111752_1_psbL:1e-10,YP_009376140_1_psbL:1e-10,YP_004563882_1_psbL:1e-10,YP_009240614_1_psbL:1e-10,YP_009123647_1_psbL:1e-10,YP_009434410_1_psbL:1e-10,YP_009131893_1_psbL:1e-10,YP_001294285_1_psbL:1e-10,YP_009371820_1_psbL:1e-10,YP_009318011_1_psbL:1e-10,YP_009377075_1_psbL:1e-10,YP_009299222_1_psbL:1e-10,YP_009307767_1_psbL:1e-10,YP_740580_1_psbL:1e-10,YP_001837375_1_psbL:1e-10,YP_009371480_1_psbL:1e-10,YP_009338645_1_psbL:1e-10,YP_009380229_1_psbL:1e-10,YP_009374015_1_psbL:1e-10,YP_009241602_1_psbL:1e-10,YP_008963706_1_psbL:1e-10,YP_009380400_1_psbL:1e-10,YP_009141700_1_psbL:1e-10,YP_009376055_1_psbL:1e-10,YP_009373846_1_psbL:1e-10,YP_009428190_1_psbL:1e-10,YP_009373761_1_psbL:1e-10,YP_009253087_1_psbL:1e-10,YP_009310533_1_psbL:1e-10,YP_009383068_1_psbL:1e-10,YP_009372500_1_psbL:1e-10,YP_009171994_1_psbL:1e-10)Node6:5e-09,((YP_009231262_1_psbL:5e-09,YP_009111670_1_psbL:5e-09)Node66:5e-09,(YP_001430054_1_psbL:0.0427946,(YP_008993793_1_psbL:1e-10,YP_007474467_1_psbL:1e-10)Node71:0.0350581)Node69:0.00531852)Node65:5e-09)Node5:0.0479114,((YP_009193269_1_psbL:0.0226436,((YP_009363321_1_psbL:1e-10,YP_001123388_1_psbL:1e-10,YP_009230752_1_psbL:1e-10,YP_009161936_1_psbL:1e-10,YP_009308093_1_psbL:1e-10,YP_009258098_1_psbL:1e-10,YP_009236511_1_psbL:1e-10,YP_009357282_1_psbL:1e-10,YP_009258268_1_psbL:1e-10,YP_009408973_1_psbL:1e-10,YP_009430557_1_psbL:1e-10,YP_009378859_1_psbL:1e-10,YP_007890388_1_psbL:1e-10,YP_009365036_1_psbL:1e-10,YP_009308746_1_psbL:1e-10,YP_009378775_1_psbL:1e-10,YP_009298375_1_psbL:1e-10,YP_007507126_1_psbL:1e-10,YP_009169367_1_psbL:1e-10,YP_009308576_1_psbL:1e-10,YP_009130336_1_psbL:1e-10)Node78:5e-09,(NP_783247_1_psbL:1e-10,YP_009136410_1_psbL:1e-10,YP_001542462_1_psbL:1e-10,YP_009307580_1_psbL:1e-10,YP_009271396_1_psbL:1e-10,YP_009375375_1_psbL:1e-10,YP_009164515_1_psbL:1e-10,YP_009327583_1_psbL:1e-10,YP_009172075_1_psbL:1e-10,YP_009316645_1_psbL:1e-10,YP_009024696_1_psbL:1e-10,YP_784488_1_psbL:1e-10)Node100:5e-09)Node77:5e-09)Node75:0.022743,(YP_001687466_1_psbL:1e-10,YP_009262442_1_psbL:1e-10,YP_740132_1_psbL:1e-10,YP_009228596_1_psbL:1e-10)Node113:0.0228712)Node74:6e-09)Node4:5e-09,((YP_009053180_1_psbL:1e-10,YP_009410320_1_psbL:1e-10,YP_008474314_1_psbL:1e-10,YP_009310666_1_psbL:1e-10,YP_008593037_1_psbL:1e-10,YP_005087804_1_psbL:1e-10,YP_004564387_1_psbL:1e-10,YP_009054234_1_psbL:1e-10,YP_007890211_1_psbL:1e-10,YP_009231844_1_psbL:1e-10,YP_001430113_1_psbL:1e-10,YP_009333937_1_psbL:1e-10,YP_009334420_1_psbL:1e-10,YP_009338523_1_psbL:1e-10,YP_009343286_1_psbL:1e-10,YP_009242969_1_psbL:1e-10,YP_009430642_1_psbL:1e-10,YP_008816261_1_psbL:1e-10,YP_009265949_1_psbL:1e-10,YP_009192422_1_psbL:1e-10,YP_009270751_1_psbL:1e-10,YP_009251994_1_psbL:1e-10,YP_009141965_1_psbL:1e-10,YP_009410901_1_psbL:1e-10,YP_009161037_1_psbL:1e-10,YP_009433435_1_psbL:1e-10,YP_009354045_1_psbL:1e-10,YP_008145806_1_psbL:1e-10,YP_009144994_1_psbL:1e-10,YP_009261796_1_psbL:1e-10,YP_009409988_1_psbL:1e-10,YP_009265451_1_psbL:1e-10,YP_009264623_1_psbL:1e-10,YP_009363803_1_psbL:1e-10,YP_009334927_1_psbL:1e-10,YP_009420809_1_psbL:1e-10,YP_009410984_1_psbL:1e-10,NP_043039_1_psbL:1e-10,YP_009387149_1_psbL:1e-10,YP_009353957_1_psbL:1e-10,YP_009413443_1_psbL:1e-10,YP_008082596_1_psbL:1e-10,YP_009242342_1_psbL:1e-10,YP_009348270_1_psbL:1e-10,YP_009161569_1_psbL:1e-10,YP_002720127_1_psbL:1e-10,YP_009386155_1_psbL:1e-10,YP_009341594_1_psbL:1e-10,YP_009384331_1_psbL:1e-10,YP_009259802_1_psbL:1e-10,YP_009138911_1_psbL:1e-10,YP_009192890_1_psbL:1e-10,YP_009307140_1_psbL:1e-10,YP_009424575_1_psbL:1e-10,YP_009266533_1_psbL:1e-10,YP_008593126_1_psbL:1e-10,YP_009231923_1_psbL:1e-10,YP_006503704_1_psbL:1e-10,YP_009354220_1_psbL:1e-10,YP_009138489_1_psbL:1e-10,YP_009401837_1_psbL:1e-10,YP_009057942_1_psbL:1e-10,YP_009264125_1_psbL:1e-10,YP_009270839_1_psbL:1e-10,YP_009052682_1_psbL:1e-10,YP_009335603_1_psbL:1e-10,YP_009341258_1_psbL:1e-10,YP_009155443_1_psbL:1e-10,YP_008081587_1_psbL:1e-10,YP_874667_1_psbL:1e-10,YP_009422931_1_psbL:1e-10,YP_009431657_1_psbL:1e-10,YP_009370991_1_psbL:1e-10,YP_008592948_1_psbL:1e-10,YP_009335348_1_psbL:1e-10,YP_009410403_1_psbL:1e-10,YP_009411233_1_psbL:1e-10,YP_009432016_1_psbL:1e-10,YP_006460358_1_psbL:1e-10,YP_009176523_1_psbL:1e-10,YP_009434038_1_psbL:1e-10,YP_009423192_1_psbL:1e-10,YP_009053675_1_psbL:1e-10,YP_009356283_1_psbL:1e-10,YP_004935567_1_psbL:1e-10,YP_009232844_1_psbL:1e-10,YP_009326307_1_psbL:1e-10,YP_009371061_1_psbL:1e-10,YP_009241256_1_psbL:1e-10,YP_009229495_1_psbL:1e-10,YP_001586196_1_psbL:1e-10,YP_009368968_1_psbL:1e-10,YP_009343120_1_psbL:1e-10,YP_009338356_1_psbL:1e-10,YP_009356198_1_psbL:1e-10,YP_009266896_1_psbL:1e-10,YP_008081743_1_psbL:1e-10,YP_009059364_1_psbL:1e-10,YP_009260996_1_psbL:1e-10,YP_009260166_1_psbL:1e-10,YP_009384827_1_psbL:1e-10,YP_009335519_1_psbL:1e-10,YP_009318981_1_psbL:1e-10,YP_009424870_1_psbL:1e-10,YP_009309640_1_psbL:1e-10,YP_009356964_1_psbL:1e-10,YP_009327690_1_psbL:1e-10,YP_003587480_1_psbL:1e-10,YP_009390654_1_psbL:1e-10,YP_009401981_1_psbL:1e-10,YP_009265617_1_psbL:1e-10,YP_009409823_1_psbL:1e-10,YP_009253661_1_psbL:1e-10,YP_009431572_1_psbL:1e-10,YP_009047947_1_psbL:1e-10,YP_009243231_1_psbL:1e-10,YP_009423018_1_psbL:1e-10,YP_009264540_1_psbL:1e-10,YP_009385989_1_psbL:1e-10,YP_009346701_1_psbL:1e-10,YP_009028483_1_psbL:1e-10,YP_009401046_1_psbL:1e-10,YP_009261245_1_psbL:1e-10,YP_009367347_1_psbL:1e-10,YP_009347463_1_psbL:1e-10,YP_009257010_1_psbL:1e-10,YP_009242254_1_psbL:1e-10,YP_009421458_1_psbL:1e-10,YP_009387231_1_psbL:1e-10,YP_009129630_1_psbL:1e-10,YP_009247081_1_psbL:1e-10,YP_009390320_1_psbL:1e-10,YP_009410154_1_psbL:1e-10,YP_009132954_1_psbL:1e-10,YP_009259068_1_psbL:1e-10,YP_009260664_1_psbL:1e-10,YP_009327319_1_psbL:1e-10,YP_009263046_1_psbL:1e-10,YP_009236295_1_psbL:1e-10,YP_008146052_1_psbL:1e-10,YP_009271582_1_psbL:1e-10,YP_009262220_1_psbL:1e-10,YP_009438153_1_psbL:1e-10,YP_009388042_1_psbL:1e-10,YP_009267907_1_psbL:1e-10,YP_009384414_1_psbL:1e-10,YP_009251911_1_psbL:1e-10,YP_009235979_1_psbL:1e-10,YP_001294367_1_psbL:1e-10,YP_009334022_1_psbL:1e-10,YP_009334505_1_psbL:1e-10,YP_009253264_1_psbL:1e-10,YP_009409480_1_psbL:1e-10,YP_009028400_1_psbL:1e-10,YP_009261162_1_psbL:1e-10,YP_009242881_1_psbL:1e-10,YP_009401693_1_psbL:1e-10,YP_009430729_1_psbL:1e-10,YP_009266436_1_psbL:1e-10,YP_009254230_1_psbL:1e-10,YP_009421968_1_psbL:1e-10,YP_009054850_1_psbL:1e-10,YP_009309087_1_psbL:1e-10,YP_009343624_1_psbL:1e-10,YP_009422757_1_psbL:1e-10,YP_009051576_1_psbL:1e-10,YP_009186268_1_psbL:1e-10,YP_913202_1_psbL:1e-10,YP_009384580_1_psbL:1e-10,YP_009183607_1_psbL:1e-10,YP_009260083_1_psbL:1e-10,YP_665573_1_psbL:1e-10,YP_009024269_1_psbL:1e-10,YP_009233014_1_psbL:1e-10,YP_009439993_1_psbL:1e-10,YP_009179168_1_psbL:1e-10,YP_009232458_1_psbL:1e-10,YP_009057166_1_psbL:1e-10,YP_009335179_1_psbL:1e-10,YP_009121188_1_psbL:1e-10,YP_009234401_1_psbL:1e-10,YP_009161694_1_psbL:1e-10,YP_009439383_1_psbL:1e-10,YP_009386818_1_psbL:1e-10,YP_024393_1_psbL:1e-10,YP_009373342_1_psbL:1e-10,YP_001122822_1_psbL:1e-10,YP_009052848_1_psbL:1e-10,YP_008965126_1_psbL:1e-10,YP_006503375_1_psbL:1e-10,YP_009232145_1_psbL:1e-10,YP_009423714_1_psbL:1e-10,YP_009354420_1_psbL:1e-10,YP_009260830_1_psbL:1e-10,YP_009161379_1_psbL:1e-10,YP_009263212_1_psbL:1e-10,YP_009267824_1_psbL:1e-10,YP_009251659_1_psbL:1e-10,YP_009326222_1_psbL:1e-10,YP_007317263_1_psbL:1e-10,YP_009024352_1_psbL:1e-10,YP_009233274_1_psbL:1e-10)Node119:5e-09,((YP_009386072_1_psbL:0.0229524,((YP_009270060_1_psbL:1e-10,YP_009269858_1_psbL:1e-10,YP_009269662_1_psbL:1e-10)Node326:0.0230433,(((((YP_009414499_1_psbL:0.0250139,YP_209514_1_psbL:0.0236059)Node334:5e-09,((YP_009421260_1_psbL:5e-09,(YP_009425211_1_psbL:5e-09,(YP_009421172_1_psbL:5e-09,(YP_009426177_1_psbL:5e-09,(((YP_009427578_1_psbL:0.0246299,YP_009183919_1_psbL:6e-09)Node348:0.0255027,(YP_004021240_1_psbL:0.106139,YP_009427139_1_psbL:0.0256778)Node351:0.0250818)Node347:5e-09,YP_009427051_1_psbL:0.0256941)Node346:0.0250798)Node344:5e-09)Node342:0.0243873)Node340:0.0237392)Node338:0.0231624,YP_001023716_1_psbL:0.023386)Node337:5e-09)Node333:0.0231875,(YP_009388257_1_psbL:5e-09,(YP_009249752_1_psbL:1e-10,YP_004276311_1_psbL:1e-10)Node358:0.125072)Node356:0.086765)Node332:0.0245233,((YP_009132460_1_psbL:1e-10,YP_009388102_1_psbL:1e-10)Node362:0.0226852,YP_002519552_1_psbL:5e-09)Node361:5e-09)Node331:0.0235689,(YP_002364514_1_psbL:0.163304,(YP_009341792_1_psbL:0.763615,YP_009434518_1_psbL:0.922398)Node368:0.202555)Node366:0.163656)Node330:5e-09)Node325:5e-09)Node323:5e-09,(YP_001123045_1_psbL:1e-10,YP_009356795_1_psbL:1e-10)Node371:0.022668)Node322:5e-09)Node118:5e-09)"
+    }
+  },
+ "analysis":{
+   "info":"LEISR (Likelihood Estimation of Individual Site Rates) infer relative amino-acid or nucleotide rates from a fixed nucleotide or amino-acid alignment and tree, with possibility for partitions. Relative site-specific substitution rates are\n    inferred by first optimizing alignment-wide branch lengths, and then inferring a site-specific uniform tree scaler.",
+   "version":"0.4",
+   "citation":"Spielman, S.J. and Kosakovsky Pond, S.L. Relative evolutionary rate inference in HyPhy with LEISR. bioRxiv. https://doi.org/10.1101/206011. (2017); Pupko, T., Bell, R. E., Mayrose, I., Glaser, F. & Ben-Tal, N. Rate4Site: an algorithmic tool for the identification of functional regions in proteins by surface mapping of evolutionary determinants within their homologues. Bioinformatics 18, S71–S77 (2002).",
+   "authors":"Sergei L Kosakovsky Pond and Stephanie J Spielman",
+   "contact":"{spond,stephanie.spielman}@temple.edu"
+  },
+ "fits":{
+   "gcpREVF+4Gamma":{
+     "Log Likelihood":-717.3304114160943,
+     "estimated parameters":393,
+     "AIC-c":2231.790126361262,
+     "Rate Distributions":{
+       "Gamma distribution shape parameter":0.965284380777611
+      },
+     "Equilibrium frequencies":[
+      [0.0394347980155902],
+      [0.02795357902196719],
+      [0.02798901488305858],
+      [0.05049078667611274],
+      [0.07451630049610122],
+      [0.0396119773210443],
+      [0.02791814316087596],
+      [0.03996633593195857],
+      [0.02873316796597791],
+      [0.1094914953933969],
+      [0.03677710843372986],
+      [0.09613217576187323],
+      [0.04071048901487854],
+      [0.05102232459248413],
+      [0.04003720765414141],
+      [0.06452338766831836],
+      [0.05141211906448985],
+      [0.06278703047483843],
+      [0.03915131112685571],
+      [0.05134124734230706]
+      ]
+    }
+  },
+ "MLE":{
+   "headers":[
+    ["MLE", "Relative rate estimate at a site"],
+    ["Lower", "Lower bound of 95% profile likelihood CI"],
+    ["Upper", "Upper bound of 95% profile likelihood CI"],
+    ["LogL global", "Site log likelihood under the global (average rate) model fit"],
+    ["LogL local", "Site log likelihood under the local (site-specific rate) model fit"]
+    ],
+   "content":{
+     "0":[
+      [0, 0, 1.035908888585163, -4.390036160710162, -3.302879680794014],
+      [5.692537128476497, 0.7435318113014094, 6141.841496504065, -9.629292389153429, -8.287487973767055],
+      [927.9848011708543, 2.991658560263584, 6141.80570115825, -12.70362808975485, -9.371799816879186],
+      [112.5758651286635, 0.4315062640027199, 6141.840627510058, -7.146265852122582, -5.985952813812067],
+      [0.5603447055253276, 0.02739377683508507, 6141.841942224441, -5.653626550853202, -5.384251123714328],
+      [0, 0, 6141.841893860836, -2.967881354847844, -2.967881354847844],
+      [0, 0, 6141.841893860836, -3.228623748850655, -3.228623748850653],
+      [0, 0, 6141.841893860836, -3.228623748850655, -3.228623748850653],
+      [0, 0, 6141.841893860836, -2.969260808113456, -2.969260808113455],
+      [0, 0, 6141.841893860836, -2.969260808113456, -2.969260808113455],
+      [0, 0, 6141.841893860836, -2.740727521394915, -2.740727521394913],
+      [0, 0, 6141.841893860836, -2.596737378924164, -2.596737378924161],
+      [0, 0, 6141.841893860836, -2.21190840038208, -2.21190840038208],
+      [0, 0, 6141.841893860836, -2.969260808113456, -2.969260808113455],
+      [0, 0, 6141.841893860836, -2.21190840038208, -2.21190840038208],
+      [0, 0, 6141.841893860836, -2.21190840038208, -2.21190840038208],
+      [0, 0, 6141.841893860836, -2.596737378924164, -2.596737378924161],
+      [0, 0, 6141.841893860836, -2.969260808113456, -2.969260808113455],
+      [0, 0, 6141.841893860836, -2.596737378924164, -2.596737378924161],
+      [0, 0, 6141.841893860836, -3.201269504383204, -3.201269504383204],
+      [0, 0, 6141.841893860836, -3.219717780914773, -3.219717780914774],
+      [0, 0, 6141.841893860836, -3.219717780914773, -3.219717780914774],
+      [0, 0, 6141.841893860836, -2.740727521394915, -2.740727521394913],
+      [0, 0, 6141.841893860836, -2.740727521394915, -2.740727521394913],
+      [0, 0, 6141.841893860836, -3.219717780914773, -3.219717780914774],
+      [0, 0, 6141.841893860836, -3.549703145241551, -3.549703145241549],
+      [3.353034372954598, 0.8603812269150831, 9.504823744797497, -21.29378520900281, -20.00232983051953],
+      [1.123357844519204, 0.2462133012527711, 3.963107831994418, -17.913360740465, -17.23226156275952],
+      [2.589599607703998, 0.7604420800467064, 7.672505591424156, -28.76565808564344, -27.65806715568693],
+      [2.614340030869853, 0.762670103890191, 8.493005458700637, -23.88078888653984, -22.76934445134603],
+      [0, 0, 0.532528211938598, -3.928967265726199, -2.342031203623948],
+      [0.5678685082151359, 0.02881006861476959, 3.73169114932716, -6.581817749099355, -6.203670774597446],
+      [0.2764318919755763, 0.01503064800211742, 1.502031385278522, -6.941704827388311, -6.285907623361396],
+      [1.391029739045314, 0.3464603985847771, 4.155555501883518, -19.6094784676182, -18.81123126339631],
+      [0, 0, 0.539493845392948, -4.535979148653801, -2.975492004929217],
+      [2.871218590332175, 0.8030202993704094, 7.502655383218769, -30.24095445854498, -29.06510151648951],
+      [0.5572252418625235, 0.04091880710934609, 2.291200371530354, -7.338972106108685, -6.79411641654047],
+      [0.3903182020043323, 0.0212627681786376, 2.10072034464447, -13.52950039808711, -12.99828415520373],
+      [1.649612388239994, 0.3393240990067342, 5.12508305761422, -18.97055882953525, -18.23080693939612],
+      [0.2645226749202146, 0.01485431823699681, 1.340574481322624, -8.332019075249113, -7.629071207742682],
+      [0.2331116634758582, 0.01305010064236049, 1.118258994110022, -7.427966787093692, -6.648142704046696],
+      [0.4102273998010826, 0.0644220857784976, 1.511786147546758, -8.986629364912929, -8.224218177334089],
+      [0.1507602494877157, 0.008386737460576155, 0.7646839408257822, -8.212245989829828, -7.228137623844116],
+      [0, 0, 0.5394646265406652, -3.775264966540781, -2.21190840038208],
+      [0, 0, 1.336941647061434, -3.884159969211999, -2.969260808113455],
+      [3.469433094609498, 0.5707237037582272, 11.03291956203511, -17.47622834410262, -16.39081605472261],
+      [0, 0, 1.41378562204218, -4.111071837513562, -3.228623748850653],
+      [0.5389511074324584, 0.03249934680981759, 2.489853456494843, -6.115004418159488, -5.620496298730886],
+      [0.3889437193737247, 0.02084763102797874, 2.139911155194026, -6.130486402907665, -5.608893404245387],
+      [1.398097076558396, 0.2853927530284724, 4.688258341698942, -14.65590345486783, -13.95134788992715],
+      [0.5377451135582102, 0.03533491369885915, 2.054369569054489, -10.76572865607276, -10.20389329135878],
+      [0.7844272476464382, 0.1165521654816085, 3.498305010928203, -14.99099480261004, -14.44480952377698],
+      [0, 0, 0.6964241174887186, -4.918339702201861, -3.577210036703451],
+      [0, 0, 1.03532024925062, -4.069401578773068, -2.967881354847844],
+      [0, 0, 0.6964241174887186, -4.918339702201861, -3.577210036703451],
+      [0, 0, 0.6964241174887186, -4.918339702201861, -3.577210036703451],
+      [0, 0, 1.622343241127643, -3.5277826334309, -2.596737378924161],
+      [0, 0, 0.8915922495101339, -4.474147603194611, -3.219717780914774],
+      [0, 0, 1.622343241127643, -3.5277826334309, -2.596737378924161],
+      [0, 0, 1.153208048431328, -4.051753733272853, -2.975492004929217],
+      [0, 0, 2.746757652848887, -3.010958271504129, -2.21190840038208],
+      [0.8321197928634855, 0.03992239053020261, 6141.841888149724, -4.539617875658228, -4.271234418293829],
+      [0.8321197928634855, 0.03992239053020261, 6141.841888149724, -4.539617875658228, -4.271234418293829],
+      [0, 0, 1.153208048431328, -4.051753733272853, -2.975492004929217],
+      [0, 0, 6141.841893860836, -2.21190840038208, -2.21190840038208],
+      [0, 0, 6141.841893860836, -3.219717780914773, -3.219717780914774],
+      [0, 0, 6141.841893860836, -2.985964401402574, -2.985964401402573],
+      [0, 0, 6141.841893860836, -3.217946065874546, -3.217946065874545],
+      [0, 0, 6141.841893860836, -3.549703145241551, -3.549703145241549],
+      [0, 0, 6141.841893860836, -3.219717780914773, -3.219717780914774],
+      [0, 0, 6141.841893860836, -2.768006747937701, -2.768006747937702],
+      [0.2577345005590894, 0.01343562518808698, 3.271086625097101, -6.704699475120805, -6.196799882860571],
+      [0.7295310812733701, 0.03723821984338614, 6141.841839567351, -9.418992163657569, -9.137898930589978],
+      [0.6792848277789924, 0.09315057627986723, 2.618849873042453, -11.15893252558053, -10.58139605053113],
+      [1.622917898827603, 0.3567963413495607, 4.839559306846853, -13.35605914222639, -12.58433703818095],
+      [1.885567254254872, 0.2782652270756481, 5.541452821915994, -16.43605198186803, -15.76653744419176],
+      [1.665484860401094, 0.4175840292522573, 5.522641149534311, -18.99327251443048, -18.19145834700754],
+      [7.837060395028244, 2.953357039126856, 17.33402827570157, -38.3846098484324, -34.34951162593116],
+      [1.501379108035337, 0.3810076081493798, 4.283415202162897, -13.54394928296733, -12.70950338658141],
+      [1.904279313868008, 0.590998878060335, 4.94150540296037, -26.39227353051655, -25.4071042321618],
+      [0.4715535689956681, 0.06565594580015607, 2.996862226884253, -14.88939835124925, -14.36717474397246],
+      [0.3413346313986331, 0.01874807278203267, 1.771239467027705, -10.75081201909758, -10.16271129989053],
+      [3.045159001902046, 0.7977956624973702, 7.909030541886594, -19.5883937086198, -18.38618358340547],
+      [1.493024606599811, 0.2397357148530045, 5.05763410556724, -11.96100825297299, -11.32156925703421],
+      [1.483985088327017, 0.3429345420716027, 4.346926145450459, -15.75266198833011, -14.97498211924509]
+      ]
+    }
+  },
+ "branch attributes":{
+   "0":{
+     "NP_043039_1_psbL":{
+       "original name":"NP_043039.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "NP_783247_1_psbL":{
+       "original name":"NP_783247.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_001023716_1_psbL":{
+       "original name":"YP_001023716.1-psbL",
+       "gcpREVF+4Gamma":0.02631870729399971
+      },
+     "YP_001122822_1_psbL":{
+       "original name":"YP_001122822.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_001123045_1_psbL":{
+       "original name":"YP_001123045.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_001123388_1_psbL":{
+       "original name":"YP_001123388.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_001294285_1_psbL":{
+       "original name":"YP_001294285.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_001294367_1_psbL":{
+       "original name":"YP_001294367.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_001430054_1_psbL":{
+       "original name":"YP_001430054.1-psbL",
+       "gcpREVF+4Gamma":0.002830028404087707
+      },
+     "YP_001430113_1_psbL":{
+       "original name":"YP_001430113.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_001542462_1_psbL":{
+       "original name":"YP_001542462.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_001586196_1_psbL":{
+       "original name":"YP_001586196.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_001687466_1_psbL":{
+       "original name":"YP_001687466.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_001837375_1_psbL":{
+       "original name":"YP_001837375.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_002364514_1_psbL":{
+       "original name":"YP_002364514.1-psbL",
+       "gcpREVF+4Gamma":0.225555833347085
+      },
+     "YP_002519552_1_psbL":{
+       "original name":"YP_002519552.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_002720127_1_psbL":{
+       "original name":"YP_002720127.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_003587480_1_psbL":{
+       "original name":"YP_003587480.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_004021240_1_psbL":{
+       "original name":"YP_004021240.1-psbL",
+       "gcpREVF+4Gamma":0.1159497042375437
+      },
+     "YP_004276311_1_psbL":{
+       "original name":"YP_004276311.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_004563882_1_psbL":{
+       "original name":"YP_004563882.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_004564387_1_psbL":{
+       "original name":"YP_004564387.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_004891621_1_psbL":{
+       "original name":"YP_004891621.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_004935567_1_psbL":{
+       "original name":"YP_004935567.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_005087804_1_psbL":{
+       "original name":"YP_005087804.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_006460358_1_psbL":{
+       "original name":"YP_006460358.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_006503375_1_psbL":{
+       "original name":"YP_006503375.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_006503704_1_psbL":{
+       "original name":"YP_006503704.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_007317263_1_psbL":{
+       "original name":"YP_007317263.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_007474467_1_psbL":{
+       "original name":"YP_007474467.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_007507126_1_psbL":{
+       "original name":"YP_007507126.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_007890211_1_psbL":{
+       "original name":"YP_007890211.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_007890388_1_psbL":{
+       "original name":"YP_007890388.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_008081587_1_psbL":{
+       "original name":"YP_008081587.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_008081743_1_psbL":{
+       "original name":"YP_008081743.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_008082596_1_psbL":{
+       "original name":"YP_008082596.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_008145806_1_psbL":{
+       "original name":"YP_008145806.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_008146052_1_psbL":{
+       "original name":"YP_008146052.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_008474314_1_psbL":{
+       "original name":"YP_008474314.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_008592948_1_psbL":{
+       "original name":"YP_008592948.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_008593037_1_psbL":{
+       "original name":"YP_008593037.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_008593126_1_psbL":{
+       "original name":"YP_008593126.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_008816261_1_psbL":{
+       "original name":"YP_008816261.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_008963706_1_psbL":{
+       "original name":"YP_008963706.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_008965126_1_psbL":{
+       "original name":"YP_008965126.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_008993793_1_psbL":{
+       "original name":"YP_008993793.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009024269_1_psbL":{
+       "original name":"YP_009024269.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009024352_1_psbL":{
+       "original name":"YP_009024352.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009024696_1_psbL":{
+       "original name":"YP_009024696.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009028400_1_psbL":{
+       "original name":"YP_009028400.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009028483_1_psbL":{
+       "original name":"YP_009028483.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009047947_1_psbL":{
+       "original name":"YP_009047947.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009051576_1_psbL":{
+       "original name":"YP_009051576.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009052682_1_psbL":{
+       "original name":"YP_009052682.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009052848_1_psbL":{
+       "original name":"YP_009052848.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009053180_1_psbL":{
+       "original name":"YP_009053180.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009053675_1_psbL":{
+       "original name":"YP_009053675.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009054234_1_psbL":{
+       "original name":"YP_009054234.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009054850_1_psbL":{
+       "original name":"YP_009054850.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009057166_1_psbL":{
+       "original name":"YP_009057166.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009057942_1_psbL":{
+       "original name":"YP_009057942.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009059364_1_psbL":{
+       "original name":"YP_009059364.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009111670_1_psbL":{
+       "original name":"YP_009111670.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009111752_1_psbL":{
+       "original name":"YP_009111752.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009121188_1_psbL":{
+       "original name":"YP_009121188.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009122879_1_psbL":{
+       "original name":"YP_009122879.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009123647_1_psbL":{
+       "original name":"YP_009123647.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009128854_1_psbL":{
+       "original name":"YP_009128854.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009129630_1_psbL":{
+       "original name":"YP_009129630.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009130336_1_psbL":{
+       "original name":"YP_009130336.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009130975_1_psbL":{
+       "original name":"YP_009130975.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009131810_1_psbL":{
+       "original name":"YP_009131810.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009131893_1_psbL":{
+       "original name":"YP_009131893.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009132460_1_psbL":{
+       "original name":"YP_009132460.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009132954_1_psbL":{
+       "original name":"YP_009132954.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009136410_1_psbL":{
+       "original name":"YP_009136410.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009138223_1_psbL":{
+       "original name":"YP_009138223.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009138489_1_psbL":{
+       "original name":"YP_009138489.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009138911_1_psbL":{
+       "original name":"YP_009138911.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009141625_1_psbL":{
+       "original name":"YP_009141625.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009141700_1_psbL":{
+       "original name":"YP_009141700.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009141965_1_psbL":{
+       "original name":"YP_009141965.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009144994_1_psbL":{
+       "original name":"YP_009144994.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009154800_1_psbL":{
+       "original name":"YP_009154800.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009155443_1_psbL":{
+       "original name":"YP_009155443.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009158444_1_psbL":{
+       "original name":"YP_009158444.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009161037_1_psbL":{
+       "original name":"YP_009161037.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009161379_1_psbL":{
+       "original name":"YP_009161379.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009161569_1_psbL":{
+       "original name":"YP_009161569.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009161694_1_psbL":{
+       "original name":"YP_009161694.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009161936_1_psbL":{
+       "original name":"YP_009161936.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009164515_1_psbL":{
+       "original name":"YP_009164515.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009169367_1_psbL":{
+       "original name":"YP_009169367.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009169683_1_psbL":{
+       "original name":"YP_009169683.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009171168_1_psbL":{
+       "original name":"YP_009171168.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009171994_1_psbL":{
+       "original name":"YP_009171994.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009172075_1_psbL":{
+       "original name":"YP_009172075.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009176523_1_psbL":{
+       "original name":"YP_009176523.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009179168_1_psbL":{
+       "original name":"YP_009179168.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009183607_1_psbL":{
+       "original name":"YP_009183607.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009183919_1_psbL":{
+       "original name":"YP_009183919.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009186268_1_psbL":{
+       "original name":"YP_009186268.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009192422_1_psbL":{
+       "original name":"YP_009192422.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009192890_1_psbL":{
+       "original name":"YP_009192890.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009193269_1_psbL":{
+       "original name":"YP_009193269.1-psbL",
+       "gcpREVF+4Gamma":0.02518537926559672
+      },
+     "YP_009228596_1_psbL":{
+       "original name":"YP_009228596.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009229495_1_psbL":{
+       "original name":"YP_009229495.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009230752_1_psbL":{
+       "original name":"YP_009230752.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009231262_1_psbL":{
+       "original name":"YP_009231262.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009231844_1_psbL":{
+       "original name":"YP_009231844.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009231923_1_psbL":{
+       "original name":"YP_009231923.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009232145_1_psbL":{
+       "original name":"YP_009232145.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009232458_1_psbL":{
+       "original name":"YP_009232458.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009232844_1_psbL":{
+       "original name":"YP_009232844.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009233014_1_psbL":{
+       "original name":"YP_009233014.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009233274_1_psbL":{
+       "original name":"YP_009233274.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009233409_1_psbL":{
+       "original name":"YP_009233409.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009234401_1_psbL":{
+       "original name":"YP_009234401.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009235979_1_psbL":{
+       "original name":"YP_009235979.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009236295_1_psbL":{
+       "original name":"YP_009236295.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009236511_1_psbL":{
+       "original name":"YP_009236511.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009240614_1_psbL":{
+       "original name":"YP_009240614.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009241256_1_psbL":{
+       "original name":"YP_009241256.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009241602_1_psbL":{
+       "original name":"YP_009241602.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009242254_1_psbL":{
+       "original name":"YP_009242254.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009242342_1_psbL":{
+       "original name":"YP_009242342.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009242881_1_psbL":{
+       "original name":"YP_009242881.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009242969_1_psbL":{
+       "original name":"YP_009242969.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009243231_1_psbL":{
+       "original name":"YP_009243231.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009245024_1_psbL":{
+       "original name":"YP_009245024.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009247081_1_psbL":{
+       "original name":"YP_009247081.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009249752_1_psbL":{
+       "original name":"YP_009249752.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009251659_1_psbL":{
+       "original name":"YP_009251659.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009251911_1_psbL":{
+       "original name":"YP_009251911.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009251994_1_psbL":{
+       "original name":"YP_009251994.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009253087_1_psbL":{
+       "original name":"YP_009253087.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009253172_1_psbL":{
+       "original name":"YP_009253172.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009253264_1_psbL":{
+       "original name":"YP_009253264.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009253661_1_psbL":{
+       "original name":"YP_009253661.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009254230_1_psbL":{
+       "original name":"YP_009254230.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009255890_1_psbL":{
+       "original name":"YP_009255890.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009257010_1_psbL":{
+       "original name":"YP_009257010.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009258098_1_psbL":{
+       "original name":"YP_009258098.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009258268_1_psbL":{
+       "original name":"YP_009258268.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009259068_1_psbL":{
+       "original name":"YP_009259068.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009259802_1_psbL":{
+       "original name":"YP_009259802.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009260083_1_psbL":{
+       "original name":"YP_009260083.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009260166_1_psbL":{
+       "original name":"YP_009260166.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009260664_1_psbL":{
+       "original name":"YP_009260664.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009260830_1_psbL":{
+       "original name":"YP_009260830.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009260996_1_psbL":{
+       "original name":"YP_009260996.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009261162_1_psbL":{
+       "original name":"YP_009261162.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009261245_1_psbL":{
+       "original name":"YP_009261245.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009261796_1_psbL":{
+       "original name":"YP_009261796.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009262220_1_psbL":{
+       "original name":"YP_009262220.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009262442_1_psbL":{
+       "original name":"YP_009262442.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009263046_1_psbL":{
+       "original name":"YP_009263046.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009263212_1_psbL":{
+       "original name":"YP_009263212.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009264125_1_psbL":{
+       "original name":"YP_009264125.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009264540_1_psbL":{
+       "original name":"YP_009264540.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009264623_1_psbL":{
+       "original name":"YP_009264623.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009265451_1_psbL":{
+       "original name":"YP_009265451.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009265617_1_psbL":{
+       "original name":"YP_009265617.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009265949_1_psbL":{
+       "original name":"YP_009265949.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009266436_1_psbL":{
+       "original name":"YP_009266436.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009266533_1_psbL":{
+       "original name":"YP_009266533.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009266896_1_psbL":{
+       "original name":"YP_009266896.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009267824_1_psbL":{
+       "original name":"YP_009267824.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009267907_1_psbL":{
+       "original name":"YP_009267907.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009269662_1_psbL":{
+       "original name":"YP_009269662.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009269858_1_psbL":{
+       "original name":"YP_009269858.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009270060_1_psbL":{
+       "original name":"YP_009270060.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009270751_1_psbL":{
+       "original name":"YP_009270751.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009270839_1_psbL":{
+       "original name":"YP_009270839.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009271396_1_psbL":{
+       "original name":"YP_009271396.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009271582_1_psbL":{
+       "original name":"YP_009271582.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009298375_1_psbL":{
+       "original name":"YP_009298375.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009298813_1_psbL":{
+       "original name":"YP_009298813.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009299222_1_psbL":{
+       "original name":"YP_009299222.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009299416_1_psbL":{
+       "original name":"YP_009299416.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009307140_1_psbL":{
+       "original name":"YP_009307140.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009307580_1_psbL":{
+       "original name":"YP_009307580.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009307767_1_psbL":{
+       "original name":"YP_009307767.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009308093_1_psbL":{
+       "original name":"YP_009308093.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009308209_1_psbL":{
+       "original name":"YP_009308209.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009308576_1_psbL":{
+       "original name":"YP_009308576.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009308746_1_psbL":{
+       "original name":"YP_009308746.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009309087_1_psbL":{
+       "original name":"YP_009309087.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009309640_1_psbL":{
+       "original name":"YP_009309640.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009310533_1_psbL":{
+       "original name":"YP_009310533.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009310666_1_psbL":{
+       "original name":"YP_009310666.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009316645_1_psbL":{
+       "original name":"YP_009316645.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009316908_1_psbL":{
+       "original name":"YP_009316908.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009318011_1_psbL":{
+       "original name":"YP_009318011.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009318981_1_psbL":{
+       "original name":"YP_009318981.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009326222_1_psbL":{
+       "original name":"YP_009326222.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009326307_1_psbL":{
+       "original name":"YP_009326307.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009327319_1_psbL":{
+       "original name":"YP_009327319.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009327583_1_psbL":{
+       "original name":"YP_009327583.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009327690_1_psbL":{
+       "original name":"YP_009327690.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009333937_1_psbL":{
+       "original name":"YP_009333937.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009334022_1_psbL":{
+       "original name":"YP_009334022.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009334420_1_psbL":{
+       "original name":"YP_009334420.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009334505_1_psbL":{
+       "original name":"YP_009334505.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009334927_1_psbL":{
+       "original name":"YP_009334927.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009335179_1_psbL":{
+       "original name":"YP_009335179.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009335348_1_psbL":{
+       "original name":"YP_009335348.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009335519_1_psbL":{
+       "original name":"YP_009335519.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009335603_1_psbL":{
+       "original name":"YP_009335603.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009338356_1_psbL":{
+       "original name":"YP_009338356.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009338523_1_psbL":{
+       "original name":"YP_009338523.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009338645_1_psbL":{
+       "original name":"YP_009338645.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009341258_1_psbL":{
+       "original name":"YP_009341258.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009341594_1_psbL":{
+       "original name":"YP_009341594.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009341792_1_psbL":{
+       "original name":"YP_009341792.1-psbL",
+       "gcpREVF+4Gamma":1.547841213693281
+      },
+     "YP_009343120_1_psbL":{
+       "original name":"YP_009343120.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009343286_1_psbL":{
+       "original name":"YP_009343286.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009343624_1_psbL":{
+       "original name":"YP_009343624.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009346701_1_psbL":{
+       "original name":"YP_009346701.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009347463_1_psbL":{
+       "original name":"YP_009347463.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009348270_1_psbL":{
+       "original name":"YP_009348270.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009353957_1_psbL":{
+       "original name":"YP_009353957.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009354045_1_psbL":{
+       "original name":"YP_009354045.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009354220_1_psbL":{
+       "original name":"YP_009354220.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009354420_1_psbL":{
+       "original name":"YP_009354420.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009356198_1_psbL":{
+       "original name":"YP_009356198.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009356283_1_psbL":{
+       "original name":"YP_009356283.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009356795_1_psbL":{
+       "original name":"YP_009356795.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009356964_1_psbL":{
+       "original name":"YP_009356964.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009357282_1_psbL":{
+       "original name":"YP_009357282.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009363321_1_psbL":{
+       "original name":"YP_009363321.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009363803_1_psbL":{
+       "original name":"YP_009363803.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009365036_1_psbL":{
+       "original name":"YP_009365036.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009367347_1_psbL":{
+       "original name":"YP_009367347.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009368968_1_psbL":{
+       "original name":"YP_009368968.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009370991_1_psbL":{
+       "original name":"YP_009370991.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009371061_1_psbL":{
+       "original name":"YP_009371061.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009371310_1_psbL":{
+       "original name":"YP_009371310.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009371480_1_psbL":{
+       "original name":"YP_009371480.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009371820_1_psbL":{
+       "original name":"YP_009371820.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009372500_1_psbL":{
+       "original name":"YP_009372500.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009373342_1_psbL":{
+       "original name":"YP_009373342.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009373761_1_psbL":{
+       "original name":"YP_009373761.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009373846_1_psbL":{
+       "original name":"YP_009373846.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009374015_1_psbL":{
+       "original name":"YP_009374015.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009374100_1_psbL":{
+       "original name":"YP_009374100.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009374610_1_psbL":{
+       "original name":"YP_009374610.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009374695_1_psbL":{
+       "original name":"YP_009374695.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009375375_1_psbL":{
+       "original name":"YP_009375375.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009375715_1_psbL":{
+       "original name":"YP_009375715.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009376055_1_psbL":{
+       "original name":"YP_009376055.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009376140_1_psbL":{
+       "original name":"YP_009376140.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009377075_1_psbL":{
+       "original name":"YP_009377075.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009378775_1_psbL":{
+       "original name":"YP_009378775.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009378859_1_psbL":{
+       "original name":"YP_009378859.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009380229_1_psbL":{
+       "original name":"YP_009380229.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009380400_1_psbL":{
+       "original name":"YP_009380400.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009383068_1_psbL":{
+       "original name":"YP_009383068.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009384331_1_psbL":{
+       "original name":"YP_009384331.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009384414_1_psbL":{
+       "original name":"YP_009384414.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009384580_1_psbL":{
+       "original name":"YP_009384580.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009384827_1_psbL":{
+       "original name":"YP_009384827.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009385989_1_psbL":{
+       "original name":"YP_009385989.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009386072_1_psbL":{
+       "original name":"YP_009386072.1-psbL",
+       "gcpREVF+4Gamma":0.02518636364002032
+      },
+     "YP_009386155_1_psbL":{
+       "original name":"YP_009386155.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009386818_1_psbL":{
+       "original name":"YP_009386818.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009387149_1_psbL":{
+       "original name":"YP_009387149.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009387231_1_psbL":{
+       "original name":"YP_009387231.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009388042_1_psbL":{
+       "original name":"YP_009388042.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009388102_1_psbL":{
+       "original name":"YP_009388102.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009388257_1_psbL":{
+       "original name":"YP_009388257.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009390320_1_psbL":{
+       "original name":"YP_009390320.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009390654_1_psbL":{
+       "original name":"YP_009390654.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009390824_1_psbL":{
+       "original name":"YP_009390824.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009401046_1_psbL":{
+       "original name":"YP_009401046.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009401693_1_psbL":{
+       "original name":"YP_009401693.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009401837_1_psbL":{
+       "original name":"YP_009401837.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009401981_1_psbL":{
+       "original name":"YP_009401981.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009408973_1_psbL":{
+       "original name":"YP_009408973.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009409480_1_psbL":{
+       "original name":"YP_009409480.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009409823_1_psbL":{
+       "original name":"YP_009409823.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009409988_1_psbL":{
+       "original name":"YP_009409988.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009410154_1_psbL":{
+       "original name":"YP_009410154.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009410320_1_psbL":{
+       "original name":"YP_009410320.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009410403_1_psbL":{
+       "original name":"YP_009410403.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009410901_1_psbL":{
+       "original name":"YP_009410901.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009410984_1_psbL":{
+       "original name":"YP_009410984.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009411233_1_psbL":{
+       "original name":"YP_009411233.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009413443_1_psbL":{
+       "original name":"YP_009413443.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009414499_1_psbL":{
+       "original name":"YP_009414499.1-psbL",
+       "gcpREVF+4Gamma":0.02539365749210815
+      },
+     "YP_009420809_1_psbL":{
+       "original name":"YP_009420809.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009421172_1_psbL":{
+       "original name":"YP_009421172.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009421260_1_psbL":{
+       "original name":"YP_009421260.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009421458_1_psbL":{
+       "original name":"YP_009421458.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009421968_1_psbL":{
+       "original name":"YP_009421968.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009422757_1_psbL":{
+       "original name":"YP_009422757.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009422931_1_psbL":{
+       "original name":"YP_009422931.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009423018_1_psbL":{
+       "original name":"YP_009423018.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009423192_1_psbL":{
+       "original name":"YP_009423192.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009423714_1_psbL":{
+       "original name":"YP_009423714.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009424575_1_psbL":{
+       "original name":"YP_009424575.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009424870_1_psbL":{
+       "original name":"YP_009424870.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009425211_1_psbL":{
+       "original name":"YP_009425211.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009426177_1_psbL":{
+       "original name":"YP_009426177.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009427051_1_psbL":{
+       "original name":"YP_009427051.1-psbL",
+       "gcpREVF+4Gamma":0.02754594775743792
+      },
+     "YP_009427139_1_psbL":{
+       "original name":"YP_009427139.1-psbL",
+       "gcpREVF+4Gamma":0.02738561227926973
+      },
+     "YP_009427578_1_psbL":{
+       "original name":"YP_009427578.1-psbL",
+       "gcpREVF+4Gamma":0.02605128534314878
+      },
+     "YP_009428190_1_psbL":{
+       "original name":"YP_009428190.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009428387_1_psbL":{
+       "original name":"YP_009428387.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009430557_1_psbL":{
+       "original name":"YP_009430557.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009430642_1_psbL":{
+       "original name":"YP_009430642.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009430729_1_psbL":{
+       "original name":"YP_009430729.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009431572_1_psbL":{
+       "original name":"YP_009431572.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009431657_1_psbL":{
+       "original name":"YP_009431657.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009432016_1_psbL":{
+       "original name":"YP_009432016.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009433435_1_psbL":{
+       "original name":"YP_009433435.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009434038_1_psbL":{
+       "original name":"YP_009434038.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009434410_1_psbL":{
+       "original name":"YP_009434410.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009434518_1_psbL":{
+       "original name":"YP_009434518.1-psbL",
+       "gcpREVF+4Gamma":1.628175489605887
+      },
+     "YP_009438153_1_psbL":{
+       "original name":"YP_009438153.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009439383_1_psbL":{
+       "original name":"YP_009439383.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_009439993_1_psbL":{
+       "original name":"YP_009439993.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_024393_1_psbL":{
+       "original name":"YP_024393.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_209514_1_psbL":{
+       "original name":"YP_209514.1-psbL",
+       "gcpREVF+4Gamma":0.02587099298263509
+      },
+     "YP_635654_2_psbL":{
+       "original name":"YP_635654.2-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_665573_1_psbL":{
+       "original name":"YP_665573.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_740132_1_psbL":{
+       "original name":"YP_740132.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_740580_1_psbL":{
+       "original name":"YP_740580.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_762276_1_psbL":{
+       "original name":"YP_762276.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_784488_1_psbL":{
+       "original name":"YP_784488.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_874667_1_psbL":{
+       "original name":"YP_874667.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "YP_913202_1_psbL":{
+       "original name":"YP_913202.1-psbL",
+       "gcpREVF+4Gamma":0
+      },
+     "Node1":{
+       "gcpREVF+4Gamma":0.02508454500677293
+      },
+     "Node100":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node113":{
+       "gcpREVF+4Gamma":0.02482556495520737
+      },
+     "Node118":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node119":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node322":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node323":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node325":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node326":{
+       "gcpREVF+4Gamma":0.0253097583563812
+      },
+     "Node330":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node331":{
+       "gcpREVF+4Gamma":0.02734701031331442
+      },
+     "Node332":{
+       "gcpREVF+4Gamma":0.0315041693259067
+      },
+     "Node333":{
+       "gcpREVF+4Gamma":0.02295360942903655
+      },
+     "Node334":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node337":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node338":{
+       "gcpREVF+4Gamma":0.02539182511524728
+      },
+     "Node340":{
+       "gcpREVF+4Gamma":0.02532927887429025
+      },
+     "Node342":{
+       "gcpREVF+4Gamma":0.02520267114000978
+      },
+     "Node344":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node346":{
+       "gcpREVF+4Gamma":0.02651259010616345
+      },
+     "Node347":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node348":{
+       "gcpREVF+4Gamma":0.02719229802400788
+      },
+     "Node351":{
+       "gcpREVF+4Gamma":0.02712514990875538
+      },
+     "Node356":{
+       "gcpREVF+4Gamma":0.121403151823701
+      },
+     "Node358":{
+       "gcpREVF+4Gamma":0.1645028487777273
+      },
+     "Node361":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node362":{
+       "gcpREVF+4Gamma":0.02471463437652401
+      },
+     "Node366":{
+       "gcpREVF+4Gamma":0.2603981967384258
+      },
+     "Node368":{
+       "gcpREVF+4Gamma":0.2602701031877557
+      },
+     "Node371":{
+       "gcpREVF+4Gamma":0.02473874732322609
+      },
+     "Node4":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node5":{
+       "gcpREVF+4Gamma":0.0370427590933798
+      },
+     "Node6":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node65":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node66":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node69":{
+       "gcpREVF+4Gamma":0.05091568149380248
+      },
+     "Node71":{
+       "gcpREVF+4Gamma":0.04022408712714783
+      },
+     "Node74":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node75":{
+       "gcpREVF+4Gamma":0.02488814554484854
+      },
+     "Node77":{
+       "gcpREVF+4Gamma":0
+      },
+     "Node78":{
+       "gcpREVF+4Gamma":0
+      }
+    },
+   "attributes":{
+     "original name":{
+       "attribute type":"node label",
+       "display order":-1
+      },
+     "gcpREVF+4Gamma":{
+       "attribute type":"branch length",
+       "display order":0
+      }
+    }
+  },
+ "data partitions":{
+   "0":{
+     "name":"leisr.filter.default",
+     "coverage":[
+      [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84]
+      ]
+    }
+  }
+}
