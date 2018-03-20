@@ -1,0 +1,36 @@
+#!/bin/bash
+#PBS -N subcounts
+#PBS -q avx
+#PBS -l nodes=2:ppn=2
+#PBS -e e.$PBS_JOBNAME-$PBS_JOBID
+#PBS -o o.$PBS_JOBNAME-$PBS_JOBID
+
+
+export PATH=/usr/local/bin:$PATH
+TYPE=$1
+FILE=$2
+
+
+PROJPATH=/home/sjspielman/leisr_rates_across_models
+DATAPATH=$PROJPATH/data/${TYPE}
+RESULTPATH=$PROJPATH/rate_inference/$TYPE-inference
+mkdir -p $RESULTPATH
+
+
+HYPATH=/home/sjspielman/hyphy
+MPI=$HYPATH/HYPHYMPI
+LIBPATH=$HYPATH/res
+BATCHFILE=$LIBPATH/TemplateBatchFiles/leisr2.bf ## just fits global models and spits back counts
+
+for MODEL in LG WAG JTT JC69 gcpREV mtMet HIVBm; do
+    for RV in Gamma No; do
+       if [ $RV == "Gamma" ]; then
+	  RV2=G
+       else
+          RV2=No
+       fi 
+        OUTFILE=$RESULTPATH/$FILE.$MODEL-$RV2-subcounts.txt
+        /opt/scyld/openmpi/1.6.3/gnu/bin/mpirun -np 4 $MPI LIBPATH=$LIBPATH $BATCHFILE ${DATAPATH}/$FILE y Protein $MODEL $RV
+       fi
+    done
+done
