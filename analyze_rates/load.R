@@ -8,6 +8,7 @@ mito <- c("ATP6", "ATP8", "COX1", "COX2", "COX3", "CYTB", "ND1", "ND2", "ND3", "
 figdir <- "figures/"
 datadir <- "summarized_data/"
 theme_set(theme_classic() + theme(strip.background = element_rect(fill = "grey90")))
+
 model.levels  <- c("LG", "WAG", "JTT", "gcpREV", "mtMet", "HIVBm", "JC69")
 model.labels  <- c("LG", "WAG", "JTT", "gcpREV", "mtMet", "HIVb", "JC")
 type.levels <- c("enzyme", "mito", "chloro", "gpcr")
