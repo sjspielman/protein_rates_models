@@ -117,7 +117,7 @@ ggsave(paste0(figdir, "scatterplot_grid_LG_vs_all_BOUNDED.pdf"),scatter.grid.mod
 rv.correlations %>% 
     ggplot(aes(x = model, y = rho, fill = type))+
     geom_point(pch=21, position = position_jitterdodge())  + 
-    ylab("Rank Correlation") + xlab("Model") + scale_fill_manual(name = "Dataset", values = ordered.colors) + 
+    ylab("Spearman Correlation") + xlab("Model") + scale_fill_manual(name = "Dataset", values = ordered.colors) + 
     theme(legend.position = "bottom",legend.box.spacing = unit(0., "cm"), legend.box.margin = margin(0,0,0,0)) -> rv.jitter.plot
 ggsave(paste0(figdir, "jitter_ratevariation.pdf"), rv.jitter.plot, width = 6, height=3)
 
