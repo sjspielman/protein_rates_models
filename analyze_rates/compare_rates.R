@@ -1,6 +1,6 @@
 ###### Crux analysis file for rates
 ###### SJS
-#source("load.R") ### shared plotting bits
+#source("load.R") ### Uncomment this line if you are directly running this script (as opposed to running the full pipeline from `pipeline.R`.
 
 lower <- 1e-8
 boundrange <- 1e3
@@ -9,13 +9,24 @@ boundrange <- 1e3
 ###################### Create, save correlations between models ############################
 ############################################################################################
 
-#### No RV - Gamma. 
+#### No RV - Gamma, with both spearman (rho) and pearson (r), where the latter is run on log-transformed data
 rates %>%
     select(-Lower, -Upper, -LogL_global, -LogL_local) %>% 
     group_by(dataset, type, model) %>%
-    spread(rv, MLE) %>%
-    summarize( rho = cor(G, No, method = "spearman")) -> rv.correlations
+    spread(rv, MLE) %>% 
+    summarize( rho = cor(G, No, method = "spearman")) -> rv.spearman
+
+rates %>%
+    select(-Lower, -Upper, -LogL_global, -LogL_local) %>% 
+    group_by(dataset, type, model) %>%
+    mutate(MLE = if_else(MLE <= lower, lower, MLE)) %>%
+    spread(rv, MLE) %>% 
+    summarize( r = cor(log(G), log(No))) -> rv.pearson
+
+left_join(rv.spearman, rv.pearson) -> rv.correlations
 write_csv(rv.correlations, paste0(datadir, "correlations_between_rv.csv"))
+
+
 
 
 ## Spread rates
@@ -27,14 +38,15 @@ rates %>%
     ungroup() -> spread.rates
 
 ## Correlate pairwise
-corr.between.models <- tibble("dataset" = character(), "type" = character(), "rho" = numeric(), "model1" = character(), "model2" = character())
+corr.between.models <- tibble("dataset" = character(), "type" = character(), "rho" = numeric(), "r" = numeric(), "model1" = character(), "model2" = character())
 for (m1 in model.labels){
     for (m2 in model.labels) {
     
         if (m1 == m2) {
-            rhos <- data.frame(dataset = spread.rates$dataset,
+            corrs <- data.frame(dataset = spread.rates$dataset,
                            type = spread.rates$type,
                            rho = 1.0,
+                           r = 1.0,
                            "model1" = m1, 
                            "model2" = m2)
         } else{
@@ -47,8 +59,17 @@ for (m1 in model.labels){
                 summarize( rho = cor(m1, m2, method = "spearman")) %>%
                 mutate("model1" = m1, "model2" = m2) %>% 
                 as.data.frame() -> rhos
+            subdat %>% 
+                group_by(type, dataset) %>%
+                mutate(m1 = if_else(m1 <= lower, lower, m1),
+                       m2 = if_else(m2 <= lower, lower, m2)) %>%
+                summarize( r = cor(log(m1), log(m2))) %>%
+                mutate("model1" = m1, "model2" = m2) %>% 
+                as.data.frame() -> rs
+            corrs <- left_join(rhos, rs)
+            
         }
-        corr.between.models <- bind_rows(corr.between.models, rhos) 
+        corr.between.models <- bind_rows(corr.between.models, corrs) 
     }
 }
 write_csv(corr.between.models, paste0(datadir, "correlations_between_models.csv"))
@@ -115,12 +136,16 @@ ggsave(paste0(figdir, "scatterplot_grid_LG_vs_all_BOUNDED.pdf"),scatter.grid.mod
 ##########################################################################################
 
 rv.correlations %>% 
-    ggplot(aes(x = model, y = rho, fill = type))+
+    gather(corrtype, value, rho, r) -> rv.data.plot
+rv.data.plot$corrtype <- factor(rv.data.plot$corrtype, levels=c("rho", "r"), labels=c("Spearman", "Pearson"))
+rv.data.plot%>%
+    ggplot(aes(x = model, y = value, fill = type))+
     geom_point(pch=21, position = position_jitterdodge())  + 
-    ylab("Spearman Correlation") + xlab("Model") + scale_fill_manual(name = "Dataset", values = ordered.colors) + 
+    ylab("Correlation") + xlab("Model") + scale_fill_manual(name = "Dataset", values = ordered.colors) + 
+    facet_wrap(~corrtype, nrow=2, scales = "free_y") + 
+    panel_border() + 
     theme(legend.position = "bottom",legend.box.spacing = unit(0., "cm"), legend.box.margin = margin(0,0,0,0)) -> rv.jitter.plot
-ggsave(paste0(figdir, "jitter_ratevariation.pdf"), rv.jitter.plot, width = 6, height=3)
-
+ggsave(paste0(figdir, "jitter_ratevariation.pdf"), rv.jitter.plot, width = 6, height=5)
 ############################################################################################
 ############################################################################################
 
@@ -189,18 +214,77 @@ all.corr$model2 <- factor(all.corr$model2, levels=model.labels)
 all.corr$type <- factor(all.corr$type, levels=type.labels)
 
 
-### Plot, save the heatmap
+### SPEARMAN HEATMAP ###
 all.corr %>%
     ggplot(aes(x = model1, y = model2, fill = meanrho)) + 
     geom_tile(color="white") + 
-    geom_text(aes(label = label), size=2.15) + 
-    scale_fill_gradient(name = "Rank Correlation", low = "red", high = "yellow", na.value = "#f2f2f2") + 
+    geom_text(aes(label = label), size=1.95) + 
+    scale_fill_gradient(name = "Rank Correlation", low = "red", high = "yellow", na.value = "#f2f2f2", limits=c(0.92, 1.0)) + 
     facet_grid(~type) + 
     xlab("") + ylab("") + 
     theme(axis.text.x = element_text(angle=15, size=8), axis.text.y = element_text(size=8.5)) -> heatmap.rho.between.models
-ggsave(paste0(figdir, "heatmap_correlations.pdf"), heatmap.rho.between.models, width=11.5, height=2.8)    
+#ggsave(paste0(figdir, "heatmap_correlations.pdf"), heatmap.rho.between.models, width=11.5, height=2.8)    
 
 
+
+##### Heatmap with PEARSON ######
+#### mean ####
+corr.between.models %>%
+    ungroup() %>%
+    group_by(type, model1, model2) %>%
+    summarize(x = mean(r)) -> meanr
+ecorr <- extract.corr.type(meanr, "Enzyme", model.labels)
+ccorr <- extract.corr.type(meanr, "Chloroplast", model.labels)
+mcorr <- extract.corr.type(meanr, "Mitochondria", model.labels)
+gcorr <- extract.corr.type(meanr, "GPCR", model.labels)
+bind_rows(ecorr,ccorr, mcorr, gcorr) %>% 
+    mutate(model2 = rep(model.labels,4)) %>%
+    gather(model1, x, model.labels) %>%
+    rename(meanr = x) -> all.meanr
+
+### standard deviation - NOT USED FOR PEARSON HEATMAP PLOT SINCE IT'S ALWAYS SO LOW, MAX IS 0.0017 ###
+corr.between.models %>%
+    ungroup() %>%
+    group_by(type, model1, model2) %>%
+    summarize(x = sd(r)) -> sdr
+ecorr <- extract.corr.type(sdr, "Enzyme", model.labels)
+ccorr <- extract.corr.type(sdr, "Chloroplast", model.labels)
+mcorr <- extract.corr.type(sdr, "Mitochondria", model.labels)
+gcorr <- extract.corr.type(sdr, "GPCR", model.labels)
+bind_rows(ecorr,ccorr, mcorr, gcorr) %>% 
+    mutate(model2 = rep(model.labels, 4)) %>%
+    gather(model1, x, model.labels) %>%
+    rename(sdr = x) -> all.sdr
+    
+### format the label ###
+left_join(all.meanr, all.sdr) %>%
+    mutate(sdr = if_else(sdr <= 1e-3, 0, 1e-3)) %>%
+    mutate(label = paste0( round(meanr, 3), "\n(",  round(sdr, 3), ")") ) %>%
+    mutate(label = ifelse(label == "NA\n(NA)", "", label)) -> all.corr
+        
+### factor order
+all.corr$model1 <- factor(all.corr$model1, levels=model.labels)
+all.corr$model2 <- factor(all.corr$model2, levels=model.labels)
+all.corr$type <- factor(all.corr$type, levels=type.labels)
+
+
+### Plot, save the heatmap
+all.corr %>%
+    ggplot(aes(x = model1, y = model2, fill = meanr)) + 
+    geom_tile(color="white") + 
+    geom_text(aes(label = label), size=2) + 
+    scale_fill_gradient(name = "Pearson Correlation", low = "red", high = "yellow", na.value = "#f2f2f2", limits=c(0.98, 1.0)) + 
+    facet_grid(~type) + 
+    xlab("") + ylab("") + 
+    theme(axis.text.x = element_text(angle=15, size=8), axis.text.y = element_text(size=8.5)) -> heatmap.r.between.models
+
+### SINGLE PLOT OF BOTH HEATMAPS FOR MAIN TEXT ####
+plot_grid(heatmap.rho.between.models, heatmap.r.between.models, labels="auto", nrow=2) -> both.heatmaps
+save_plot(paste0(figdir, "heatmaps.pdf"), both.heatmaps, base_width=12, base_height=5.25)
+
+
+
+  
 ############################################################################################
 ############################################################################################
 
