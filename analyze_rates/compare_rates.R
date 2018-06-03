@@ -1,6 +1,6 @@
 ###### Crux analysis file for rates
 ###### SJS
-#source("load.R") ### Uncomment this line if you are directly running this script (as opposed to running the full pipeline from `pipeline.R`.
+source("load.R") ### Uncomment this line if you are directly running this script (as opposed to running the full pipeline from `pipeline.R`.
 
 lower <- 1e-8
 boundrange <- 1e3
@@ -137,19 +137,17 @@ ggsave(paste0(figdir, "scatterplot_grid_LG_vs_all_BOUNDED.pdf"),scatter.grid.mod
 
 rv.correlations %>% 
     gather(corrtype, value, rho, r) -> rv.data.plot
-rv.data.plot$corrtype <- factor(rv.data.plot$corrtype, levels=c("rho", "r"), labels=c("Spearman", "Pearson"))
+rv.data.plot$corrtype <- factor(rv.data.plot$corrtype, levels=c("rho", "r"), labels=c("Spearman Correlation", "Pearson Correlation"))
 rv.data.plot%>%
     ggplot(aes(x = model, y = value, fill = type))+
     geom_point(pch=21, position = position_jitterdodge())  + 
-    ylab("Correlation") + xlab("Model") + scale_fill_manual(name = "Dataset", values = ordered.colors) + 
+    xlab("Model") + scale_fill_manual(name = "Dataset", values = ordered.colors) + 
     facet_wrap(~corrtype, nrow=2, scales = "free_y") + 
     panel_border() + 
     theme(legend.position = "bottom",legend.box.spacing = unit(0., "cm"), legend.box.margin = margin(0,0,0,0)) -> rv.jitter.plot
 ggsave(paste0(figdir, "jitter_ratevariation.pdf"), rv.jitter.plot, width = 6, height=5)
 ############################################################################################
 ############################################################################################
-
-
 
 
 
@@ -219,7 +217,7 @@ all.corr %>%
     ggplot(aes(x = model1, y = model2, fill = meanrho)) + 
     geom_tile(color="white") + 
     geom_text(aes(label = label), size=1.95) + 
-    scale_fill_gradient(name = "Rank Correlation", low = "red", high = "yellow", na.value = "#f2f2f2", limits=c(0.92, 1.0)) + 
+    scale_fill_gradient(name = "Spearman Correlation", low = "red", high = "yellow", na.value = "#f2f2f2", limits=c(0.92, 1.0)) + 
     facet_grid(~type) + 
     xlab("") + ylab("") + 
     theme(axis.text.x = element_text(angle=15, size=8), axis.text.y = element_text(size=8.5)) -> heatmap.rho.between.models
