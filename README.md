@@ -1,8 +1,10 @@
-Repository for [*Relative evolutionary rates in proteins are largely insensitive to the substitution model*](https://doi.org/10.1101/304758)
+Repository for [*Relative evolutionary rates in proteins are largely insensitive to the substitution model*](https://doi.org/10.1093/molbev/msy127)
 
 + [Stephanie J. Spielman](http://sjspielman.org) 
 	+ Corresponding: `stephanie.spielman <at> temple.edu`
 + [Sergei L. Kosakovsky Pond](http://hyphy.org)
+
+See [here](https://github.com/sjspielman/protein_rates_models/releases/tag/1.0) for publication version of repo.
 
 -----------------------------------------------------
 
